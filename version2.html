@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大阪關西親子 9 日遊攻略 Version 2 進階版｜2026/6/30–7/8</title>
+<style>
+  :root{
+    --teal:#0f6e6e; --teal2:#138a86; --coral:#e2683f; --coral2:#ef7e57;
+    --ink:#1f2733; --muted:#6b7280; --bg:#f4f6f5; --card:#ffffff;
+    --gold:#c98a2b; --green:#2f8f5b; --line:#e2e6e3; --purple:#6b4ea8;
+    --shadow:0 6px 24px rgba(15,110,110,.09);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px}
+  a{color:var(--teal2);text-decoration:none}
+  .hero{background:linear-gradient(135deg,#0f6e6e 0%,#138a86 55%,#1aa39a 100%);
+    color:#fff;padding:54px 20px 64px;position:relative;overflow:hidden}
+  .hero::after{content:"🐬 🎢 🚃 ☀️ 🗼";position:absolute;right:-10px;bottom:8px;
+    font-size:40px;opacity:.18;letter-spacing:8px}
+  .hero-inner{max-width:1000px;margin:0 auto}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+    padding:4px 14px;border-radius:999px;font-size:13px;letter-spacing:1px;margin-bottom:16px}
+  .hero .v2{background:var(--coral);border-color:var(--coral)}
+  .hero h1{margin:0 0 8px;font-size:32px;font-weight:800;letter-spacing:1px}
+  .hero p.sub{margin:0;font-size:18px;opacity:.92}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .hero .meta span{background:rgba(255,255,255,.12);padding:8px 14px;border-radius:10px;font-size:14px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  nav .wrap{max-width:1000px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:10px 12px}
+  nav a{white-space:nowrap;font-size:14px;padding:7px 12px;border-radius:8px;color:var(--ink);font-weight:600}
+  nav a:hover{background:#e3f2f1;color:var(--teal2)}
+  main{max-width:1000px;margin:0 auto;padding:30px 18px 80px}
+  section{margin:42px 0;scroll-margin-top:64px}
+  h2{font-size:25px;border-left:6px solid var(--coral);padding-left:12px;margin:0 0 18px}
+  h2 .em{color:var(--coral)}
+  h3{font-size:19px;margin:22px 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2,.grid3{grid-template-columns:1fr}.hero h1{font-size:25px}}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#e3f2f1;color:var(--teal);font-weight:700}
+  tr:nth-child(even) td{background:#fafafa}
+  .pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;color:#fff}
+  .pill.coral{background:var(--coral)} .pill.teal{background:var(--teal2)}
+  .pill.green{background:var(--green)} .pill.gold{background:var(--gold)} .pill.purple{background:var(--purple)}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:var(--shadow);margin-bottom:22px}
+  .day-head{background:linear-gradient(90deg,#0f6e6e,#138a86);color:#fff;padding:16px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .day-head.usj{background:linear-gradient(90deg,#5a4b8a,#6b4ea8)}
+  .day-head .num{background:#fff;color:var(--teal);font-weight:800;width:42px;height:42px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .day-head.usj .num{color:var(--purple)}
+  .day-head .d-date{font-size:14px;opacity:.9}
+  .day-head .d-title{font-size:19px;font-weight:800;margin:0}
+  .day-head .d-theme{margin-left:auto;background:rgba(255,255,255,.16);padding:5px 12px;border-radius:8px;font-size:13px}
+  .badge-new{background:var(--coral);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:6px;margin-left:6px}
+  .day-body{padding:18px 20px}
+  .leg{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .leg:last-child{border-bottom:none}
+  .leg .ico{font-size:20px;flex-shrink:0;width:30px;text-align:center}
+  .leg .t{flex-shrink:0;width:62px;font-weight:700;color:var(--teal2);font-size:14px}
+  .leg .c{flex:1}
+  .row-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tg{font-size:13px;background:#eef4f3;border:1px solid #d7e6e4;border-radius:8px;padding:6px 10px}
+  .tg.eat{background:#fdf1ec;border-color:#f6dbcf}
+  .tg.move{background:#eef7f1;border-color:#cfe9d9}
+  .tg.stay{background:#fff7ea;border-color:#f3e2c2}
+  .callout{border-left:4px solid var(--gold);background:#fffaf0;padding:12px 16px;border-radius:8px;margin:14px 0;font-size:14.5px}
+  .callout.coral{border-color:var(--coral);background:#fdf2ee}
+  .callout.teal{border-color:var(--teal2);background:#eef6f5}
+  ul.clean{margin:8px 0;padding-left:20px} ul.clean li{margin:5px 0}
+  .muted{color:var(--muted);font-size:13.5px}
+  .price-strong{color:var(--coral);font-weight:800}
+  footer{background:#0f6e6e;color:#cfe6e4;text-align:center;padding:26px 18px;font-size:13px}
+  @media print{nav{display:none}.hero{padding:30px 20px}.day,.card{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="tag v2">VERSION 2 · 進階／在地版</span>
+    <span class="tag">去年經典款都玩過 → 這次換新玩法</span>
+    <h1>大阪關西親子 9 日遊攻略 · 進階版</h1>
+    <p class="sub">2026 / 6 / 30（二）– 7 / 8（三）｜動物冒險 × 復古電車 × 夏季限定 × 互動科技</p>
+    <div class="meta">
+      <span>✈️ 去程 AK170 高雄08:30→關西12:40</span>
+      <span>✈️ 回程 CI167 關西12:00→高雄14:20</span>
+      <span>👨‍👩‍👧‍👦 4 大 + 3 青少年</span>
+      <span>🏨 ESLEAD 難波黑門 ×2 房</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#whatsnew">改了什麼</a>
+    <a href="#overview">總覽</a>
+    <a href="#d1">Day1-2 USJ</a>
+    <a href="#d3">Day3 和歌山</a>
+    <a href="#d4">Day4 枚方</a>
+    <a href="#d5">Day5 嵐山</a>
+    <a href="#d6">Day6 萬博</a>
+    <a href="#d7">Day7 南大阪</a>
+    <a href="#d9">Day9 返程</a>
+    <a href="#swap">替換選項</a>
+    <a href="#notes">預約提醒</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- WHATS NEW -->
+<section id="whatsnew">
+  <h2>🔄 跟原版/去年<span class="em">差在哪</span></h2>
+  <div class="card">
+    <table>
+      <tr><th>去年/原版（經典款）</th><th>Version 2 換成（新玩法）</th></tr>
+      <tr><td>道頓堀、心齋橋、黑門（重複逛）</td><td><b>難波八阪神社獅子頭 + 在地系景點</b></td></tr>
+      <tr><td>京都東山（伏見稻荷/清水寺/祇園）</td><td><b>嵐山猴子公園 + 嵯峨野小火車</b>（京都西側/自然）</td></tr>
+      <tr><td>奈良東大寺餵鹿</td><td><b>和歌山 Adventure World</b> 動物冒險樂園</td></tr>
+      <tr><td>大阪城、梅田</td><td><b>枚方公園</b>（在地遊樂園 + 夏季戲水）</td></tr>
+      <tr><td>海遊館</td><td><b>NIFREL 互動水族館 + 太陽之塔內部</b>（萬博公園）</td></tr>
+      <tr><td>通天閣、神戶三宮</td><td><b>阿倍野HARUKAS 日本最高樓 + 住吉大社 + 阪堺電車 + teamLab</b></td></tr>
+    </table>
+    <p class="callout teal">🎯 <b>設計主軸</b>：保留環球影城（兩天）與黑門基地不動，把中後段全部換成「<b>去年沒玩過、青少年會嗨</b>」的主題日——動物近距離、刺激遊樂、復古電車、夏夜光影。每天仍有完整吃住玩交通。</p>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <h2>🗺️ 行程<span class="em">總覽</span></h2>
+  <div class="card">
+    <table>
+      <tr><th>日期</th><th>主題</th><th>住宿</th><th>類型</th></tr>
+      <tr><td>6/30（二）</td><td>抵達 + 環球影城①</td><td>環球影城區</td><td>🎢 樂園</td></tr>
+      <tr><td>7/1（三）</td><td>環球影城②（整天）</td><td>環球影城區</td><td>🎢 樂園</td></tr>
+      <tr><td>7/2（四）</td><td>搬家 + 難波在地半日</td><td>難波黑門</td><td>⛩️ 在地</td></tr>
+      <tr><td>7/3（五）</td><td>和歌山 Adventure World</td><td>難波黑門</td><td>🐬 動物冒險</td></tr>
+      <tr><td>7/4（六）</td><td>枚方公園遊樂園</td><td>難波黑門</td><td>🎡 刺激/戲水</td></tr>
+      <tr><td>7/5（日）</td><td>嵐山猴子 + 嵯峨野小火車</td><td>難波黑門</td><td>🐒 自然/鐵道</td></tr>
+      <tr><td>7/6（一）</td><td>萬博公園 太陽之塔 + NIFREL</td><td>難波黑門</td><td>🦁 互動科技</td></tr>
+      <tr><td>7/7（二）</td><td>阿倍野 + 住吉 + 阪堺電車 + teamLab</td><td>難波黑門</td><td>🗼 在地/夜光</td></tr>
+      <tr><td>7/8（三）</td><td>返程 CI167</td><td>—</td><td>✈️ 賦歸</td></tr>
+    </table>
+    <p class="muted">住宿、航班與原版一致；回程 CI167 已確認 <b>12:00 起飛、約 14:20 抵高雄</b>。</p>
+  </div>
+</section>
+
+<!-- DAY 1-2 USJ (brief) -->
+<section id="d1">
+  <div class="day">
+    <div class="day-head usj">
+      <div class="num">1·2</div>
+      <div><div class="d-date">6/30（二）– 7/1（三）</div><p class="d-title">環球影城（維持原規劃）</p></div>
+      <div class="d-theme">🎢 USJ</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">✈️</div><div class="t">6/30</div><div class="c">高雄 08:30→關西 12:40，搭 JR（関空快速→西九条→ゆめ咲線）約 15:00 抵環球影城飯店。傍晚 Universal CityWalk + 視體力午後入園。</div></div>
+      <div class="leg"><div class="ico">🍄</div><div class="t">7/1</div><div class="c">環球影城整天：開園先衝<b>大金剛瘋狂礦車</b>＋超級任天堂世界（App 抽整理券），哈利波特、侏羅紀、好萊塢美夢。<b>Express Pass 提前 1–2 個月買</b>。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 奶油啤酒 · 蘑菇餐 · CityWalk</span>
+        <span class="tg move">🚇 関空快速＋ゆめ咲線</span>
+        <span class="tg stay">🏨 環球影城飯店（待訂）</span>
+      </div>
+      <p class="callout">這兩天與原版相同（你們本來就要玩 USJ），細節請參考原版攻略。Version 2 的新內容從 7/2 開始。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 3 Wakayama -->
+<section id="d3">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">3</div>
+      <div><div class="d-date">7/3（週五）</div><p class="d-title">和歌山 Adventure World<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🐬 動物冒險</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚆</div><div class="t">07:30</div><div class="c">南海難波 或 JR 天王寺搭 <b>JR 特急「黑潮号 くろしお」</b>→白浜站（約 2.5 小時），轉園區巴士約 10 分。建議搭最早班次。</div></div>
+      <div class="leg"><div class="ico">🦁</div><div class="t">10:30</div><div class="c"><b>Adventure World</b>：開車穿越<b>野生動物 Safari</b>（獅子、犀牛、長頸鹿超近）、餵食體驗、海豚秀、企鵝、遊樂設施一園搞定。</div></div>
+      <div class="leg"><div class="ico">🍱</div><div class="t">12:30</div><div class="c">午餐：園內餐廳（咖哩、動物造型餐）。</div></div>
+      <div class="leg"><div class="ico">🎢</div><div class="t">下午</div><div class="c">遊樂園區（摩天輪、雲霄飛車）＋海洋館；青少年可分頭玩刺激設施。</div></div>
+      <div class="leg"><div class="ico">🏖️</div><div class="t">16:00</div><div class="c">時間夠可順走旁邊 <b>白良浜白沙灘</b>、三段壁、千疊敷拍照。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:30</div><div class="c">返抵難波，<b>晚餐</b>黑門/飯店附近，或回家煮（白天累了在家放鬆）。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 動物造型餐 · 白浜梅干</span>
+        <span class="tg move">🚆 JR 特急黑潮号（建議劃位）</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      </div>
+      <p class="callout coral">⚠️ <b>熊貓已撤離</b>：Adventure World 的大熊貓 2025 年已全數送返中國，<b>2026 年看不到熊貓</b>；但 Safari、海豚、餵獅子長頸鹿、遊樂設施仍非常精彩。<br>⏰ 白浜單程 2.5 小時較遠，務必搭早班 + 黑潮号<b>事先劃指定席</b>；不想跑遠可改替換選項裡的近郊樂園。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 4 Hirakata -->
+<section id="d4">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">4</div>
+      <div><div class="d-date">7/4（週六）</div><p class="d-title">枚方公園 ひらかたパーク<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🎡 在地遊樂園</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚆</div><div class="t">09:00</div><div class="c">日本橋→北浜轉<b>京阪本線</b>→枚方公園站（約 40 分），步行 3 分到園區。</div></div>
+      <div class="leg"><div class="ico">🎢</div><div class="t">10:00</div><div class="c"><b>枚方公園</b>：大阪在地老牌遊樂園，雲霄飛車、立體迷宮、各式設施。<b>人潮比 USJ 少、票價親民</b>，青少年玩到飽。</div></div>
+      <div class="leg"><div class="ico">🍔</div><div class="t">12:30</div><div class="c">午餐：園內美食區。</div></div>
+      <div class="leg"><div class="ico">🏊</div><div class="t">下午</div><div class="c"><b>夏季戲水泳池「ザ・ブーン」</b>（滑水道、流水泳池）消暑——<b>但通常 7 月中才開</b>，若未開則改玩遊樂設施。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回難波<b>晚餐</b>：千日前/難波在地居酒屋，或黑門採買回家煮。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 園內小吃 · 難波居酒屋</span>
+        <span class="tg move">🚆 京阪本線（北浜轉乘）</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      </div>
+      <p class="callout coral">⚠️ <b>泳池開放日要確認</b>：「ザ・ブーン」夏季泳池一般約 7 月中旬才開放，你們 7/4 偏早，出發前請上官網確認；若未開，遊樂設施全年營運不影響玩樂。帶泳衣＋毛巾以備開放。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 5 Arashiyama -->
+<section id="d5">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">5</div>
+      <div><div class="d-date">7/5（週日）</div><p class="d-title">嵐山猴子公園 + 嵯峨野小火車<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🐒 京都西側</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:00</div><div class="c">難波搭<b>阪急</b>（御堂筋線到梅田轉阪急京都線→桂→嵐山線）或 JR 到嵯峨嵐山，約 70–80 分。</div></div>
+      <div class="leg"><div class="ico">🐒</div><div class="t">09:30</div><div class="c"><b>嵐山猴子公園（岩田山）</b>：爬約 20 分到山頂，野生獼猴互動、俯瞰京都市景，屋內可餵猴（青少年最愛）。</div></div>
+      <div class="leg"><div class="ico">🎋</div><div class="t">11:30</div><div class="c">竹林小徑、渡月橋、天龍寺周邊；午餐嵐山名物（湯豆腐、嵐山可樂餅、抹茶甜點）。</div></div>
+      <div class="leg"><div class="ico">🚃</div><div class="t">14:00</div><div class="c"><b>嵯峨野小火車（トロッコ列車）</b>：嵯峨站→龜岡，沿保津川峽谷的觀光列車，<b>需事先劃位</b>，旺季常滿。</div></div>
+      <div class="leg"><div class="ico">🚉</div><div class="t">15:30</div><div class="c">（選配）京都鐵道博物館（蒸汽火車、模擬駕駛，超適合青少年）或回程逛京都站。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:00</div><div class="c">返難波<b>晚餐</b>，或回家煮。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 湯豆腐 · 嵐山可樂餅 · 抹茶</span>
+        <span class="tg move">🚆 阪急/JR + 嵯峨野小火車</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      </div>
+      <p class="callout teal">🚃 去年玩的是京都東山寺廟群，今年改<b>京都西側自然+鐵道</b>完全不重複。小火車與保津川泛舟可二選一（泛舟更刺激但耗時）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 6 Expo Park -->
+<section id="d6">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">6</div>
+      <div><div class="d-date">7/6（週一）</div><p class="d-title">萬博公園 太陽之塔 + NIFREL<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🦁 互動科技</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚝</div><div class="t">09:30</div><div class="c">御堂筋線→千里中央→轉<b>大阪單軌電車</b>→萬博紀念公園站（約 50 分）。</div></div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">10:30</div><div class="c"><b>太陽之塔內部見學</b>：岡本太郎名作，內部「生命之樹」震撼，<b>需事先官網預約</b>。</div></div>
+      <div class="leg"><div class="ico">🐠</div><div class="t">13:00</div><div class="c"><b>NIFREL（ニフレル）</b>：海遊館團隊打造的「感性博物館」，水族×動物×藝術，可近距離接觸白虎、水豚、鳥類，互動性比海遊館更強。</div></div>
+      <div class="leg"><div class="ico">🎡</div><div class="t">15:30</div><div class="c"><b>EXPOCITY</b>：日本最大級購物中心、大型摩天輪、午茶；逛街吹冷氣。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回難波<b>晚餐</b>：黑門最後採買也可從今天開始；或在家壽喜燒。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 EXPOCITY 美食 · 在家煮</span>
+        <span class="tg move">🚝 御堂筋線＋大阪單軌</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      </div>
+      <p class="callout">🦁 取代去年的海遊館：NIFREL <b>互動性更高、人潮較少</b>，加上太陽之塔內部＋EXPOCITY 摩天輪，是「水族＋藝術＋購物」三合一的不一樣選擇。太陽之塔內部<b>務必先預約</b>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 7 South Osaka + teamLab -->
+<section id="d7">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">7</div>
+      <div><div class="d-date">7/7（週二）</div><p class="d-title">阿倍野 + 住吉 + 阪堺電車 + teamLab<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🗼 在地 + 夜光</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🗼</div><div class="t">09:30</div><div class="c">御堂筋線→天王寺（5 分）。<b>阿倍野 HARUKAS 300</b>：日本最高樓（300m）展望台，360° 俯瞰大阪。</div></div>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">11:30</div><div class="c">天王寺→<b>住吉大社</b>：全國住吉神社總本社，朱紅<b>太鼓橋（反橋）</b>必拍。</div></div>
+      <div class="leg"><div class="ico">🚃</div><div class="t">13:00</div><div class="c">搭<b>阪堺電車</b>（大阪僅存復古路面電車）回程，沿線懷舊風情；午餐天王寺/阿倍野 Q's Mall。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">15:00</div><div class="c">難波八阪神社（巨大獅子頭舞台，近飯店）＋心齋橋/黑門<b>最後採買打包</b>。</div></div>
+      <div class="leg"><div class="ico">🌌</div><div class="t">19:00</div><div class="c"><b>teamLab Botanical Garden 長居植物園</b>（御堂筋線長居站）：夜間戶外數位光影藝術，夢幻拍照，<b>需事先買時段票</b>。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">21:00</div><div class="c">回程<b>告別晚餐</b>或宵夜，最後整理行李。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 阿倍野美食 · 告別餐</span>
+        <span class="tg move">🚃 御堂筋線＋阪堺電車</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      </div>
+      <p class="callout teal">🌌 <b>teamLab 是夜間限定</b>（日落後開放），剛好排在白天南大阪行程之後，地理上都在御堂筋線南段，順路又能避開白天暑氣。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 9 return -->
+<section id="d9">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">8</div>
+      <div><div class="d-date">7/8（週三）</div><p class="d-title">返程回高雄 CI167</p></div>
+      <div class="d-theme">✈️ 賦歸</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🛏️</div><div class="t">07:30</div><div class="c">早餐、最後檢查，<b>10:00 前退房</b>。</div></div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:05</div><div class="c">日本橋站堺筋線→<b>天下茶屋</b>轉南海（特急ラピート約 33 分），約 09:15 抵關西機場。</div></div>
+      <div class="leg"><div class="ico">✈️</div><div class="t">12:00</div><div class="c"><b>CI167 關西 12:00 → 高雄約 14:20</b>（起飛前 3 小時到機場、退稅）。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 機場最後一餐 · 關西限定伴手禮</span>
+        <span class="tg move">🚆 南海ラピート（建議劃位）</span>
+        <span class="tg stay">🏠 賦歸</span>
+      </div>
+      <p class="callout coral">⏰ 7 人＋大行李，南海 <b>ラピート 指定席</b>較好放行李；或叫車到天下茶屋再轉南海。CI167 確切時間出發前再確認華航官網。</p>
+    </div>
+  </div>
+</section>
+
+<!-- SWAP OPTIONS -->
+<section id="swap">
+  <h2>🔀 替換 / <span class="em">備案景點</span>（想再換口味）</h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill purple">青少年最愛</span>
+      <h3>淡路島 二次元之森（ニジゲンノモリ）</h3>
+      <p>火影忍者忍者修行、<b>實體大哥吉拉滑索</b>、蠟筆小新、龍貓夜間步道。大阪/三宮搭高速巴士約 1.5–2 小時。動漫迷青少年的夢幻樂園。<span class="muted">（交通較不便，建議查好巴士班次或包車）</span></p>
+    </div>
+    <div class="card">
+      <span class="pill teal">夏季限定避暑</span>
+      <h3>京都 鞍馬・貴船 川床流水麵</h3>
+      <p>在貴船川上的平台用餐，比市區涼 10 度，<b>流水麵</b>從竹管流下超消暑。叡山電車前往，可串鞍馬寺健行。7 月正是季節，<b>川床需預約</b>。</p>
+    </div>
+    <div class="card">
+      <span class="pill green">自然健行</span>
+      <h3>箕面瀑布 + 勝尾寺達摩</h3>
+      <p>阪急箕面站沿溪步行 40 分到 33m 瀑布，名物<b>炸楓葉</b>；勝尾寺<b>滿山達摩不倒翁</b>超療癒好拍。半日自然行程，避開觀光人潮。</p>
+    </div>
+    <div class="card">
+      <span class="pill gold">室內/雨備</span>
+      <h3>合味道紀念館 大阪池田</h3>
+      <p>自己 DIY 專屬泡麵杯（畫包裝、選配料），便宜又好玩。阪急池田站。<b>下雨天或想輕鬆的一天</b>的最佳備案，青少年很買單。</p>
+    </div>
+  </div>
+  <p class="callout">想把哪一天換成這些都可以：例如怕白浜太遠 → 7/3 改「淡路島二次元之森」；想要更悠閒 → 把某天換「箕面瀑布」或「合味道紀念館」。</p>
+</section>
+
+<!-- NOTES -->
+<section id="notes">
+  <h2>📋 進階版專屬<span class="em">預約提醒</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>✅ 一定要提前預約/購票</h3>
+      <ul class="clean">
+        <li><b>USJ Express Pass</b>（提前 1–2 個月，旺季秒殺）</li>
+        <li><b>JR 特急黑潮号</b>指定席（去和歌山白浜）</li>
+        <li><b>嵯峨野小火車</b>指定席（旺季常滿，建議網路先訂）</li>
+        <li><b>太陽之塔內部見學</b>（官網時段預約）</li>
+        <li><b>teamLab 長居植物園</b>夜間時段票</li>
+        <li><b>南海ラピート</b>回程指定席（前 1–2 天）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>⚠️ 出發前務必確認</h3>
+      <ul class="clean">
+        <li><b>枚方公園夏季泳池</b>開放日（多為 7 月中才開）</li>
+        <li><b>Adventure World</b> 動物資訊（已無熊貓）</li>
+        <li>各樂園/景點公休日與營業時間</li>
+        <li>CI167 確切起飛時間（華航官網）</li>
+        <li>環球影城段住宿（6/30–7/1）盡快下訂</li>
+        <li>7 月關西濕熱：水壺、涼感巾、防曬、折傘/雨衣</li>
+      </ul>
+    </div>
+  </div>
+  <p class="callout teal">🍳 <b>自炊照舊</b>：黑門市場 6 分、玉出超市 24h，房內有完整廚房＋洗衣機。跑遠的日子（和歌山、嵐山）回來累，回家煮壽喜燒/海鮮丼最放鬆。</p>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+  <h2>🔗 參考<span class="em">來源</span></h2>
+  <div class="card">
+    <ul class="clean">
+      <li>Adventure World 冒險大世界（和歌山白浜）官方</li>
+      <li>枚方公園 ひらかたパーク 官方（夏季泳池開放日）</li>
+      <li>嵐山猴子公園 岩田山 / 嵯峨野小火車 トロッコ列車 官方</li>
+      <li>萬博紀念公園 太陽之塔內部見學 / NIFREL 官方</li>
+      <li>阿倍野 HARUKAS 300 / 住吉大社 / 阪堺電車 / 難波八阪神社</li>
+      <li>teamLab Botanical Garden Osaka 長居植物園 官方</li>
+      <li>淡路島 二次元之森、鞍馬貴船川床、箕面瀑布勝尾寺、合味道紀念館（替換選項）</li>
+    </ul>
+    <p class="muted">＊價格/時刻/開放日以各官方網站即時資訊為準。Version 2 著重「去年沒玩過」的新景點；經典款請見原版攻略。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>大阪關西親子 9 日遊攻略 · Version 2 進階／在地版 · 2026/6/30–7/8</p>
+  <p>動物冒險 × 復古電車 × 夏季限定 × 互動科技 ｜ 祝旅途愉快！🎌</p>
+</footer>
+
+</body>
+</html>
