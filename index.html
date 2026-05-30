@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大阪關西親子 9 日遊攻略｜2026/6/30–7/8</title>
+<style>
+  :root{
+    --indigo:#22357a; --indigo2:#2e4799; --red:#d6435a; --red2:#e25b71;
+    --ink:#23262e; --muted:#6b7280; --bg:#f6f5f1; --card:#ffffff;
+    --gold:#c98a2b; --green:#2f8f5b; --line:#e6e3da;
+    --shadow:0 6px 24px rgba(34,53,122,.08);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px}
+  a{color:var(--indigo2);text-decoration:none}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#22357a 0%,#2e4799 55%,#3a59bd 100%);
+    color:#fff;padding:54px 20px 64px;position:relative;overflow:hidden}
+  .hero::after{content:"🎢 🏯 🦌 ⛩️ 🍜";position:absolute;right:-10px;bottom:8px;
+    font-size:40px;opacity:.18;letter-spacing:8px}
+  .hero-inner{max-width:1000px;margin:0 auto}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+    padding:4px 14px;border-radius:999px;font-size:13px;letter-spacing:1px;margin-bottom:16px}
+  .hero h1{margin:0 0 8px;font-size:34px;font-weight:800;letter-spacing:1px}
+  .hero p.sub{margin:0;font-size:18px;opacity:.92}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .hero .meta span{background:rgba(255,255,255,.12);padding:8px 14px;border-radius:10px;font-size:14px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  nav .wrap{max-width:1000px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:10px 12px}
+  nav a{white-space:nowrap;font-size:14px;padding:7px 12px;border-radius:8px;color:var(--ink);font-weight:600}
+  nav a:hover{background:#eef0fb;color:var(--indigo2)}
+  /* LAYOUT */
+  main{max-width:1000px;margin:0 auto;padding:30px 18px 80px}
+  section{margin:42px 0;scroll-margin-top:64px}
+  h2{font-size:25px;border-left:6px solid var(--red);padding-left:12px;margin:0 0 18px}
+  h2 .em{color:var(--red)}
+  h3{font-size:19px;margin:22px 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2,.grid3{grid-template-columns:1fr}.hero h1{font-size:26px}}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#eef0fb;color:var(--indigo);font-weight:700}
+  tr:nth-child(even) td{background:#fafafa}
+  .pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;color:#fff}
+  .pill.red{background:var(--red)} .pill.indigo{background:var(--indigo2)}
+  .pill.green{background:var(--green)} .pill.gold{background:var(--gold)}
+  /* DAY CARD */
+  .day{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:var(--shadow);margin-bottom:22px}
+  .day-head{background:linear-gradient(90deg,#22357a,#2e4799);color:#fff;padding:16px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .day-head .num{background:#fff;color:var(--indigo);font-weight:800;width:42px;height:42px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .day-head .d-date{font-size:14px;opacity:.9}
+  .day-head .d-title{font-size:19px;font-weight:800;margin:0}
+  .day-head .d-theme{margin-left:auto;background:rgba(255,255,255,.16);padding:5px 12px;border-radius:8px;font-size:13px}
+  .day-body{padding:18px 20px}
+  .leg{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .leg:last-child{border-bottom:none}
+  .leg .ico{font-size:20px;flex-shrink:0;width:30px;text-align:center}
+  .leg .t{flex-shrink:0;width:62px;font-weight:700;color:var(--indigo2);font-size:14px}
+  .leg .c{flex:1}
+  .leg .c b{color:var(--ink)}
+  .row-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .row-tags .tg{font-size:13px;background:#f1f3fb;border:1px solid #e0e4f5;border-radius:8px;padding:6px 10px}
+  .tg.eat{background:#fdf1f3;border-color:#f6d6dc}
+  .tg.move{background:#eef7f1;border-color:#cfe9d9}
+  .tg.stay{background:#fff7ea;border-color:#f3e2c2}
+  .callout{border-left:4px solid var(--gold);background:#fffaf0;padding:12px 16px;border-radius:8px;margin:14px 0;font-size:14.5px}
+  .callout.red{border-color:var(--red);background:#fdf2f4}
+  .callout.indigo{border-color:var(--indigo2);background:#f1f3fb}
+  ul.clean{margin:8px 0;padding-left:20px} ul.clean li{margin:5px 0}
+  .big-num{font-size:22px;font-weight:800;color:var(--red)}
+  .muted{color:var(--muted);font-size:13.5px}
+  footer{background:#22357a;color:#cfd6f0;text-align:center;padding:26px 18px;font-size:13px}
+  .toc-mini{font-size:13px;color:var(--muted)}
+  .price-strong{color:var(--red);font-weight:800}
+  @media print{nav{display:none}.hero{padding:30px 20px}.day,.card{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="tag">家庭旅遊 · 7 人 · 自炊型公寓</span>
+    <h1>大阪關西親子 9 日遊攻略</h1>
+    <p class="sub">2026 / 6 / 30（二）– 7 / 8（三）｜環球影城 × 大阪 × 京都 × 奈良</p>
+    <div class="meta">
+      <span>✈️ 去程 AK170 高雄08:30→關西12:40</span>
+      <span>✈️ 回程 CI167 關西→高雄</span>
+      <span>👨‍👩‍👧‍👦 4 大 + 3 青少年（13/15/16）</span>
+      <span>🏨 兩間四人房</span>
+      <span>💱 ¥1 ≈ NT$0.197</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap">
+    <a href="#overview">總覽</a>
+    <a href="#flights">航班</a>
+    <a href="#hotels">住宿</a>
+    <a href="#transport">交通票券</a>
+    <a href="#d1">Day1</a>
+    <a href="#d2">Day2</a>
+    <a href="#d3">Day3</a>
+    <a href="#d4">Day4</a>
+    <a href="#d5">Day5</a>
+    <a href="#d6">Day6</a>
+    <a href="#d7">Day7</a>
+    <a href="#d8">Day8</a>
+    <a href="#d9">Day9</a>
+    <a href="#budget">預算</a>
+    <a href="#cook">自炊</a>
+    <a href="#notes">注意事項</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ OVERVIEW ============ -->
+<section id="overview">
+  <h2>🗺️ 行程<span class="em">總覽</span></h2>
+  <div class="card">
+    <table>
+      <tr><th>日期</th><th>主題</th><th>住宿</th><th>重點</th></tr>
+      <tr><td>6/30（二）</td><td>抵達 + 環球影城①</td><td>環球影城區</td><td>午後入園或環球城散步、夜間遊行</td></tr>
+      <tr><td>7/1（三）</td><td>環球影城②（整天）</td><td>環球影城區</td><td>超級任天堂世界、大金剛、哈利波特</td></tr>
+      <tr><td>7/2（四）</td><td>移動 + 道頓堀</td><td>難波黑門</td><td>退房進市區、黑門市場、道頓堀、心齋橋</td></tr>
+      <tr><td>7/3（五）</td><td>京都一日遊</td><td>難波黑門</td><td>伏見稻荷、清水寺、祇園、嵐山(選)</td></tr>
+      <tr><td>7/4（六）</td><td>奈良一日遊</td><td>難波黑門</td><td>東大寺、餵鹿、奈良公園（近鐵直達）</td></tr>
+      <tr><td>7/5（日）</td><td>大阪市區</td><td>難波黑門</td><td>大阪城、梅田、空中庭園、寶可夢中心</td></tr>
+      <tr><td>7/6（一）</td><td>海遊館 + 新世界</td><td>難波黑門</td><td>海遊館、天保山摩天輪、通天閣串炸</td></tr>
+      <tr><td>7/7（二）</td><td>購物 + 採買</td><td>難波黑門</td><td>電電城、心齋橋、美國村、黑門最後採買</td></tr>
+      <tr><td>7/8（三）</td><td>返程</td><td>—</td><td>CI167 關西→高雄</td></tr>
+    </table>
+    <p class="callout indigo">📌 <b>節奏設計</b>：前段「環球影城體力衝刺」→ 中段「京都奈良輕鬆一日遊」→ 後段「大阪深度＋採買」。住宿只搬一次家（環球→難波），把行李搬運次數降到最低。</p>
+  </div>
+</section>
+
+<!-- ============ FLIGHTS ============ -->
+<section id="flights">
+  <h2>✈️ 航班<span class="em">資訊</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill red">去程 6/30（二）</span>
+      <h3 style="margin-top:12px">AirAsia AK170</h3>
+      <table>
+        <tr><th>高雄小港 KHH</th><td>起飛 <b>08:30</b></td></tr>
+        <tr><th>大阪關西 KIX T1</th><td>抵達 <b>12:40</b></td></tr>
+        <tr><th>航程</th><td>約 2 小時 40 分</td></tr>
+      </table>
+      <p class="muted">⚠️ 此為 AirAsia 2026/6/15 新開航線，請於出發前 1 週至官網確認實際時刻與航廈。建議線上預辦登機、行李加購（廉航行李另計）。</p>
+    </div>
+    <div class="card">
+      <span class="pill indigo">回程 7/8（三）</span>
+      <h3 style="margin-top:12px">China Airlines CI167</h3>
+      <table>
+        <tr><th>大阪關西 KIX</th><td>起飛 <b>約中午（請確認）</b></td></tr>
+        <tr><th>高雄小港 KHH</th><td>抵達 <b>約下午</b></td></tr>
+        <tr><th>航程</th><td>約 3 小時 45 分</td></tr>
+      </table>
+      <p class="muted">⚠️ CI167 確切起飛時間請以華航官網為準。<b>國際線請於起飛前 3 小時抵達機場</b>；若中午起飛，當天 08:30–09:00 就要從難波出發。</p>
+    </div>
+  </div>
+  <p class="callout red">🧳 <b>抵達日動線（6/30）</b>：12:40 落地 → 入境/領行李約 13:30 → 關西機場搭 <b>JR 関空快速</b> 至「西九条」轉 <b>JR ゆめ咲線</b> 到「ユニバーサルシティ駅」（約 70 分）→ 約 15:00 抵環球影城飯店。或搭利木津巴士直達環球影城（約 70 分、¥1,600）。</p>
+</section>
+
+<!-- ============ HOTELS ============ -->
+<section id="hotels">
+  <h2>🏨 住宿<span class="em">安排</span></h2>
+
+  <div class="card">
+    <span class="pill gold">6/30–7/1（2 晚）· 環球影城區 · 待訂</span>
+    <h3 style="margin-top:12px">建議：近鐵環球城飯店 Hotel Kintetsu Universal City ×2 四人房</h3>
+    <table>
+      <tr><th>位置</th><td>步行 2 分到環球影城、直通 Universal CityWalk</td></tr>
+      <tr><th>房型</th><td>Deluxe Corner 38㎡ / 芝麻街主題房（4 人）×2 間</td></tr>
+      <tr><th>福利</th><td>官方夥伴飯店 → <b>可比一般遊客提早入園 15 分鐘</b></td></tr>
+      <tr><th>預估</th><td>2 晚 2 間約 <span class="price-strong">¥56,000–88,000</span>（NT$11,000–17,000）</td></tr>
+    </table>
+    <p class="callout">🔔 <b>此段尚未訂房</b>，請盡快下訂（暑假旺季）。替代：環球港維塔 Hotel Universal Port Vita（4 人房 32㎡、親子備品齊、步行 5 分）。官方飯店的「提早入園」對衝任天堂世界很關鍵。</p>
+  </div>
+
+  <div class="card">
+    <span class="pill green">7/2–7/8（6 晚）· 難波黑門 · 已比較選定</span>
+    <h3 style="margin-top:12px">ESLEAD HOTEL Namba Kuromon 艾思利德飯店難波黑門 ×2 家庭公寓</h3>
+    <table>
+      <tr><th>地址</th><td>大阪市中央區高津 3-8-29（日本橋站 8 號出口步行 5 分）</td></tr>
+      <tr><th>房型</th><td>家庭公寓 <b>48㎡</b>（雙床×2＋單床×1＋沙發床×1，可睡 6）×2 間</td></tr>
+      <tr><th>設備</th><td>房內 IH 爐＋完整廚房＋冰箱＋微波＋<b>洗衣機</b>＋浴室乾燥＋餐桌椅、軟木地板</td></tr>
+      <tr><th>機能</th><td>黑門市場 6 分、玉出超市 24h 8–10 分、通天閣/新世界 10 分、近鐵日本橋站可直達奈良</td></tr>
+      <tr><th>總價</th><td><span class="price-strong">¥256,264</span>（6 晚 2 間，約 NT$50,500）</td></tr>
+      <tr><th>入住</th><td>16:00 後（密碼自助 check-in，30 秒）／退房 10:00 前</td></tr>
+    </table>
+    <p class="callout indigo">✅ <b>為何選黑門</b>：48㎡ 比心齋橋分館（35㎡）大 37%、床位多、房內有餐桌；走 6 分鐘到黑門市場買菜回家煮，是自炊家庭的最佳基地。唯一小缺點是離地鐵站 5 分（心齋橋分館 2 分）。</p>
+  </div>
+</section>
+
+<!-- ============ TRANSPORT ============ -->
+<section id="transport">
+  <h2>🚇 交通 &amp; <span class="em">票券</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>必備：ICOCA 交通卡</h3>
+      <p>7 人每人一張（或用手機 Apple Pay 綁 ICOCA）。地鐵、JR、私鐵、便利商店都能嗶。先儲值 ¥3,000，不夠站內機台加值。</p>
+      <h3>環球影城往返</h3>
+      <ul class="clean">
+        <li>機場→USJ：JR 関空快速 →「西九条」轉 JR ゆめ咲線</li>
+        <li>USJ→難波：JR ゆめ咲線→西九条→大阪環状線→「今宮」轉/或到「新今宮」走到動物園前轉地鐵；最簡單是到大阪站再轉，約 40–50 分</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>建議加購的一日券</h3>
+      <ul class="clean">
+        <li><b>USJ 快速通關（Express Pass 4 或 7）</b>：暑假必買！含大金剛瘋狂礦車＋任天堂世界確保入場。<b>務必提前 1–2 個月於官網/KKday/Klook 購入</b>，現場常售罄。</li>
+        <li><b>大阪周遊券（Amazing Pass）1 日</b>：7/5 或 7/6 用，免費搭地鐵＋免費入大阪城、梅田空中庭園、通天閣等 40+ 設施。</li>
+        <li><b>近鐵電車周遊券 1 日（¥1,900）</b>：7/4 奈良用，難波↔近鐵奈良來回＋觀光優惠。</li>
+      </ul>
+    </div>
+  </div>
+  <p class="callout"><b>住宿位置的交通優勢（日本橋站＝近鐵日本橋站共構）</b>：① 奈良 → 近鐵日本橋直接上車到近鐵奈良；② 京都 → 堺筋線到「北浜」轉京阪本線到伏見稻荷/祇園；③ 機場 → 堺筋線到「天下茶屋」轉南海，或走 10 分到南海難波。</p>
+</section>
+
+<!-- ============ DAY 1 ============ -->
+<section id="d1">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">1</div>
+      <div><div class="d-date">6/30（週二）</div><p class="d-title">抵達大阪 · 環球影城①</p></div>
+      <div class="d-theme">🎢 USJ 暖身</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">✈️</div><div class="t">12:40</div><div class="c"><b>關西機場 T1 抵達</b>，入境、領行李、買/領 ICOCA 與 USJ 門票（若未線上購）。</div></div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">13:40</div><div class="c">搭 <b>JR 関空快速</b>→西九条→轉 <b>JR ゆめ咲線</b>→ユニバーサルシティ駅（約 70 分）。或利木津巴士直達。</div></div>
+      <div class="leg"><div class="ico">🏨</div><div class="t">15:00</div><div class="c">抵達 <b>環球影城飯店</b>，寄放行李 / 提早 check-in。</div></div>
+      <div class="leg"><div class="ico">🎢</div><div class="t">15:30</div><div class="c"><b>視體力二選一</b>：①持當日 1-Day 票午後入園（衝幾項熱門＋夜間遊行）；②先逛免費的 <b>Universal CityWalk</b> 商店街，養精蓄銳明天全力衝。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:00</div><div class="c"><b>晚餐</b>：CityWalk 內「鶴橋風月大阪燒」、「Bubba Gump 蝦餐廳」、拉麵或章魚燒。</div></div>
+      <div class="leg"><div class="ico">🛏️</div><div class="t">21:00</div><div class="c">回飯店超市/便利商店補水補糧，早睡，明天開園就衝。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 大阪燒 · 章魚燒 · 拉麵</span>
+        <span class="tg move">🚇 関空快速＋ゆめ咲線</span>
+        <span class="tg stay">🏨 環球影城飯店</span>
+      </div>
+      <p class="callout red">💡 第一天因班機午後抵達，USJ 只能算半天。若想保留體力，6/30 純逛 CityWalk，把 USJ 主力放在 7/1 整天即可。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 2 ============ -->
+<section id="d2">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2</div>
+      <div><div class="d-date">7/1（週三）</div><p class="d-title">環球影城② 全日衝刺</p></div>
+      <div class="d-theme">🍄 任天堂世界</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">⏰</div><div class="t">08:00</div><div class="c">官方飯店住客<b>提早入園</b>，第一件事：開 USJ App 預約「超級任天堂世界」與「大金剛國度」<b>整理券</b>。</div></div>
+      <div class="leg"><div class="ico">🦍</div><div class="t">上午</div><div class="c"><b>大金剛：瘋狂礦車</b>（2024 新設施、排隊常 150 分↑，用快通最划算）＋<b>瑪利歐賽車：庫巴的挑戰書</b>＋耀西冒險。</div></div>
+      <div class="leg"><div class="ico">⚡</div><div class="t">中午</div><div class="c"><b>哈利波特魔法世界</b>：禁忌之旅、鷹馬飛行；奶油啤酒＋三根掃帚午餐。</div></div>
+      <div class="leg"><div class="ico">🎢</div><div class="t">下午</div><div class="c">好萊塢美夢飛車（逆向超刺激）、小小兵樂園、侏羅紀公園飛天翼龍。</div></div>
+      <div class="leg"><div class="ico">🌃</div><div class="t">晚上</div><div class="c">夜間遊行/光雕秀，閉園前逛環球商店買周邊。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">晚餐</div><div class="c">園內主題餐廳或回 CityWalk；累的話回飯店附近吃。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 奶油啤酒 · 蘑菇造型餐 · 主題美食</span>
+        <span class="tg move">🚶 園內步行為主</span>
+        <span class="tg stay">🏨 環球影城飯店</span>
+      </div>
+      <p class="callout">🎯 <b>順序鐵則</b>：開園先衝「大金剛」與「任天堂」（最熱門），快通券把這兩區綁進去。其餘設施用 App 看即時排隊時間機動調整。3 位青少年體力夠，可挑戰所有刺激設施。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 3 ============ -->
+<section id="d3">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">3</div>
+      <div><div class="d-date">7/2（週四）</div><p class="d-title">搬家進市區 · 道頓堀</p></div>
+      <div class="d-theme">🏮 大阪南區</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🧳</div><div class="t">09:30</div><div class="c">環球影城飯店<b>退房</b>。行李兩選一：①自行拖行；②用「宅急便」寄到難波飯店（約 ¥2,000/件，隔日達不適合，當日請選自行拖）。</div></div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">10:00</div><div class="c">JR ゆめ咲線→西九条→大阪環状線→難波一帶（約 40–50 分）。先到 <b>ESLEAD 難波黑門</b> 寄放行李。</div></div>
+      <div class="leg"><div class="ico">🦐</div><div class="t">11:30</div><div class="c"><b>黑門市場</b>午餐巡禮：現烤和牛串、生魚片、海膽、烤帆立貝、河豚、現切水果。逛熟悉一下未來幾天的「自家廚房補給站」。</div></div>
+      <div class="leg"><div class="ico">🏮</div><div class="t">14:00</div><div class="c"><b>道頓堀</b>：固力果跑跑人拍照、戎橋、道頓堀川。<b>心齋橋筋商店街</b>購物（藥妝、UNIQLO、唐吉訶德）。</div></div>
+      <div class="leg"><div class="ico">🏨</div><div class="t">16:00</div><div class="c">回飯店正式 <b>check-in</b>（密碼自助）、安頓、開洗衣機洗第一批衣服。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c"><b>晚餐</b>：道頓堀「金龍拉麵」「一蘭」「四天王」、或「大阪王將」；想省錢就黑門/玉出買食材回家開伙。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 黑門海鮮 · 道頓堀拉麵 · 章魚燒</span>
+        <span class="tg move">🚇 JR 環状線 · 步行</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 1 晚）</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 4 ============ -->
+<section id="d4">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">4</div>
+      <div><div class="d-date">7/3（週五）</div><p class="d-title">京都一日遊</p></div>
+      <div class="d-theme">⛩️ 千本鳥居</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:00</div><div class="c">日本橋站搭堺筋線→<b>北浜</b>轉京阪本線（特急）→<b>伏見稲荷</b>站。</div></div>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">09:00</div><div class="c"><b>伏見稻荷大社</b>千本鳥居（建議早到避人潮，半山腰「四ツ辻」展望大阪平原）。</div></div>
+      <div class="leg"><div class="ico">🍵</div><div class="t">11:30</div><div class="c">京阪到「祇園四条」。<b>祇園</b>花見小路、<b>八坂神社</b>，午餐錦市場周邊或祇園定食。</div></div>
+      <div class="leg"><div class="ico">🏯</div><div class="t">14:00</div><div class="c"><b>清水寺</b>＋二年坂三年坂石板老街，抹茶冰淇淋、和服拍照、伴手禮。</div></div>
+      <div class="leg"><div class="ico">🎋</div><div class="t">16:30</div><div class="c"><b>（體力選配）嵐山</b>竹林、渡月橋；或直接回京都站逛伊勢丹/京都塔。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:00</div><div class="c">返抵難波。<b>晚餐</b>：飯店附近串炸或回家簡單煮。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 抹茶甜點 · 京漬物 · 湯豆腐</span>
+        <span class="tg move">🚆 京阪電車（北浜轉乘）</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 2 晚）</span>
+      </div>
+      <p class="callout indigo">🚆 京都東山一線（伏見稻荷→祇園→清水寺）用<b>京阪電車</b>串最順，不必進京都市巴士人擠人。回程同線返難波。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 5 ============ -->
+<section id="d5">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">5</div>
+      <div><div class="d-date">7/4（週六）</div><p class="d-title">奈良一日遊</p></div>
+      <div class="d-theme">🦌 餵小鹿</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:30</div><div class="c"><b>近鐵日本橋站</b>（飯店旁）直接搭近鐵奈良線→<b>近鐵奈良</b>站（約 40 分，免轉車超方便）。</div></div>
+      <div class="leg"><div class="ico">🦌</div><div class="t">09:30</div><div class="c"><b>奈良公園</b>餵鹿、買鹿仙貝；小鹿會鞠躬，青少年一定玩瘋。</div></div>
+      <div class="leg"><div class="ico">🏯</div><div class="t">10:30</div><div class="c"><b>東大寺</b>大佛殿（世界最大木造建築之一）、南大門金剛力士像、「大佛鼻孔」洞穿越。</div></div>
+      <div class="leg"><div class="ico">🍮</div><div class="t">12:30</div><div class="c">午餐：近鐵奈良站周邊「平宗柿葉壽司」、釜飯、或商店街美食；中谷堂現搗麻糬必吃。</div></div>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">14:00</div><div class="c"><b>春日大社</b>燈籠參道（選配），或回程逛 ならまち 老街。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:00</div><div class="c">返難波。<b>晚餐</b>：黑門/玉出採買，回家煮火鍋或壽喜燒（週末在家放鬆）。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 柿葉壽司 · 中谷堂麻糬 · 釜飯</span>
+        <span class="tg move">🚆 近鐵直達（日本橋上車）</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 3 晚）</span>
+      </div>
+      <p class="callout red">⚠️ 週六奈良人潮較多，建議 08:30 出發避開。鹿仙貝請一次給完，否則會被一群鹿追著要。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 6 ============ -->
+<section id="d6">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">6</div>
+      <div><div class="d-date">7/5（週日）</div><p class="d-title">大阪城 · 梅田</p></div>
+      <div class="d-theme">🏯 大阪周遊券日</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🎫</div><div class="t">全日</div><div class="c">使用 <b>大阪周遊券 1 日</b>（免費搭地鐵＋多處免費入場）。</div></div>
+      <div class="leg"><div class="ico">🏯</div><div class="t">09:30</div><div class="c"><b>大阪城</b>天守閣（周遊券免費）、西之丸庭園、護城河；御座船遊船。</div></div>
+      <div class="leg"><div class="ico">🍜</div><div class="t">12:30</div><div class="c">午餐：大阪城公園 JO-TERRACE 餐廳，或移動到梅田用餐。</div></div>
+      <div class="leg"><div class="ico">🌆</div><div class="t">14:00</div><div class="c"><b>梅田</b>：空中庭園展望台（周遊券免費）、HEP FIVE 紅色摩天輪、Grand Front／LUCUA 購物。</div></div>
+      <div class="leg"><div class="ico">🎮</div><div class="t">16:30</div><div class="c"><b>寶可夢中心大阪</b>（大丸梅田店 13F）＋Pokémon Café、任天堂/卡比週邊。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c"><b>晚餐</b>：梅田「瀧見小路」昭和風美食街、阪急三番街拉麵小路。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 拉麵小路 · 梅田美食街</span>
+        <span class="tg move">🚇 大阪周遊券（地鐵免費）</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 4 晚）</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 7 ============ -->
+<section id="d7">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">7</div>
+      <div><div class="d-date">7/6（週一）</div><p class="d-title">海遊館 · 新世界</p></div>
+      <div class="d-theme">🐋 親子＋復古</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🚇</div><div class="t">09:30</div><div class="c">地鐵中央線→「大阪港」站。</div></div>
+      <div class="leg"><div class="ico">🐋</div><div class="t">10:00</div><div class="c"><b>海遊館</b>（世界級水族館，鯨鯊、水母區）；旁邊 <b>天保山大摩天輪</b>、聖瑪麗亞號遊船、樂高樂園探索中心。</div></div>
+      <div class="leg"><div class="ico">🍱</div><div class="t">13:00</div><div class="c">午餐：天保市場 / なにわ食いしんぼ横丁（昭和懷舊美食街）。</div></div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">15:30</div><div class="c">回程到 <b>新世界 · 通天閣</b>（離飯店超近，步行 10 分）。登塔、跳樓機 TIP THE TSUTENKAKU。</div></div>
+      <div class="leg"><div class="ico">🍢</div><div class="t">18:00</div><div class="c"><b>晚餐</b>：新世界<b>串炸（串カツ）</b>名店「だるま」「八重勝」，記得「醬汁不可二次浸」！</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 串炸 · 土手燒 · 冰啤酒</span>
+        <span class="tg move">🚇 中央線 · 步行回家</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 5 晚）</span>
+      </div>
+      <p class="callout">🐋 海遊館建議線上購票避排隊。若家人更想血拼，今天可改為「神戶一日遊」（難波→三宮約 40 分，看港夜景、吃神戶牛）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 8 ============ -->
+<section id="d8">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">8</div>
+      <div><div class="d-date">7/7（週二）</div><p class="d-title">購物 · 最後採買</p></div>
+      <div class="d-theme">🛍️ 掃貨日</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🎮</div><div class="t">10:00</div><div class="c"><b>日本橋電電城（でんでんタウン）</b>（飯店旁）：動漫、電玩、模型、扭蛋；男孩們的天堂。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">13:00</div><div class="c"><b>心齋橋筋＋美國村</b>：藥妝補貨、潮牌、二手古著；大丸百貨退稅。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">午餐</div><div class="c">道頓堀「はり重」咖哩/牛排、或「北極星」蛋包飯（大阪發源）。</div></div>
+      <div class="leg"><div class="ico">🦐</div><div class="t">16:00</div><div class="c"><b>黑門市場最後採買</b>：要帶回台的零食、和牛便當、水果當晚餐；伴手禮（藥妝、ROYCE、白色戀人等）。</div></div>
+      <div class="leg"><div class="ico">🧳</div><div class="t">19:00</div><div class="c">回飯店<b>整理行李＋洗最後一批衣服</b>，確認證件、退稅單、隔天交通。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 蛋包飯 · 咖哩牛 · 黑門外帶</span>
+        <span class="tg move">🚶 步行＋地鐵</span>
+        <span class="tg stay">🏠 ESLEAD 難波黑門（第 6 晚）</span>
+      </div>
+      <p class="callout indigo">🧳 <b>打包提醒</b>：液體、刀具（黑門買的料理刀）、超過 100ml 都要託運；鋰電池/行動電源只能手提。利用飯店洗衣機把衣服洗乾淨，行李更好收。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAY 9 ============ -->
+<section id="d9">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9</div>
+      <div><div class="d-date">7/8（週三）</div><p class="d-title">返程回高雄</p></div>
+      <div class="d-theme">✈️ CI167</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🛏️</div><div class="t">08:00</div><div class="c">早餐（家中清冰箱／便利商店），最後檢查、<b>10:00 前退房</b>（密碼鎖直接離開）。</div></div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:30</div><div class="c">前往機場：日本橋站堺筋線→<b>天下茶屋</b>轉南海（特急ラピート約 33 分 / 空港急行約 40 分）；或走 10 分到南海難波直接搭。</div></div>
+      <div class="leg"><div class="ico">🛫</div><div class="t">提早</div><div class="c">抵 <b>關西機場 T1</b>，華航櫃台報到、退稅、出境。<b>起飛前 3 小時抵達</b>。</div></div>
+      <div class="leg"><div class="ico">✈️</div><div class="t">中午</div><div class="c"><b>CI167 關西 → 高雄</b>（請確認確切時刻，回推出發時間）。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 機場最後一餐 · 555 牛肉湯(高雄到家再說😋)</span>
+        <span class="tg move">🚆 南海電鐵（ラピート/空港急行）</span>
+        <span class="tg stay">🏠 賦歸</span>
+      </div>
+      <p class="callout red">⏰ <b>關鍵</b>：CI167 實際起飛時間請務必上華航官網確認！若為中午起飛，08:30–09:00 一定要從難波出發；7 人＋大行李建議預留充裕時間，或預約機場接送包車（門口直達、免拖行李轉乘）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUDGET ============ -->
+<section id="budget">
+  <h2>💰 預算<span class="em">估算</span>（7 人總計 · 粗估）</h2>
+  <div class="card">
+    <table>
+      <tr><th>項目</th><th>說明</th><th>日幣概估</th><th>台幣概估</th></tr>
+      <tr><td>住宿 · 環球影城 2 晚</td><td>近鐵環球城 ×2 房（待訂）</td><td>¥56,000–88,000</td><td>NT$11,000–17,300</td></tr>
+      <tr><td>住宿 · 難波黑門 6 晚</td><td>ESLEAD ×2 房（已訂）</td><td>¥256,264</td><td>NT$50,500</td></tr>
+      <tr><td>USJ 門票＋快通</td><td>7 人 1–2 日券＋Express Pass</td><td>¥160,000–250,000</td><td>NT$31,500–49,000</td></tr>
+      <tr><td>市內交通＋一日券</td><td>ICOCA、京阪、近鐵、周遊券</td><td>¥45,000–60,000</td><td>NT$8,900–11,800</td></tr>
+      <tr><td>餐飲（含自炊省下）</td><td>7 人 × 8 天，部分在家煮</td><td>¥160,000–220,000</td><td>NT$31,500–43,300</td></tr>
+      <tr><td>門票/景點/購物</td><td>海遊館、清水寺、伴手禮等</td><td>彈性</td><td>彈性</td></tr>
+      <tr><th colspan="2">交通住宿門票小計（不含購物）</th><th>約 ¥677,000–874,000</th><th>約 NT$133,000–172,000</th></tr>
+    </table>
+    <p class="muted">＊匯率 ¥1≈NT$0.197，實際依刷卡銀行浮動。USJ 快通價差大（依日期與方案 4/7），是最大變數，越早買越省。自炊每天可省約 NT$2,000–3,000 餐費。</p>
+  </div>
+</section>
+
+<!-- ============ COOK ============ -->
+<section id="cook">
+  <h2>🍳 自炊<span class="em">攻略</span>（黑門市場 × 房內廚房）</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>採買地圖</h3>
+      <ul class="clean">
+        <li><b>黑門市場</b>（步行 6 分）：生鮮、海鮮、和牛、水果、熟食，傍晚有折扣</li>
+        <li><b>玉出超市</b>（24h，8–10 分）：激安泡麵、飲料、調味、白飯</li>
+        <li><b>業務超市 / 唐吉訶德</b>：零食、伴手禮、大包裝</li>
+      </ul>
+      <h3>房內設備</h3>
+      <p>IH 雙口爐、鍋具、餐具、冰箱、微波、電熱水壺、洗衣機＋浴室乾燥。7 人有餐桌椅可一起吃飯。</p>
+    </div>
+    <div class="card">
+      <h3>在家快煮菜單建議</h3>
+      <ul class="clean">
+        <li><b>壽喜燒/牛肉鍋</b>：黑門買和牛薄片＋蔬菜（CP 值高、青少年最愛）</li>
+        <li><b>海鮮丼</b>：黑門生魚片＋白飯＋海苔，5 分鐘上桌</li>
+        <li><b>關東煮</b>：超市現成包加熱即可</li>
+        <li><b>早餐</b>：吐司、雞蛋、牛奶、水果、即溶味噌湯</li>
+      </ul>
+      <p class="callout">💡 連住 6 晚不打掃（自助公寓型），垃圾請依日本分類自行整理，餐具用畢洗淨。早餐＋部分晚餐在家煮，整趟餐費可省下不少。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOTES ============ -->
+<section id="notes">
+  <h2>📋 出發前 &amp; <span class="em">注意事項</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>🌤️ 七月天氣（梅雨末～盛夏）</h3>
+      <ul class="clean">
+        <li>氣溫約 26–34°C，<b>悶熱潮濕</b>，可能有午後雷陣雨</li>
+        <li>必備：折傘/雨衣、防曬、帽子、扇子、補水</li>
+        <li>USJ 排隊曬太陽，<b>防中暑</b>：小電風扇、涼感巾、鹽糖</li>
+        <li>室內冷氣強，帶薄外套</li>
+      </ul>
+      <h3>📱 必裝 App</h3>
+      <ul class="clean">
+        <li><b>USJ 官方 App</b>（整理券、即時排隊）</li>
+        <li>Google Maps / Yahoo!乗換案内（轉乘）</li>
+        <li>食べログ（美食評價）、PayPay（行動支付）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>✅ 行前清單</h3>
+      <ul class="clean">
+        <li>護照（效期 6 個月以上）、電子簽證/Visit Japan Web 預填</li>
+        <li><b>環球影城飯店趕快訂</b>（6/30–7/1，暑假旺季）</li>
+        <li><b>USJ 門票＋快通提前 1–2 個月買</b></li>
+        <li>確認 <b>CI167 起飛時間</b>，回推 7/8 出發時刻</li>
+        <li>網路：eSIM / WiFi 機（7 人建議 2 台分流或人人 eSIM）</li>
+        <li>日幣現金（黑門、串炸店多收現）＋可刷卡信用卡</li>
+        <li>旅平險、海外醫療險</li>
+      </ul>
+      <h3>🆘 緊急資訊</h3>
+      <ul class="clean">
+        <li>日本報警 110 / 火警救護 119</li>
+        <li>台北駐大阪經濟文化辦事處：+81-6-6443-8481</li>
+        <li>急難救助專線：+81-90-8794-4568</li>
+      </ul>
+    </div>
+  </div>
+  <p class="callout indigo">👨‍👩‍👧‍👦 <b>住客人數提醒</b>：3 位青少年（13/15/16 歲）在多數日本飯店以「大人」計價並含住宿費。入住前可向飯店再確認「7 人入住 2 間」無需補費，避免現場糾紛。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>大阪關西親子 9 日遊攻略 · 2026/6/30–7/8 · 為 7 人家庭客製</p>
+  <p class="toc-mini">資料僅供規劃參考，價格/時刻/空房以各官方網站即時資訊為準。祝旅途愉快！🎌</p>
+</footer>
+
+</body>
+</html>
