@@ -68,6 +68,10 @@
   .leg .ico{font-size:20px;flex-shrink:0;width:30px;text-align:center}
   .leg .t{flex-shrink:0;width:62px;font-weight:700;color:var(--teal2);font-size:14px}
   .leg .c{flex:1}
+  .transport-box{background:#eef6f5;border:1px solid #cfe4e2;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:14px}
+  .transport-box b{color:var(--teal)}
+  .transport-box .step{display:block;padding:3px 0;border-bottom:1px dotted #cfe4e2}
+  .transport-box .step:last-child{border-bottom:none}
   .row-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
   .tg{font-size:13px;background:#eef4f3;border:1px solid #d7e6e4;border-radius:8px;padding:6px 10px}
   .tg.eat{background:#fdf1ec;border-color:#f6dbcf}
@@ -87,7 +91,7 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <span class="tag v2">VERSION 2 · 進階／在地版</span>
+    <span class="tag v2">VERSION 2 · 進階／在地版（飯店確定版）</span>
     <span class="tag">去年經典款都玩過 → 這次換新玩法</span>
     <h1>大阪關西親子 9 日遊攻略 · 進階版</h1>
     <p class="sub">2026 / 6 / 30（二）– 7 / 8（三）｜動物冒險 × 復古電車 × 夏季限定 × 互動科技</p>
@@ -95,21 +99,24 @@
       <span>✈️ 去程 AK170 高雄08:30→關西12:40</span>
       <span>✈️ 回程 CI167 關西12:00→高雄14:20</span>
       <span>👨‍👩‍👧‍👦 4 大 + 3 青少年</span>
-      <span>🏨 ESLEAD 難波黑門 ×2 房</span>
+      <span>🏨 Universal Port → Ocean Tsutenkaku</span>
     </div>
   </div>
 </header>
 
 <nav>
   <div class="wrap">
-    <a href="#whatsnew">改了什麼</a>
+    <a href="#flights">航班</a>
+    <a href="#hotels">住宿</a>
+    <a href="#transport">交通票券</a>
     <a href="#overview">總覽</a>
     <a href="#d1">Day1-2 USJ</a>
-    <a href="#d3">Day3 和歌山</a>
-    <a href="#d4">Day4 枚方</a>
-    <a href="#d5">Day5 嵐山</a>
-    <a href="#d6">Day6 萬博</a>
-    <a href="#d7">Day7 南大阪</a>
+    <a href="#d2">Day3 搬家+新世界</a>
+    <a href="#d3">Day4 和歌山</a>
+    <a href="#d4">Day5 枚方</a>
+    <a href="#d5">Day6 嵐山</a>
+    <a href="#d6">Day7 萬博</a>
+    <a href="#d7">Day8 南大阪</a>
     <a href="#d9">Day9 返程</a>
     <a href="#swap">替換選項</a>
     <a href="#notes">預約提醒</a>
@@ -118,20 +125,114 @@
 
 <main>
 
+<!-- FLIGHTS -->
+<section id="flights">
+  <h2>✈️ 航班<span class="em">資訊</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill coral">去程 6/30（二）</span>
+      <h3 style="margin-top:12px">AirAsia AK170</h3>
+      <table>
+        <tr><th>高雄小港 KHH</th><td>起飛 <b>08:30</b></td></tr>
+        <tr><th>大阪關西 KIX T1</th><td>抵達 <b>12:40</b></td></tr>
+        <tr><th>航程</th><td>約 2 小時 40 分</td></tr>
+        <tr><th>報到</th><td>建議 <b>06:00 前</b>到高雄機場（國際線、廉航行李另計）</td></tr>
+      </table>
+      <p class="muted">⚠️ AirAsia 2026/6/15 新開航線，出發前 1 週上官網確認時刻與航廈。建議線上預辦登機、加購行李與餐點。</p>
+    </div>
+    <div class="card">
+      <span class="pill teal">回程 7/8（三）</span>
+      <h3 style="margin-top:12px">China Airlines CI167</h3>
+      <table>
+        <tr><th>大阪關西 KIX T1</th><td>起飛 <b>12:00</b></td></tr>
+        <tr><th>高雄小港 KHH</th><td>抵達 <b>約 14:20</b></td></tr>
+        <tr><th>航程</th><td>約 3 小時 45 分</td></tr>
+        <tr><th>到機場</th><td>目標 <b>09:00–09:15</b> 抵 KIX（起飛前 3 小時）</td></tr>
+      </table>
+      <p class="muted">⚠️ CI167 確切時間以華航官網為準。7 人＋大行李，建議南海指定席。</p>
+    </div>
+  </div>
+  <div class="card">
+    <h3>🚇 機場 ⇄ 飯店 交通細節</h3>
+    <div class="transport-box">
+      <span class="step"><b>6/30 抵達 → Hotel Universal Port（推薦JR）</b>：關西空港駅 →〔JR 関空快速・往京橋方向〕→ <b>西九条駅</b>（約 50–60 分，¥1,210）→ 同站轉〔JR ゆめ咲線・桜島行〕→ <b>ユニバーサルシティ駅</b>（約 5 分）→ 步行 4 分到飯店。總約 70–80 分。</span>
+      <span class="step"><b>6/30 替代（省轉車）</b>：關西機場 →〔利木津巴士・環球影城線〕直達 環球影城飯店區（約 70 分，約 ¥1,600）。7 人帶行李不用轉車，最輕鬆。</span>
+      <span class="step"><b>7/8 返程 → Ocean Tsutenkaku 出發</b>：飯店步行 10 分到 <b>新今宮駅</b> →〔南海本線・空港急行〕→ 關西空港駅（約 45 分，¥970）；或〔南海特急 ラピート〕（約 37 分，¥1,490，指定席）。<b>新今宮直達關空、免轉車！</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- HOTELS -->
+<section id="hotels">
+  <h2>🏨 住宿<span class="em">（已確認）</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill green">✅ 已確認 · 6/30–7/2（2 晚）</span>
+      <h3 style="margin-top:12px">Hotel Universal Port 環球港飯店</h3>
+      <table>
+        <tr><th>入住/退房</th><td>6/30 <b>15:00</b> 入住 → 7/2 <b>11:00</b> 退房</td></tr>
+        <tr><th>位置</th><td>JR ユニバーサルシティ駅 步行 4 分、USJ 正門步行 4 分</td></tr>
+        <tr><th>類型</th><td>USJ 官方夥伴飯店（可享提早入園福利）</td></tr>
+        <tr><th>特色</th><td>小小兵主題、親子備品齊、餐廳多、海灣景</td></tr>
+      </table>
+      <p class="callout teal">🎢 官方夥伴飯店 → 7/1 可比一般遊客<b>提早入園</b>，衝大金剛/任天堂世界超關鍵。</p>
+    </div>
+    <div class="card">
+      <span class="pill green">✅ 已確認 · 7/2–7/8（6 晚）</span>
+      <h3 style="margin-top:12px">Ocean Tsutenkaku 新世界公寓</h3>
+      <table>
+        <tr><th>入住/退房</th><td>7/2 <b>16:00</b> 入住 → 7/8 <b>10:00</b> 退房</td></tr>
+        <tr><th>地址</th><td>浪速區惠美須東 1-10-12（通天閣樓下、新世界內）</td></tr>
+        <tr><th>類型</th><td>公寓式（房內廚房＋餐廚＋冰箱微波，可自炊）</td></tr>
+        <tr><th>最近車站</th><td>惠美須町站(堺筋線)5分 · 動物園前站(御堂筋線)7分 · <b>新今宮站(JR/南海)10分</b> · 天王寺10分</td></tr>
+      </table>
+      <p class="callout coral">🗼 <b>位置優勢</b>：①樓下就是新世界串炸街；②新今宮站南海<b>直達關空</b>；③動物園前御堂筋線直達梅田/千里中央；④步行可到天王寺/阿倍野 HARUKAS。對 Version 2 的南大阪行程超加分！</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPORT -->
+<section id="transport">
+  <h2>🚇 交通 &amp; <span class="em">票券建議</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>必備：ICOCA 交通卡</h3>
+      <p>7 人每人一張（或手機綁 ICOCA/Suica）。地鐵、JR、私鐵、南海、便利商店都能嗶。先儲值 ¥3,000，站內機台可加值。</p>
+      <h3>新世界出發的交通主幹</h3>
+      <ul class="clean">
+        <li><b>御堂筋線（動物園前站）</b>：北上直達梅田、千里中央（萬博）；南下到長居（teamLab）、天王寺</li>
+        <li><b>堺筋線（惠美須町站）</b>：北上到北浜（轉京阪去京都/枚方）、日本橋、天神橋</li>
+        <li><b>JR/南海（新今宮站）</b>：環状線繞大阪一圈；南海直達關空</li>
+        <li><b>阪堺電車（惠美須町電停）</b>：復古路面電車到住吉大社、堺市</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>建議加購的票券</h3>
+      <ul class="clean">
+        <li><b>USJ Express Pass（快通 4 或 7）</b>：暑假必買、提前 1–2 個月於官網/KKday/Klook 購入，含大金剛＋任天堂世界入場保證。</li>
+        <li><b>JR 特急黑潮号(くろしお)指定席</b>：7/3 去和歌山白浜用。</li>
+        <li><b>嵯峨野小火車指定席</b>：7/5 嵐山用，旺季常滿先訂。</li>
+        <li><b>太陽之塔內部見學 / teamLab</b>：官網時段預約制。</li>
+        <li><b>南海ラピート指定席</b>：7/8 回程，前 1–2 天買。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- WHATS NEW -->
 <section id="whatsnew">
-  <h2>🔄 跟原版/去年<span class="em">差在哪</span></h2>
+  <h2>🔄 跟去年經典款<span class="em">差在哪</span></h2>
   <div class="card">
     <table>
       <tr><th>去年/原版（經典款）</th><th>Version 2 換成（新玩法）</th></tr>
-      <tr><td>道頓堀、心齋橋、黑門（重複逛）</td><td><b>難波八阪神社獅子頭 + 在地系景點</b></td></tr>
+      <tr><td>道頓堀、心齋橋（重複逛）</td><td><b>新世界/通天閣（住這！）+ 阪堺電車</b></td></tr>
       <tr><td>京都東山（伏見稻荷/清水寺/祇園）</td><td><b>嵐山猴子公園 + 嵯峨野小火車</b>（京都西側/自然）</td></tr>
       <tr><td>奈良東大寺餵鹿</td><td><b>和歌山 Adventure World</b> 動物冒險樂園</td></tr>
       <tr><td>大阪城、梅田</td><td><b>枚方公園</b>（在地遊樂園 + 夏季戲水）</td></tr>
       <tr><td>海遊館</td><td><b>NIFREL 互動水族館 + 太陽之塔內部</b>（萬博公園）</td></tr>
-      <tr><td>通天閣、神戶三宮</td><td><b>阿倍野HARUKAS 日本最高樓 + 住吉大社 + 阪堺電車 + teamLab</b></td></tr>
+      <tr><td>通天閣、神戶三宮</td><td><b>阿倍野HARUKAS 日本最高樓 + 住吉大社 + teamLab</b></td></tr>
     </table>
-    <p class="callout teal">🎯 <b>設計主軸</b>：保留環球影城（兩天）與黑門基地不動，把中後段全部換成「<b>去年沒玩過、青少年會嗨</b>」的主題日——動物近距離、刺激遊樂、復古電車、夏夜光影。每天仍有完整吃住玩交通。</p>
+    <p class="callout teal">🎯 <b>設計主軸</b>：保留環球影城（兩天）不動，市區改住新世界 Ocean Tsutenkaku，把中後段全換成「去年沒玩過、青少年會嗨」的主題日。每天都有完整吃住玩＋逐段交通。</p>
   </div>
 </section>
 
@@ -141,212 +242,273 @@
   <div class="card">
     <table>
       <tr><th>日期</th><th>主題</th><th>住宿</th><th>類型</th></tr>
-      <tr><td>6/30（二）</td><td>抵達 + 環球影城①</td><td>環球影城區</td><td>🎢 樂園</td></tr>
-      <tr><td>7/1（三）</td><td>環球影城②（整天）</td><td>環球影城區</td><td>🎢 樂園</td></tr>
-      <tr><td>7/2（四）</td><td>搬家 + 難波在地半日</td><td>難波黑門</td><td>⛩️ 在地</td></tr>
-      <tr><td>7/3（五）</td><td>和歌山 Adventure World</td><td>難波黑門</td><td>🐬 動物冒險</td></tr>
-      <tr><td>7/4（六）</td><td>枚方公園遊樂園</td><td>難波黑門</td><td>🎡 刺激/戲水</td></tr>
-      <tr><td>7/5（日）</td><td>嵐山猴子 + 嵯峨野小火車</td><td>難波黑門</td><td>🐒 自然/鐵道</td></tr>
-      <tr><td>7/6（一）</td><td>萬博公園 太陽之塔 + NIFREL</td><td>難波黑門</td><td>🦁 互動科技</td></tr>
-      <tr><td>7/7（二）</td><td>阿倍野 + 住吉 + 阪堺電車 + teamLab</td><td>難波黑門</td><td>🗼 在地/夜光</td></tr>
+      <tr><td>6/30（二）</td><td>抵達 + 環球影城①</td><td>Universal Port</td><td>🎢 樂園</td></tr>
+      <tr><td>7/1（三）</td><td>環球影城②（整天）</td><td>Universal Port</td><td>🎢 樂園</td></tr>
+      <tr><td>7/2（四）</td><td>搬家 + 新世界/通天閣</td><td>Ocean Tsutenkaku</td><td>🗼 在地</td></tr>
+      <tr><td>7/3（五）</td><td>和歌山 Adventure World</td><td>Ocean Tsutenkaku</td><td>🐬 動物冒險</td></tr>
+      <tr><td>7/4（六）</td><td>枚方公園遊樂園</td><td>Ocean Tsutenkaku</td><td>🎡 刺激/戲水</td></tr>
+      <tr><td>7/5（日）</td><td>嵐山猴子 + 嵯峨野小火車</td><td>Ocean Tsutenkaku</td><td>🐒 自然/鐵道</td></tr>
+      <tr><td>7/6（一）</td><td>萬博公園 太陽之塔 + NIFREL</td><td>Ocean Tsutenkaku</td><td>🦁 互動科技</td></tr>
+      <tr><td>7/7（二）</td><td>阿倍野 + 住吉 + 阪堺 + teamLab</td><td>Ocean Tsutenkaku</td><td>🗼 在地/夜光</td></tr>
       <tr><td>7/8（三）</td><td>返程 CI167</td><td>—</td><td>✈️ 賦歸</td></tr>
     </table>
-    <p class="muted">住宿、航班與原版一致；回程 CI167 已確認 <b>12:00 起飛、約 14:20 抵高雄</b>。</p>
   </div>
 </section>
 
-<!-- DAY 1-2 USJ (brief) -->
+<!-- DAY 1-2 USJ -->
 <section id="d1">
   <div class="day">
     <div class="day-head usj">
       <div class="num">1·2</div>
-      <div><div class="d-date">6/30（二）– 7/1（三）</div><p class="d-title">環球影城（維持原規劃）</p></div>
+      <div><div class="d-date">6/30（二）– 7/1（三）</div><p class="d-title">抵達 + 環球影城</p></div>
       <div class="d-theme">🎢 USJ</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">✈️</div><div class="t">6/30</div><div class="c">高雄 08:30→關西 12:40，搭 JR（関空快速→西九条→ゆめ咲線）約 15:00 抵環球影城飯店。傍晚 Universal CityWalk + 視體力午後入園。</div></div>
-      <div class="leg"><div class="ico">🍄</div><div class="t">7/1</div><div class="c">環球影城整天：開園先衝<b>大金剛瘋狂礦車</b>＋超級任天堂世界（App 抽整理券），哈利波特、侏羅紀、好萊塢美夢。<b>Express Pass 提前 1–2 個月買</b>。</div></div>
-      <div class="row-tags">
-        <span class="tg eat">🍴 奶油啤酒 · 蘑菇餐 · CityWalk</span>
-        <span class="tg move">🚇 関空快速＋ゆめ咲線</span>
-        <span class="tg stay">🏨 環球影城飯店（待訂）</span>
+      <div class="leg"><div class="ico">✈️</div><div class="t">6/30 12:40</div><div class="c">關西機場 T1 抵達，入境、領行李、購/領 ICOCA 與 USJ 門票。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>機場 → Hotel Universal Port</b>：關西空港駅 →〔JR 関空快速〕→ 西九条駅（約 55 分，¥1,210）→ 轉〔JR ゆめ咲線〕→ ユニバーサルシティ駅（約 5 分）→ 步行 4 分。</span>
+        <span class="step"><b>替代</b>：利木津巴士 機場→環球影城直達（約 70 分，¥1,600，免轉車）。</span>
       </div>
-      <p class="callout">這兩天與原版相同（你們本來就要玩 USJ），細節請參考原版攻略。Version 2 的新內容從 7/2 開始。</p>
+      <div class="leg"><div class="ico">🏨</div><div class="t">15:00</div><div class="c"><b>Hotel Universal Port</b> 入住、放行李。</div></div>
+      <div class="leg"><div class="ico">🌃</div><div class="t">15:30</div><div class="c">傍晚逛 <b>Universal CityWalk</b>（免費），視體力午後入園拍照、看夜間氛圍。</div></div>
+      <div class="leg"><div class="ico">🍴</div><div class="t">19:00</div><div class="c"><b>晚餐</b>：CityWalk「鶴橋風月大阪燒」、Takopa 章魚燒、Bubba Gump。</div></div>
+      <div class="leg"><div class="ico">🍄</div><div class="t">7/1 08:00</div><div class="c"><b>環球影城整天</b>：官方飯店提早入園，開 App 抽超級任天堂世界＋大金剛整理券；上午衝<b>大金剛瘋狂礦車</b>＋瑪利歐賽車，中午哈利波特，下午侏羅紀/好萊塢美夢，晚上夜間遊行。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 奶油啤酒 · 蘑菇餐 · 大阪燒</span>
+        <span class="tg move">🚇 関空快速＋ゆめ咲線</span>
+        <span class="tg stay">🏨 Hotel Universal Port</span>
+      </div>
+      <p class="callout">這兩天與你原本的 USJ 計畫相同。<b>Express Pass 請提前 1–2 個月購買</b>，旺季秒殺。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 3 Wakayama -->
-<section id="d3">
+<!-- DAY 3 = 7/2 move + Shinsekai -->
+<section id="d2">
   <div class="day">
     <div class="day-head">
       <div class="num">3</div>
+      <div><div class="d-date">7/2（週四）</div><p class="d-title">搬家 + 新世界/通天閣<span class="badge-new">就在樓下</span></p></div>
+      <div class="d-theme">🗼 在地</div>
+    </div>
+    <div class="day-body">
+      <div class="leg"><div class="ico">🧳</div><div class="t">10:30</div><div class="c"><b>Hotel Universal Port 退房</b>（11:00 前），自行拖行李移動。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>環球影城 → Ocean Tsutenkaku</b>：ユニバーサルシティ駅 →〔JR ゆめ咲線〕→ 西九条駅（約 5 分）→ 同站轉〔JR 大阪環状線・外回り/天王寺方向〕→ <b>新今宮駅</b>（約 25 分，全程約 ¥230）→ 步行 10 分到飯店。一次轉車、同站轉。</span>
+      </div>
+      <div class="leg"><div class="ico">🧳</div><div class="t">11:30</div><div class="c">先到 <b>Ocean Tsutenkaku</b> 寄放行李（16:00 才能入住）。</div></div>
+      <div class="leg"><div class="ico">🍢</div><div class="t">12:00</div><div class="c"><b>午餐＝新世界串炸</b>：樓下「だるま」「八重勝」名店，醬汁不可二次浸！</div></div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">13:30</div><div class="c"><b>通天閣</b>登塔（跳樓機 TIP THE TSUTENKAKU）、新世界懷舊街拍照、SPA WORLD 世界大溫泉（選配）。</div></div>
+      <div class="leg"><div class="ico">🛒</div><div class="t">15:00</div><div class="c">採買：玉出超市惠美須店（24h，激安）、業務超市，補早餐/飲料/食材。</div></div>
+      <div class="leg"><div class="ico">🏨</div><div class="t">16:00</div><div class="c">正式 <b>入住 Ocean Tsutenkaku</b>，安頓、開洗衣。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c"><b>晚餐</b>：新世界居酒屋、或步行到天王寺 Q's Mall/阿倍野 HARUKAS 用餐；或在家煮。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 新世界串炸 · 玉出採買 · 在家煮</span>
+        <span class="tg move">🚇 ゆめ咲線→環状線（西九条轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 1 晚）</span>
+      </div>
+      <p class="callout teal">🗼 換基地日不排太遠。新世界、通天閣、串炸街、玉出超市全在飯店樓下，剛好當熟悉環境的一天。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 4 = 7/3 Wakayama -->
+<section id="d3">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">4</div>
       <div><div class="d-date">7/3（週五）</div><p class="d-title">和歌山 Adventure World<span class="badge-new">NEW</span></p></div>
       <div class="d-theme">🐬 動物冒險</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🚆</div><div class="t">07:30</div><div class="c">南海難波 或 JR 天王寺搭 <b>JR 特急「黑潮号 くろしお」</b>→白浜站（約 2.5 小時），轉園區巴士約 10 分。建議搭最早班次。</div></div>
-      <div class="leg"><div class="ico">🦁</div><div class="t">10:30</div><div class="c"><b>Adventure World</b>：開車穿越<b>野生動物 Safari</b>（獅子、犀牛、長頸鹿超近）、餵食體驗、海豚秀、企鵝、遊樂設施一園搞定。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>去程（建議早班）</b>：飯店步行 10 分 → <b>天王寺駅</b> →〔JR 特急 くろしお(黑潮号)・指定席〕→ <b>白浜駅</b>（約 2 小時 20 分，指定席約 ¥5,000）→ 轉〔明光巴士・Adventure World 行〕（約 10 分，¥480）。</span>
+        <span class="step"><b>回程</b>：白浜駅 → くろしお → 天王寺駅 → 步行回飯店。<b>務必事先劃指定席</b>（旺季易滿）。</span>
+      </div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">07:30</div><div class="c">天王寺出發（搭早班黑潮号）。</div></div>
+      <div class="leg"><div class="ico">🦁</div><div class="t">10:30</div><div class="c"><b>Adventure World</b>：開車穿越野生動物 Safari（餵獅子、長頸鹿超近）、海豚秀、企鵝、遊樂設施一園搞定。</div></div>
       <div class="leg"><div class="ico">🍱</div><div class="t">12:30</div><div class="c">午餐：園內餐廳（咖哩、動物造型餐）。</div></div>
-      <div class="leg"><div class="ico">🎢</div><div class="t">下午</div><div class="c">遊樂園區（摩天輪、雲霄飛車）＋海洋館；青少年可分頭玩刺激設施。</div></div>
-      <div class="leg"><div class="ico">🏖️</div><div class="t">16:00</div><div class="c">時間夠可順走旁邊 <b>白良浜白沙灘</b>、三段壁、千疊敷拍照。</div></div>
-      <div class="leg"><div class="ico">🍽️</div><div class="t">19:30</div><div class="c">返抵難波，<b>晚餐</b>黑門/飯店附近，或回家煮（白天累了在家放鬆）。</div></div>
+      <div class="leg"><div class="ico">🎢</div><div class="t">下午</div><div class="c">遊樂園區（摩天輪、雲霄飛車）＋海洋館；青少年分頭玩刺激設施。</div></div>
+      <div class="leg"><div class="ico">🏖️</div><div class="t">16:00</div><div class="c">時間夠順走 <b>白良浜白沙灘</b>、三段壁、千疊敷拍照。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:30</div><div class="c">返抵天王寺/新世界，<b>晚餐</b>串炸或在家煮（白天累了放鬆）。</div></div>
       <div class="row-tags">
         <span class="tg eat">🍴 動物造型餐 · 白浜梅干</span>
-        <span class="tg move">🚆 JR 特急黑潮号（建議劃位）</span>
-        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+        <span class="tg move">🚆 JR 黑潮号特急（指定席）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 2 晚）</span>
       </div>
-      <p class="callout coral">⚠️ <b>熊貓已撤離</b>：Adventure World 的大熊貓 2025 年已全數送返中國，<b>2026 年看不到熊貓</b>；但 Safari、海豚、餵獅子長頸鹿、遊樂設施仍非常精彩。<br>⏰ 白浜單程 2.5 小時較遠，務必搭早班 + 黑潮号<b>事先劃指定席</b>；不想跑遠可改替換選項裡的近郊樂園。</p>
+      <p class="callout coral">⚠️ <b>熊貓已撤離</b>：Adventure World 大熊貓 2025 年已全數送返中國，2026 看不到熊貓；但 Safari、海豚、餵長頸鹿、遊樂設施仍精彩。白浜單程 2.5h，務必早出＋劃指定席；不想跑遠可改替換選項。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 4 Hirakata -->
+<!-- DAY 5 = 7/4 Hirakata -->
 <section id="d4">
   <div class="day">
     <div class="day-head">
-      <div class="num">4</div>
+      <div class="num">5</div>
       <div><div class="d-date">7/4（週六）</div><p class="d-title">枚方公園 ひらかたパーク<span class="badge-new">NEW</span></p></div>
       <div class="d-theme">🎡 在地遊樂園</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🚆</div><div class="t">09:00</div><div class="c">日本橋→北浜轉<b>京阪本線</b>→枚方公園站（約 40 分），步行 3 分到園區。</div></div>
-      <div class="leg"><div class="ico">🎢</div><div class="t">10:00</div><div class="c"><b>枚方公園</b>：大阪在地老牌遊樂園，雲霄飛車、立體迷宮、各式設施。<b>人潮比 USJ 少、票價親民</b>，青少年玩到飽。</div></div>
-      <div class="leg"><div class="ico">🍔</div><div class="t">12:30</div><div class="c">午餐：園內美食區。</div></div>
-      <div class="leg"><div class="ico">🏊</div><div class="t">下午</div><div class="c"><b>夏季戲水泳池「ザ・ブーン」</b>（滑水道、流水泳池）消暑——<b>但通常 7 月中才開</b>，若未開則改玩遊樂設施。</div></div>
-      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回難波<b>晚餐</b>：千日前/難波在地居酒屋，或黑門採買回家煮。</div></div>
-      <div class="row-tags">
-        <span class="tg eat">🍴 園內小吃 · 難波居酒屋</span>
-        <span class="tg move">🚆 京阪本線（北浜轉乘）</span>
-        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 5 分 → <b>惠美須町駅</b> →〔堺筋線・北行〕→ <b>北浜駅</b>（約 10 分）→ 同站轉〔京阪本線・特急/急行〕→ <b>枚方公園駅</b>（約 30 分）→ 步行 3 分到園區。全程約 50 分、約 ¥620。</span>
+        <span class="step"><b>回程</b>：枚方公園 → 京阪 → 北浜 → 堺筋線 → 惠美須町，原路回。</span>
       </div>
-      <p class="callout coral">⚠️ <b>泳池開放日要確認</b>：「ザ・ブーン」夏季泳池一般約 7 月中旬才開放，你們 7/4 偏早，出發前請上官網確認；若未開，遊樂設施全年營運不影響玩樂。帶泳衣＋毛巾以備開放。</p>
+      <div class="leg"><div class="ico">🎢</div><div class="t">10:00</div><div class="c"><b>枚方公園</b>：大阪在地老牌遊樂園，雲霄飛車、立體迷宮、各式設施，<b>人潮比 USJ 少、票價親民</b>。</div></div>
+      <div class="leg"><div class="ico">🍔</div><div class="t">12:30</div><div class="c">午餐：園內美食區。</div></div>
+      <div class="leg"><div class="ico">🏊</div><div class="t">下午</div><div class="c"><b>夏季戲水池「ザ・ブーン」</b>（滑水道、流水泳池）消暑——通常 7 月中才開，未開則改玩設施。帶泳衣以備。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回新世界<b>晚餐</b>：串炸/居酒屋，或玉出採買回家煮。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 園內小吃 · 新世界串炸</span>
+        <span class="tg move">🚆 堺筋線→京阪本線（北浜轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 3 晚）</span>
+      </div>
+      <p class="callout coral">⚠️ <b>泳池開放日要確認</b>：「ザ・ブーン」一般約 7 月中旬才開放，你們 7/4 偏早，出發前上官網查；若未開，遊樂設施全年營運不影響玩樂。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 5 Arashiyama -->
+<!-- DAY 6 = 7/5 Arashiyama -->
 <section id="d5">
   <div class="day">
     <div class="day-head">
-      <div class="num">5</div>
+      <div class="num">6</div>
       <div><div class="d-date">7/5（週日）</div><p class="d-title">嵐山猴子公園 + 嵯峨野小火車<span class="badge-new">NEW</span></p></div>
       <div class="d-theme">🐒 京都西側</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🚆</div><div class="t">08:00</div><div class="c">難波搭<b>阪急</b>（御堂筋線到梅田轉阪急京都線→桂→嵐山線）或 JR 到嵯峨嵐山，約 70–80 分。</div></div>
-      <div class="leg"><div class="ico">🐒</div><div class="t">09:30</div><div class="c"><b>嵐山猴子公園（岩田山）</b>：爬約 20 分到山頂，野生獼猴互動、俯瞰京都市景，屋內可餵猴（青少年最愛）。</div></div>
-      <div class="leg"><div class="ico">🎋</div><div class="t">11:30</div><div class="c">竹林小徑、渡月橋、天龍寺周邊；午餐嵐山名物（湯豆腐、嵐山可樂餅、抹茶甜點）。</div></div>
-      <div class="leg"><div class="ico">🚃</div><div class="t">14:00</div><div class="c"><b>嵯峨野小火車（トロッコ列車）</b>：嵯峨站→龜岡，沿保津川峽谷的觀光列車，<b>需事先劃位</b>，旺季常滿。</div></div>
-      <div class="leg"><div class="ico">🚉</div><div class="t">15:30</div><div class="c">（選配）京都鐵道博物館（蒸汽火車、模擬駕駛，超適合青少年）或回程逛京都站。</div></div>
-      <div class="leg"><div class="ico">🍽️</div><div class="t">19:00</div><div class="c">返難波<b>晚餐</b>，或回家煮。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>去程（阪急）</b>：飯店步行 7 分 → <b>動物園前駅</b> →〔御堂筋線・北行〕→ <b>梅田駅</b>（約 15 分）→ 步行至阪急大阪梅田 →〔阪急京都線・特急〕→ <b>桂駅</b> → 轉〔阪急嵐山線〕→ <b>嵐山駅</b>（約 50 分）。全程約 75–85 分。</span>
+        <span class="step"><b>替代（JR）</b>：新今宮駅 →〔JR 大阪環状線〕→ 大阪駅 →〔JR 嵯峨野線〕→ 嵯峨嵐山駅。</span>
+      </div>
+      <div class="leg"><div class="ico">🐒</div><div class="t">09:30</div><div class="c"><b>嵐山猴子公園（岩田山）</b>：爬約 20 分到山頂，野生獼猴互動、俯瞰京都，屋內可餵猴（青少年最愛）。</div></div>
+      <div class="leg"><div class="ico">🎋</div><div class="t">11:30</div><div class="c">竹林小徑、渡月橋、天龍寺；午餐嵐山名物（湯豆腐、可樂餅、抹茶甜點）。</div></div>
+      <div class="leg"><div class="ico">🚃</div><div class="t">14:00</div><div class="c"><b>嵯峨野小火車（トロッコ列車）</b>：嵯峨站→龜岡，沿保津川峽谷觀光列車，<b>需事先劃位</b>。</div></div>
+      <div class="leg"><div class="ico">🚉</div><div class="t">15:30</div><div class="c">（選配）京都鐵道博物館（蒸汽火車、模擬駕駛）。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">19:00</div><div class="c">返新世界<b>晚餐</b>，或在家煮。</div></div>
       <div class="row-tags">
         <span class="tg eat">🍴 湯豆腐 · 嵐山可樂餅 · 抹茶</span>
-        <span class="tg move">🚆 阪急/JR + 嵯峨野小火車</span>
-        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+        <span class="tg move">🚆 御堂筋線→阪急（梅田/桂轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 4 晚）</span>
       </div>
-      <p class="callout teal">🚃 去年玩的是京都東山寺廟群，今年改<b>京都西側自然+鐵道</b>完全不重複。小火車與保津川泛舟可二選一（泛舟更刺激但耗時）。</p>
+      <p class="callout teal">🚃 去年玩京都東山寺廟，今年改京都西側自然+鐵道完全不重複。小火車與保津川泛舟可二選一。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 6 Expo Park -->
+<!-- DAY 7 = 7/6 Expo Park -->
 <section id="d6">
   <div class="day">
     <div class="day-head">
-      <div class="num">6</div>
+      <div class="num">7</div>
       <div><div class="d-date">7/6（週一）</div><p class="d-title">萬博公園 太陽之塔 + NIFREL<span class="badge-new">NEW</span></p></div>
       <div class="d-theme">🦁 互動科技</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🚝</div><div class="t">09:30</div><div class="c">御堂筋線→千里中央→轉<b>大阪單軌電車</b>→萬博紀念公園站（約 50 分）。</div></div>
-      <div class="leg"><div class="ico">🗼</div><div class="t">10:30</div><div class="c"><b>太陽之塔內部見學</b>：岡本太郎名作，內部「生命之樹」震撼，<b>需事先官網預約</b>。</div></div>
-      <div class="leg"><div class="ico">🐠</div><div class="t">13:00</div><div class="c"><b>NIFREL（ニフレル）</b>：海遊館團隊打造的「感性博物館」，水族×動物×藝術，可近距離接觸白虎、水豚、鳥類，互動性比海遊館更強。</div></div>
-      <div class="leg"><div class="ico">🎡</div><div class="t">15:30</div><div class="c"><b>EXPOCITY</b>：日本最大級購物中心、大型摩天輪、午茶；逛街吹冷氣。</div></div>
-      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回難波<b>晚餐</b>：黑門最後採買也可從今天開始；或在家壽喜燒。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 7 分 → <b>動物園前駅</b> →〔御堂筋線・北行直達〕→ <b>千里中央駅</b>（約 30 分）→ 轉〔大阪單軌電車〕→ <b>萬博紀念公園駅</b>（約 6 分）→ 步行 5 分。全程約 50 分、約 ¥680。</span>
+        <span class="step"><b>回程</b>：原路 萬博→千里中央→御堂筋線→動物園前。</span>
+      </div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">10:30</div><div class="c"><b>太陽之塔內部見學</b>：岡本太郎名作，內部「生命之樹」震撼，<b>需官網時段預約</b>（成人 ¥720＋入園 ¥450）。</div></div>
+      <div class="leg"><div class="ico">🐠</div><div class="t">13:00</div><div class="c"><b>NIFREL（ニフレル）</b>：海遊館團隊打造「感性博物館」，水族×動物×藝術，近距離接觸白虎、水豚（成人 ¥2,200）。</div></div>
+      <div class="leg"><div class="ico">🎡</div><div class="t">15:30</div><div class="c"><b>EXPOCITY</b>：日本最大級購物中心、大型摩天輪、午茶，逛街吹冷氣。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">18:30</div><div class="c">回新世界<b>晚餐</b>，或在家壽喜燒。</div></div>
       <div class="row-tags">
         <span class="tg eat">🍴 EXPOCITY 美食 · 在家煮</span>
-        <span class="tg move">🚝 御堂筋線＋大阪單軌</span>
-        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+        <span class="tg move">🚝 御堂筋線→大阪單軌（千里中央轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 5 晚）</span>
       </div>
-      <p class="callout">🦁 取代去年的海遊館：NIFREL <b>互動性更高、人潮較少</b>，加上太陽之塔內部＋EXPOCITY 摩天輪，是「水族＋藝術＋購物」三合一的不一樣選擇。太陽之塔內部<b>務必先預約</b>。</p>
+      <p class="callout">🦁 取代去年海遊館：NIFREL 互動性更高、人潮較少，加太陽之塔內部＋摩天輪，水族＋藝術＋購物三合一。太陽之塔內部<b>務必先預約</b>。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 7 South Osaka + teamLab -->
+<!-- DAY 8 = 7/7 South Osaka + teamLab -->
 <section id="d7">
   <div class="day">
     <div class="day-head">
-      <div class="num">7</div>
+      <div class="num">8</div>
       <div><div class="d-date">7/7（週二）</div><p class="d-title">阿倍野 + 住吉 + 阪堺電車 + teamLab<span class="badge-new">NEW</span></p></div>
       <div class="d-theme">🗼 在地 + 夜光</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🗼</div><div class="t">09:30</div><div class="c">御堂筋線→天王寺（5 分）。<b>阿倍野 HARUKAS 300</b>：日本最高樓（300m）展望台，360° 俯瞰大阪。</div></div>
-      <div class="leg"><div class="ico">⛩️</div><div class="t">11:30</div><div class="c">天王寺→<b>住吉大社</b>：全國住吉神社總本社，朱紅<b>太鼓橋（反橋）</b>必拍。</div></div>
-      <div class="leg"><div class="ico">🚃</div><div class="t">13:00</div><div class="c">搭<b>阪堺電車</b>（大阪僅存復古路面電車）回程，沿線懷舊風情；午餐天王寺/阿倍野 Q's Mall。</div></div>
-      <div class="leg"><div class="ico">🛍️</div><div class="t">15:00</div><div class="c">難波八阪神社（巨大獅子頭舞台，近飯店）＋心齋橋/黑門<b>最後採買打包</b>。</div></div>
-      <div class="leg"><div class="ico">🌌</div><div class="t">19:00</div><div class="c"><b>teamLab Botanical Garden 長居植物園</b>（御堂筋線長居站）：夜間戶外數位光影藝術，夢幻拍照，<b>需事先買時段票</b>。</div></div>
-      <div class="leg"><div class="ico">🍽️</div><div class="t">21:00</div><div class="c">回程<b>告別晚餐</b>或宵夜，最後整理行李。</div></div>
-      <div class="row-tags">
-        <span class="tg eat">🍴 阿倍野美食 · 告別餐</span>
-        <span class="tg move">🚃 御堂筋線＋阪堺電車</span>
-        <span class="tg stay">🏠 ESLEAD 難波黑門</span>
+      <div class="callout teal" style="margin-top:0">📍 <b>今天全在飯店附近的南大阪</b>，移動最省力，剛好排在離開前一天。</div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">09:30</div><div class="c">飯店步行 10 分到 <b>天王寺/阿倍野 HARUKAS 300</b>（日本最高樓 300m）展望台，360° 俯瞰大阪。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>阿倍野 → 住吉大社</b>：天王寺駅西側 <b>阪堺電車「天王寺駅前」電停</b> →〔阪堺電車・上町線〕→ <b>住吉鳥居前</b>（約 20 分，¥230，復古路面電車）。</span>
+        <span class="step"><b>住吉 → 飯店</b>：阪堺電車回「惠美須町」電停（在飯店附近），或回天王寺。</span>
       </div>
-      <p class="callout teal">🌌 <b>teamLab 是夜間限定</b>（日落後開放），剛好排在白天南大阪行程之後，地理上都在御堂筋線南段，順路又能避開白天暑氣。</p>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">11:30</div><div class="c"><b>住吉大社</b>：全國住吉神社總本社，朱紅<b>太鼓橋（反橋）</b>必拍。</div></div>
+      <div class="leg"><div class="ico">🍴</div><div class="t">13:00</div><div class="c">午餐：天王寺/阿倍野 Q's Mall、近鐵百貨美食街。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">15:00</div><div class="c">天王寺/新世界<b>最後採買打包</b>（藥妝、伴手禮、隔天早餐）。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>飯店 → teamLab</b>：動物園前駅 →〔御堂筋線・南行〕→ <b>長居駅</b>（約 8 分，3 站）→ 3 號出口步行 10 分到長居植物園。</span>
+      </div>
+      <div class="leg"><div class="ico">🌌</div><div class="t">19:45</div><div class="c"><b>teamLab Botanical Garden 長居植物園</b>：夜間戶外數位光影藝術（成人 ¥1,800，<b>需時段票</b>，6–7 月 19:45–21:30）。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">21:30</div><div class="c">回新世界<b>告別晚餐</b>或宵夜，最後整理行李。</div></div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 阿倍野美食 · 告別串炸</span>
+        <span class="tg move">🚃 阪堺電車＋御堂筋線</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 6 晚）</span>
+      </div>
+      <p class="callout teal">🌌 teamLab 是夜間限定（日落後開放），剛好排在白天南大阪行程後，地理上都在御堂筋線南段，順路又避暑。</p>
     </div>
   </div>
 </section>
 
-<!-- DAY 9 return -->
+<!-- DAY 9 = 7/8 return -->
 <section id="d9">
   <div class="day">
     <div class="day-head">
-      <div class="num">8</div>
+      <div class="num">9</div>
       <div><div class="d-date">7/8（週三）</div><p class="d-title">返程回高雄 CI167</p></div>
       <div class="d-theme">✈️ 賦歸</div>
     </div>
     <div class="day-body">
-      <div class="leg"><div class="ico">🛏️</div><div class="t">07:30</div><div class="c">早餐、最後檢查，<b>10:00 前退房</b>。</div></div>
-      <div class="leg"><div class="ico">🚆</div><div class="t">08:05</div><div class="c">日本橋站堺筋線→<b>天下茶屋</b>轉南海（特急ラピート約 33 分），約 09:15 抵關西機場。</div></div>
-      <div class="leg"><div class="ico">✈️</div><div class="t">12:00</div><div class="c"><b>CI167 關西 12:00 → 高雄約 14:20</b>（起飛前 3 小時到機場、退稅）。</div></div>
+      <div class="leg"><div class="ico">🛏️</div><div class="t">08:00</div><div class="c">早餐（清冰箱/便利商店），最後檢查，<b>10:00 前退房</b>。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>飯店 → 關西機場（免轉車！）</b>：飯店步行 10 分 → <b>新今宮駅</b> →〔南海本線・空港急行〕→ 關西空港駅（約 45 分，¥970）；或〔南海特急 ラピート〕（約 37 分，¥1,490，指定席）。</span>
+        <span class="step"><b>替代</b>：7 人＋大行李可叫 2 台計程車到新今宮，或直接搭計程車到機場。</span>
+      </div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:30</div><div class="c">新今宮搭南海，約 09:15 抵關西機場 T1。</div></div>
+      <div class="leg"><div class="ico">🛫</div><div class="t">09:15</div><div class="c">華航櫃台報到、退稅、出境（起飛前 3 小時）。</div></div>
+      <div class="leg"><div class="ico">✈️</div><div class="t">12:00</div><div class="c"><b>CI167 關西 12:00 → 高雄約 14:20</b>。</div></div>
       <div class="row-tags">
         <span class="tg eat">🍴 機場最後一餐 · 關西限定伴手禮</span>
-        <span class="tg move">🚆 南海ラピート（建議劃位）</span>
+        <span class="tg move">🚆 南海（新今宮直達關空）</span>
         <span class="tg stay">🏠 賦歸</span>
       </div>
-      <p class="callout coral">⏰ 7 人＋大行李，南海 <b>ラピート 指定席</b>較好放行李；或叫車到天下茶屋再轉南海。CI167 確切時間出發前再確認華航官網。</p>
+      <p class="callout coral">⏰ 新飯店<b>最大優點</b>：新今宮站南海直達關空，比原本「天下茶屋轉車」更簡單。7 人建議 ラピート 指定席好放行李。CI167 時間出發前再確認華航官網。</p>
     </div>
   </div>
 </section>
 
 <!-- SWAP OPTIONS -->
 <section id="swap">
-  <h2>🔀 替換 / <span class="em">備案景點</span>（想再換口味）</h2>
+  <h2>🔀 替換 / <span class="em">備案景點</span></h2>
   <div class="grid2">
     <div class="card">
       <span class="pill purple">青少年最愛</span>
-      <h3>淡路島 二次元之森（ニジゲンノモリ）</h3>
-      <p>火影忍者忍者修行、<b>實體大哥吉拉滑索</b>、蠟筆小新、龍貓夜間步道。大阪/三宮搭高速巴士約 1.5–2 小時。動漫迷青少年的夢幻樂園。<span class="muted">（交通較不便，建議查好巴士班次或包車）</span></p>
+      <h3>淡路島 二次元之森</h3>
+      <p>火影忍者忍者修行、<b>實體大哥吉拉滑索</b>、蠟筆小新。難波 JR 高速巴士直達約 2 小時。動漫迷青少年的夢幻樂園。<span class="muted">（新世界出發：御堂筋線→難波轉巴士）</span></p>
     </div>
     <div class="card">
       <span class="pill teal">夏季限定避暑</span>
       <h3>京都 鞍馬・貴船 川床流水麵</h3>
-      <p>在貴船川上的平台用餐，比市區涼 10 度，<b>流水麵</b>從竹管流下超消暑。叡山電車前往，可串鞍馬寺健行。7 月正是季節，<b>川床需預約</b>。</p>
+      <p>貴船川上平台用餐，比市區涼 10 度，流水麵超消暑。叡山電車前往。7 月正季節，<b>川床需預約</b>。</p>
     </div>
     <div class="card">
       <span class="pill green">自然健行</span>
       <h3>箕面瀑布 + 勝尾寺達摩</h3>
-      <p>阪急箕面站沿溪步行 40 分到 33m 瀑布，名物<b>炸楓葉</b>；勝尾寺<b>滿山達摩不倒翁</b>超療癒好拍。半日自然行程，避開觀光人潮。</p>
+      <p>阪急箕面站沿溪步行到 33m 瀑布，名物炸楓葉；勝尾寺<b>滿山達摩不倒翁</b>超療癒。半日自然行程。</p>
     </div>
     <div class="card">
       <span class="pill gold">室內/雨備</span>
-      <h3>合味道紀念館 大阪池田</h3>
-      <p>自己 DIY 專屬泡麵杯（畫包裝、選配料），便宜又好玩。阪急池田站。<b>下雨天或想輕鬆的一天</b>的最佳備案，青少年很買單。</p>
+      <h3>合味道紀念館 池田</h3>
+      <p>DIY 專屬泡麵杯（畫包裝、選配料），便宜好玩。阪急池田站。<b>雨天/想輕鬆</b>的最佳備案。</p>
     </div>
   </div>
-  <p class="callout">想把哪一天換成這些都可以：例如怕白浜太遠 → 7/3 改「淡路島二次元之森」；想要更悠閒 → 把某天換「箕面瀑布」或「合味道紀念館」。</p>
+  <p class="callout">想換口味：怕白浜太遠 → 7/3 改「淡路島二次元之森」；想更悠閒 → 某天換「箕面瀑布」或「合味道紀念館」。</p>
 </section>
 
 <!-- NOTES -->
@@ -357,51 +519,32 @@
       <h3>✅ 一定要提前預約/購票</h3>
       <ul class="clean">
         <li><b>USJ Express Pass</b>（提前 1–2 個月，旺季秒殺）</li>
-        <li><b>JR 特急黑潮号</b>指定席（去和歌山白浜）</li>
-        <li><b>嵯峨野小火車</b>指定席（旺季常滿，建議網路先訂）</li>
-        <li><b>太陽之塔內部見學</b>（官網時段預約）</li>
-        <li><b>teamLab 長居植物園</b>夜間時段票</li>
-        <li><b>南海ラピート</b>回程指定席（前 1–2 天）</li>
+        <li><b>JR 特急黑潮号</b>指定席（7/3 和歌山白浜）</li>
+        <li><b>嵯峨野小火車</b>指定席（7/5，旺季常滿）</li>
+        <li><b>太陽之塔內部見學</b>（7/6，官網時段預約）</li>
+        <li><b>teamLab 長居植物園</b>夜間時段票（7/7）</li>
+        <li><b>南海ラピート</b>回程指定席（7/8，前 1–2 天）</li>
       </ul>
     </div>
     <div class="card">
       <h3>⚠️ 出發前務必確認</h3>
       <ul class="clean">
         <li><b>枚方公園夏季泳池</b>開放日（多為 7 月中才開）</li>
-        <li><b>Adventure World</b> 動物資訊（已無熊貓）</li>
+        <li><b>Adventure World</b> 已無熊貓</li>
         <li>各樂園/景點公休日與營業時間</li>
         <li>CI167 確切起飛時間（華航官網）</li>
-        <li>環球影城段住宿（6/30–7/1）盡快下訂</li>
         <li>7 月關西濕熱：水壺、涼感巾、防曬、折傘/雨衣</li>
       </ul>
     </div>
   </div>
-  <p class="callout teal">🍳 <b>自炊照舊</b>：黑門市場 6 分、玉出超市 24h，房內有完整廚房＋洗衣機。跑遠的日子（和歌山、嵐山）回來累，回家煮壽喜燒/海鮮丼最放鬆。</p>
+  <p class="callout teal">🍳 <b>自炊照舊</b>：Ocean Tsutenkaku 房內有廚房，樓下玉出超市 24h。跑遠的日子（和歌山、嵐山）回來累，在家煮壽喜燒/海鮮丼最放鬆。</p>
 </section>
-
-<!-- SOURCES -->
-<section id="sources">
-  <h2>🔗 參考<span class="em">來源</span></h2>
-  <div class="card">
-    <ul class="clean">
-      <li>Adventure World 冒險大世界（和歌山白浜）官方</li>
-      <li>枚方公園 ひらかたパーク 官方（夏季泳池開放日）</li>
-      <li>嵐山猴子公園 岩田山 / 嵯峨野小火車 トロッコ列車 官方</li>
-      <li>萬博紀念公園 太陽之塔內部見學 / NIFREL 官方</li>
-      <li>阿倍野 HARUKAS 300 / 住吉大社 / 阪堺電車 / 難波八阪神社</li>
-      <li>teamLab Botanical Garden Osaka 長居植物園 官方</li>
-      <li>淡路島 二次元之森、鞍馬貴船川床、箕面瀑布勝尾寺、合味道紀念館（替換選項）</li>
-    </ul>
-    <p class="muted">＊價格/時刻/開放日以各官方網站即時資訊為準。Version 2 著重「去年沒玩過」的新景點；經典款請見原版攻略。</p>
-  </div>
-</section>
-
-</main>
 
 <footer>
-  <p>大阪關西親子 9 日遊攻略 · Version 2 進階／在地版 · 2026/6/30–7/8</p>
-  <p>動物冒險 × 復古電車 × 夏季限定 × 互動科技 ｜ 祝旅途愉快！🎌</p>
+  <p>大阪關西親子 9 日遊攻略 · Version 2 進階／在地版（飯店確定版）· 2026/6/30–7/8</p>
+  <p>Hotel Universal Port → Ocean Tsutenkaku ｜ 動物冒險 × 復古電車 × 夏季限定 × 互動科技 🎌</p>
 </footer>
 
+</main>
 </body>
 </html>
