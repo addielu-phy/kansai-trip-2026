@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026 大阪關西家庭旅行攻略 Version 4</title>
+  <meta name="description" content="2026/6/30-7/8 大阪關西家庭旅行 Version 4：保留既有版本，新增 6/30 父子延後出發分流、Ocean 行李策略、杯麵整理券與最後一晚放鬆版行程。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16202a;
+      --muted: #617083;
+      --line: #d9e2ea;
+      --soft: #f5f8fb;
+      --paper: #ffffff;
+      --blue: #1e5aa8;
+      --cyan: #0f8aa8;
+      --green: #277a52;
+      --amber: #9a6713;
+      --rose: #b0435a;
+      --shadow: 0 14px 36px rgba(16, 32, 48, .11);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
+      color: var(--ink);
+      background: #eef4f8;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 76vh;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(7, 20, 31, .25) 0%, rgba(7, 20, 31, .64) 58%, rgba(7, 20, 31, .88) 100%),
+        url("https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=2200&q=82") center / cover;
+    }
+
+    .hero-inner,
+    main > section,
+    .sticky-nav-inner,
+    footer {
+      width: min(1180px, calc(100% - 32px));
+      margin-inline: auto;
+    }
+
+    .hero-inner {
+      padding: 86px 0 54px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 6px 11px;
+      border: 1px solid rgba(255, 255, 255, .44);
+      background: rgba(255, 255, 255, .13);
+      backdrop-filter: blur(8px);
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 18px 0 16px;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 820px;
+      margin: 0 0 26px;
+      font-size: clamp(17px, 2vw, 22px);
+      color: rgba(255, 255, 255, .91);
+    }
+
+    .hero-facts {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .hero-fact {
+      padding: 14px 16px;
+      min-height: 94px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      background: rgba(255, 255, 255, .14);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+    }
+
+    .hero-fact span,
+    .mini-label {
+      display: block;
+      color: rgba(255, 255, 255, .76);
+      font-size: 13px;
+    }
+
+    .hero-fact strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(246, 250, 253, .93);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .sticky-nav-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 0;
+    }
+
+    .sticky-nav a {
+      flex: 0 0 auto;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: #25425c;
+      font-size: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    main {
+      padding: 26px 0 54px;
+    }
+
+    section {
+      margin: 22px auto;
+      padding: 28px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    section.flat {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-bottom: 4px;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 0;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 30px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      color: #294158;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .grid-2,
+    .grid-3 {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .plain-box {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfdff;
+    }
+
+    .plain-box strong {
+      color: #18334b;
+    }
+
+    .note {
+      border-left: 4px solid var(--cyan);
+      padding: 12px 14px;
+      background: #eef9fb;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      color: #234752;
+    }
+
+    .warn {
+      border-left-color: var(--amber);
+      background: #fff7e8;
+      color: #5e4318;
+    }
+
+    .important {
+      border-left-color: var(--rose);
+      background: #fff0f3;
+      color: #67303b;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 820px;
+    }
+
+    th,
+    td {
+      padding: 12px 13px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: #edf4fb;
+      color: #263d55;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: #214b88;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .day {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .day::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 7px;
+      background: var(--blue);
+    }
+
+    .day:nth-of-type(2n)::before {
+      background: var(--green);
+    }
+
+    .day:nth-of-type(3n)::before {
+      background: var(--cyan);
+    }
+
+    .day-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 16px;
+      padding-left: 8px;
+    }
+
+    .date {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: #1d4e8f;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .stay {
+      min-width: 230px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f9fbfd;
+      color: #264055;
+    }
+
+    .stay span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .day-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: 22px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline li {
+      display: grid;
+      grid-template-columns: 116px minmax(0, 1fr);
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef2f5;
+    }
+
+    .timeline li:last-child {
+      border-bottom: 0;
+    }
+
+    .time {
+      font-weight: 800;
+      color: #173b64;
+      white-space: nowrap;
+    }
+
+    .detail-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .detail-list li {
+      margin: 0 0 8px;
+    }
+
+    .meal-grid {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .meal {
+      padding: 10px 12px;
+      border-left: 4px solid #c9d8e5;
+      background: #f8fbfd;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .meal strong {
+      color: #173b64;
+    }
+
+    .choice-list {
+      display: grid;
+      gap: 7px;
+      margin: 9px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .meal-choice {
+      padding: 9px 10px;
+      border: 1px solid #dde7ef;
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .choice-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 3px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .choice-badge {
+      display: inline-flex;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #eef6f1;
+      color: #276143;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .choice-note {
+      margin: 0;
+      color: #566879;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .visual-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 22px rgba(16, 32, 48, .08);
+    }
+
+    .visual-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #dce7ee;
+    }
+
+    .visual-card div {
+      padding: 11px 12px 13px;
+    }
+
+    .visual-card strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #18334b;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .visual-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .source-list {
+      columns: 2;
+      column-gap: 32px;
+      padding-left: 18px;
+    }
+
+    .source-list li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+    }
+
+    .photo-band {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+      margin: 18px 0 0;
+    }
+
+    .photo {
+      min-height: 210px;
+      border-radius: var(--radius);
+      background: #d8e4ee center / cover;
+      border: 1px solid rgba(255,255,255,.7);
+      box-shadow: var(--shadow);
+    }
+
+    .photo.usj {
+      background-image: url("https://images.unsplash.com/photo-1630164165552-681d6ae224a3?auto=format&fit=crop&w=1200&q=82");
+    }
+
+    .photo.osaka {
+      background-image: url("https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1200&q=82");
+    }
+
+    footer {
+      padding: 26px 0 48px;
+      color: #506276;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: 82vh;
+      }
+
+      .hero-facts,
+      .grid-2,
+      .grid-3,
+      .day-body,
+      .photo-band,
+      .visual-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head,
+      .day-head {
+        display: block;
+      }
+
+      .stay {
+        min-width: 0;
+        margin-top: 12px;
+      }
+
+      section {
+        padding: 22px 18px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero-inner,
+      main > section,
+      .sticky-nav-inner,
+      footer {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .timeline li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .source-list {
+        columns: 1;
+      }
+
+      .hero-inner {
+        padding-bottom: 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Version 4 updated 2026-06-21 · 考試分流與風險修正版</div>
+      <h1>2026 大阪關西家庭旅行攻略</h1>
+      <p class="hero-lead">6/30 到 7/8，以 Hotel Universal Port 與 Ocean Tsutenkaku 兩個已確認住宿為核心。這版不改原本 v2/v3，新增父子考後延後出發應變、7/2 行李寄放策略、杯麵整理券判斷，以及最後一晚不要太趕的調整。</p>
+      <div class="hero-facts">
+        <div class="hero-fact">
+          <span>去程主班</span>
+          <strong>AirAsia AK170<br>5 人先行 KHH 08:30 → KIX 12:40</strong>
+        </div>
+        <div class="hero-fact">
+          <span>6/30 分流</span>
+          <strong>父子 12:00 後出發<br>優先查 15:25-15:35 直飛 KIX</strong>
+        </div>
+        <div class="hero-fact">
+          <span>前兩晚住宿</span>
+          <strong>Hotel Universal Port<br>6/30 15:00 → 7/2 11:00</strong>
+        </div>
+        <div class="hero-fact">
+          <span>後六晚住宿</span>
+          <strong>Ocean Tsutenkaku<br>7/2 16:00 → 7/8 10:00</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sticky-nav" aria-label="頁面導覽">
+    <div class="sticky-nav-inner">
+      <a href="#adjustments">v4重點</a>
+      <a href="#summary">總覽</a>
+      <a href="#hotels">住宿與交通核心</a>
+      <a href="#visuals">照片速覽</a>
+      <a href="#daily">每日行程</a>
+      <a href="#transport">交通備忘</a>
+      <a href="#tickets">預約清單</a>
+      <a href="#backup">備案</a>
+      <a href="#sources">資料來源</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="adjustments">
+      <div class="section-head">
+        <div>
+          <h2>本版修正重點</h2>
+          <p class="sub">這頁是獨立 version4，原本 v2/v3 不修改。所有調整都以 7 人同行、暑假、兩間住宿已確定為前提。</p>
+        </div>
+        <span class="tag">風險優先</span>
+      </div>
+
+      <div class="grid-3">
+        <div class="note important">
+          <h3>6/30 改成兩批出發</h3>
+          <p>5 人照原 AK170 先到 Hotel Universal Port；父子考後再搭下午直飛或備案航線。第一天不排共同景點，只排會合、吃飯、睡覺。</p>
+        </div>
+        <div class="note warn">
+          <h3>7/2 不假設 Ocean 能寄放</h3>
+          <p>Ocean Tsutenkaku 是自助入住型住宿，行李寄放不可當主方案。改以新今宮/天王寺大型置物櫃、行李寄放店或等 16:00 入住為主。</p>
+        </div>
+        <div class="note">
+          <h3>7/7 先打包再夜遊</h3>
+          <p>teamLab 保留，但最後一晚下午回房休息與整理行李。中之島、堀江、心齋橋只選一條，避免 21:30 後才開始打包。</p>
+        </div>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">My CUPNOODLES 是當日整理券</span>
+        <span class="pill">Chicken Ramen 才需預約</span>
+        <span class="pill">USJ 7/1 避開停運設施</span>
+        <span class="pill">有馬週日巴士先訂位</span>
+      </div>
+    </section>
+
+    <section id="summary">
+      <div class="section-head">
+        <div>
+          <h2>行程總覽</h2>
+          <p class="sub">每天只安排一個主題，移動與用餐都抓保守時間。v4 特別處理 6/30 父子延後出發、7/2 行李、7/7 打包與夜間 teamLab 節奏。</p>
+        </div>
+        <span class="tag">不改原版，新增 V4</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>主題</th>
+              <th>住宿</th>
+              <th>三餐策略</th>
+              <th>主要交通</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6/30 二</td>
+              <td>5 人 AK170 先抵達；父子考後下午/晚間抵達 USJ 住宿區會合</td>
+              <td>Hotel Universal Port</td>
+              <td>兩批分流用餐；先到組 CityWalk 晚餐，晚到組以機場或便利商店補餐</td>
+              <td>先到組 KIX 巴士進 USJ；晚到組優先 JR 或仍有班次的機場巴士</td>
+            </tr>
+            <tr>
+              <td>7/1 三</td>
+              <td>USJ 全日，優先 Super Nintendo World 與夏季活動</td>
+              <td>Hotel Universal Port</td>
+              <td>飯店或便利商店早餐、園內午餐、CityWalk 晚餐</td>
+              <td>飯店步行到 USJ，晚上步行回飯店</td>
+            </tr>
+            <tr>
+              <td>7/2 四</td>
+              <td>退房移動、行李寄放處理、新世界/阿倍野輕鬆半日</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>飯店早餐、新世界午餐、天王寺/新世界晚餐</td>
+              <td>Universal City → 西九條 → 新今宮；行李先找大型置物櫃/寄放店</td>
+            </tr>
+            <tr>
+              <td>7/3 五</td>
+              <td>宇治平等院、抹茶街，有票才進 Nintendo Museum</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>房內早餐、宇治午餐、回大阪晚餐或房內簡餐</td>
+              <td>惠美須町 → 北浜 → 京阪宇治，Nintendo 用近鐵小倉步行</td>
+            </tr>
+            <tr>
+              <td>7/4 六</td>
+              <td>杯麵博物館大阪池田 + 勝尾寺達摩</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>房內早餐、池田午餐、梅田或房內晚餐</td>
+              <td>御堂筋線到梅田、阪急到池田，池田到勝尾寺建議分兩台計程車</td>
+            </tr>
+            <tr>
+              <td>7/5 日</td>
+              <td>有馬溫泉慢日，不硬排六甲跨山</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>房內早餐、有馬午餐、有馬或大阪晚餐</td>
+              <td>大阪梅田高速巴士往返有馬，少轉乘</td>
+            </tr>
+            <tr>
+              <td>7/6 一</td>
+              <td>EXPOCITY 室內日：NIFREL、LaLaport、VS PARK</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>房內早餐、LaLaport 午餐、EXPOCITY 或回大阪晚餐</td>
+              <td>御堂筋線到千里中央，轉大阪單軌到萬博記念公園</td>
+            </tr>
+            <tr>
+              <td>7/7 二</td>
+              <td>上午打包休息；中之島或堀江擇一；夜間 teamLab</td>
+              <td>Ocean Tsutenkaku</td>
+              <td>房內清冰箱早餐、市區午餐、天王寺/長居前晚餐</td>
+              <td>市區短程移動，下午回房休息，晚上御堂筋線到長居</td>
+            </tr>
+            <tr>
+              <td>7/8 三</td>
+              <td>新今宮搭南海往關空，CI167 回高雄</td>
+              <td>退房</td>
+              <td>房內簡早餐、關空早午餐、抵台後補餐</td>
+              <td>Ocean → 新今宮 → 南海 Rapi:t 或 Airport Express → KIX T1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">6/30 改兩批會合</span>
+        <span class="pill">7/2 行李先有備案</span>
+        <span class="pill">7/7 先打包再 teamLab</span>
+        <span class="pill">7/2 改新世界/阿倍野</span>
+        <span class="pill">回程改新今宮搭南海</span>
+        <span class="pill">7/5 不依賴六甲有馬纜車</span>
+        <span class="pill">7/6 teamLab 休館，改排 7/7</span>
+      </div>
+    </section>
+
+    <section id="hotels">
+      <div class="section-head">
+        <div>
+          <h2>住宿與交通核心</h2>
+          <p class="sub">新的 V2 以通天閣、惠美須町、新今宮與天王寺為後六晚交通核心。</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="plain-box">
+          <h3>Hotel Universal Port｜6/30-7/2</h3>
+          <p>確認入住 6/30 15:00、退房 7/2 11:00。官方與大阪觀光資料顯示飯店約為 JR Universal City 站步行 3 分鐘，從飯店到 USJ 入口與 CityWalk 都適合步行。</p>
+          <ul class="detail-list">
+            <li>抵達日：KIX 到 USJ 優先搭機場利木津巴士，省去 7 人拖行李轉 JR。</li>
+            <li>USJ 日：早上步行進園，晚上不必趕末班車，對小孩與青少年最友善。</li>
+            <li>早餐：Port Dining ricorico 官方標示 7:00-10:30，最後入場 10:00；若要搶開園，改便利商店早餐更快。</li>
+          </ul>
+        </div>
+
+        <div class="plain-box">
+          <h3>Ocean Tsutenkaku｜7/2-7/8</h3>
+          <p>確認 2 間房，7/2 16:00 入住、7/8 10:00 退房。訂房資料與訂房網站評價顯示為公寓式住宿，具洗衣機、爐具與廚房用品，步行可到惠美須町、通天閣與新世界。</p>
+          <ul class="detail-list">
+            <li>地鐵核心：惠美須町站可接堺筋線，動物園前可接御堂筋線與堺筋線。</li>
+            <li>機場核心：回程不走日本橋，改走新今宮搭南海，轉乘最少。</li>
+            <li>採買：新世界市場、スーパー玉出恵美須店、產直市場よってって天王寺/てんしば店、便利商店都在可步行範圍，晚餐後可補早餐與水果。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="photo-band" aria-hidden="true">
+        <div class="photo usj"></div>
+        <div class="photo osaka"></div>
+      </div>
+    </section>
+
+    <section id="visuals">
+      <div class="section-head">
+        <div>
+          <h2>照片速覽</h2>
+          <p class="sub">先用畫面建立方位感。每張照片都對應到實際行程中的住宿、景點或交通節點。</p>
+        </div>
+      </div>
+
+      <div class="visual-grid">
+        <a class="visual-card" href="https://osaka-info.jp/en/spot/hotel-universal-port/" target="_blank" rel="noreferrer">
+          <img src="https://osaka-info.jp/spot/images/282c01539b2b76ddfcbeb5383508e2f1d3d8a1da.jpg" alt="Hotel Universal Port">
+          <div><strong>Hotel Universal Port</strong><span>前兩晚住 USJ 旁，早進園與晚回飯店都很省力。</span></div>
+        </a>
+        <a class="visual-card" href="https://osaka-info.jp/special/e-pass-usj/" target="_blank" rel="noreferrer">
+          <img src="https://osaka-info.jp/special/e-pass-usj/common/img/ogp.jpg" alt="Universal Studios Japan Super Nintendo World">
+          <div><strong>USJ / Super Nintendo World</strong><span>7/1 全日主軸，先處理整理券或 Express 時段。</span></div>
+        </a>
+        <a class="visual-card" href="https://osaka-info.jp/en/spot/tsutenkaku/" target="_blank" rel="noreferrer">
+          <img src="https://cdn.osaka-info.jp/cache/page_translation_500/b7d76c74-04bf-11e8-8318-06326e701dd4.jpeg" alt="Tsutenkaku and Shinsekai">
+          <div><strong>新世界 / 通天閣</strong><span>7/2 換住宿後只排周邊半日，少拉車、好吃飯。</span></div>
+        </a>
+        <a class="visual-card" href="https://www.abenoharukas-300.jp/en/observatory/information.html" target="_blank" rel="noreferrer">
+          <img src="https://www.abenoharukas-300.jp/en/observatory/assets/images/common/ogimg.png" alt="Abeno Harukas 300">
+          <div><strong>阿倍野 Harukas 300</strong><span>天氣好就看夕景夜景，累了可直接改天王寺晚餐。</span></div>
+        </a>
+        <a class="visual-card" href="https://www.byodoin.or.jp/en/learn/architecture/" target="_blank" rel="noreferrer">
+          <img src="https://www.byodoin.or.jp/common/img/architecture-houou-01.jpg" alt="Byodoin Phoenix Hall in Uji">
+          <div><strong>宇治平等院</strong><span>宇治日的穩定核心，Nintendo 沒票也不會浪費這天。</span></div>
+        </a>
+        <a class="visual-card" href="https://museum.nintendo.com/en/index.html" target="_blank" rel="noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nintendo_Museum_Entrance.jpg/960px-Nintendo_Museum_Entrance.jpg" alt="Nintendo Museum">
+          <div><strong>Nintendo Museum</strong><span>有票才進館，交通端點要用小倉站步行。</span></div>
+        </a>
+        <a class="visual-card" href="https://osaka-info.jp/en/spot/gastronomy-cupnoodle/" target="_blank" rel="noreferrer">
+          <img src="https://cdn.osaka-info.jp/cache/page_translation_500/6d36d814-c550-11e9-942a-06326e701dd4.jpeg" alt="CupNoodles Museum Osaka Ikeda">
+          <div><strong>杯麵博物館大阪池田</strong><span>7/4 上午做 My CUPNOODLES，下午再去勝尾寺。</span></div>
+        </a>
+        <a class="visual-card" href="https://osaka-info.jp/en/spot/katsuoji/" target="_blank" rel="noreferrer">
+          <img src="https://cdn.osaka-info.jp/cache/page_translation_500/9fe1c21c-e024-11e9-9c9c-06326e701dd4.jpeg" alt="Katsuoji Temple">
+          <div><strong>勝尾寺</strong><span>達摩寺拍照很有記憶點，但夏天不再加箕面瀑布。</span></div>
+        </a>
+        <a class="visual-card" href="https://www.japan-guide.com/e/e3558.html" target="_blank" rel="noreferrer">
+          <img src="https://res-3.cloudinary.com/jnto/image/upload/w_1000,h_667,c_fill,f_auto,fl_lossy,q_auto/v1646644556/hyogo/M_00099_003" alt="Arima Onsen">
+          <div><strong>有馬溫泉</strong><span>7/5 當作慢日，泡湯、老街、早點回大阪。</span></div>
+        </a>
+        <a class="visual-card" href="https://www.nifrel.jp/en/" target="_blank" rel="noreferrer">
+          <img src="https://cdn.osaka-info.jp/cache/page_translation_500/30be7644-96ee-11e8-957e-06326e701dd4.jpeg" alt="NIFREL EXPOCITY">
+          <div><strong>NIFREL / EXPOCITY</strong><span>7/6 室內比例高，適合雨天與青少年分組活動。</span></div>
+        </a>
+        <a class="visual-card" href="https://www.teamlab.art/e/botanicalgarden/" target="_blank" rel="noreferrer">
+          <img src="https://assets.team-lab.com/b5EBo9Uo-OK6SM09ZTkEZQ/9cf18fad-ce15-4688-c57a-4c886f573f00/width=1200,format=jpeg" alt="teamLab Botanical Garden Osaka">
+          <div><strong>teamLab Botanical Garden</strong><span>7/7 夜間戶外展，晚餐要先吃完再進長居植物園。</span></div>
+        </a>
+        <a class="visual-card" href="https://osaka-info.jp/en/spot/nakanoshima-museum/" target="_blank" rel="noreferrer">
+          <img src="https://osaka-info.jp/spot/images/43485fb30fc778a1a6683aa58d3b77c579958371.jpg" alt="Nakanoshima Museum of Art Osaka">
+          <div><strong>中之島美術館周邊</strong><span>最後完整一天排市區輕鬆日，留體力給晚上 teamLab。</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="daily" class="flat">
+      <section class="day" id="day-0630">
+        <div class="day-head">
+          <div>
+            <span class="date">6/30 星期二｜兩批抵達大阪</span>
+            <h2>5 人先進 Hotel Universal Port，父子考後晚間會合</h2>
+            <p class="sub">這天最大的原則是「不要硬湊全員同班」。5 人照 AK170 先飛，父子 12:00 後再出發；所有景點取消，只保留入住、會合、晚餐與睡眠。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Hotel Universal Port</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">05:40</span><span>A 組 5 人抵達高雄機場，照原訂 AK170 報到、托運、早餐與安檢。</span></li>
+              <li><span class="time">08:30</span><span>A 組 AirAsia AK170 高雄 KHH 起飛，12:40 抵達 KIX T1。</span></li>
+              <li><span class="time">12:00</span><span>B 組父子考試結束後出發。行李前一晚整理好，護照、票券、充電線獨立小包。</span></li>
+              <li><span class="time">13:10</span><span>A 組辦入境、領行李、補交通卡或 eSIM；若入境順利，可在關空先吃午餐。</span></li>
+              <li><span class="time">14:10</span><span>A 組搭關西機場利木津巴士往 Universal Studios Japan，車程約 70-80 分；若錯過就等下一班或改 JR。</span></li>
+              <li><span class="time">15:30</span><span>A 組抵達 Hotel Universal Port 辦入住。先確認兩間房、房卡、父子晚到是否需要補登記。</span></li>
+              <li><span class="time">15:25-15:35</span><span>B 組優先查 KHH → KIX 下午直飛候選：EVA 15:25 或華航/其他 15:35 左右班次，以實際有票為準。</span></li>
+              <li><span class="time">19:35-20:10</span><span>B 組若搭下午直飛，約晚間抵達 KIX；只走最少轉乘路線，不再安排購物。</span></li>
+              <li><span class="time">21:30-22:45</span><span>B 組抵達 Universal City/飯店會合。A 組可先吃晚餐，父子到飯店後補便利商店或 CityWalk 輕食。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>A 組在高雄機場吃；B 組考前在家或學校附近吃穩，不靠機上餐。</div>
+              <div class="meal"><strong>午餐：</strong>A 組關空或巴士前補餐；B 組 12:00 後先吃簡單午餐再去機場，避免空腹趕班機。</div>
+              <div class="meal"><strong>晚餐：</strong>A 組 CityWalk 先吃；B 組到飯店後用便利商店、飯店周邊或外帶輕食補，不硬湊同桌晚餐。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>A 組首選：KATE 關西機場巴士 KIX T1 → Universal Studios Japan，單程成人 1,800 日圓、兒童 900 日圓，免轉乘但先到先搭。</li>
+              <li>B 組晚到首選：若當晚仍有 KATE 到 USJ 班次就搭巴士；否則 JR 關空快速到西九條，轉 JR 夢咲線到 Universal City。</li>
+              <li>B 組若班機延誤到太晚，改搭南海到新今宮/難波後計程車到 Hotel Universal Port，不要深夜拖行李多次轉乘。</li>
+              <li>A 組到飯店後用訂房姓名確認父子可晚到補登記；若飯店要求全員護照，父子抵達後再補。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0701">
+        <div class="day-head">
+          <div>
+            <span class="date">7/1 星期三｜Universal Studios Japan</span>
+            <h2>USJ 全日，早進園、晚點回飯店</h2>
+            <p class="sub">7/1 正好進入夏季活動期。這天只排 USJ，不再加海遊館或梅田夜景，讓大家有體力把園區玩完整。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Hotel Universal Port</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">06:45</span><span>早餐。若要搶 Super Nintendo World，建議便利商店或飯店外帶式早餐。</span></li>
+              <li><span class="time">07:30</span><span>從飯店步行到 USJ 排隊。官方提醒實際入園可能早於公布開園時間。</span></li>
+              <li><span class="time">入園後</span><span>先用 USJ App 確認 Super Nintendo World 整理券或 Express 進場時段。</span></li>
+              <li><span class="time">上午</span><span>優先排 Mario Kart、Yoshi、Harry Potter 或熱門室內設施，避開中午高溫。</span></li>
+              <li><span class="time">12:00</span><span>園內午餐，選有冷氣座位的餐廳，不建議離園再回來。</span></li>
+              <li><span class="time">16:15</span><span>NO LIMIT! Parade: Discover U!!! 夏季時段依官方約 16:15，前後以當日 Show Schedule 為準。</span></li>
+              <li><span class="time">傍晚</span><span>玩互動區、看商店與補拍照。累的人可先回飯店休息，距離很近。</span></li>
+              <li><span class="time">20:00</span><span>CityWalk 晚餐，回飯店洗澡洗衣。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>Hotel Universal Port 早餐可用，但若想搶開園，前一晚先買飯糰、麵包、優格。</div>
+              <div class="meal"><strong>午餐：</strong>園內餐廳，避開 12:00 尖峰可提早 11:15 或延後 13:30。</div>
+              <div class="meal"><strong>晚餐：</strong>CityWalk 用餐，飯後買隔天移動日的水與早餐。</div>
+            </div>
+
+            <h3>交通與注意</h3>
+            <ul class="detail-list">
+              <li>Hotel Universal Port → USJ 入口：步行，經 Universal CityWalk，約 8-12 分鐘。</li>
+              <li>7/1 園內不要排 Jurassic Park - The Ride，官方暫停期間為 2026/6/24-7/7。</li>
+              <li>Space Fantasy、Sesame Street 4-D、Shrek 4-D 也在暫停或長期停運名單內，行前一晚再看官方停運頁。</li>
+              <li>7 人同行可先約定集合點，青少年想逛商店時不要整團被拖慢。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0702">
+        <div class="day-head">
+          <div>
+            <span class="date">7/2 星期四｜換住宿 + 行李處理 + 新世界/阿倍野</span>
+            <h2>移動日先解決行李，再玩住處周邊</h2>
+            <p class="sub">Ocean Tsutenkaku 不當作可寄放行李的飯店處理。今天的成敗在行李：先找大型置物櫃或寄放店，16:00 入住後再決定通天閣或阿倍野。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">08:30</span><span>飯店早餐或 CityWalk 簡早餐，整理行李。</span></li>
+              <li><span class="time">10:30</span><span>Hotel Universal Port 退房，最晚 11:00 前完成。</span></li>
+              <li><span class="time">11:10</span><span>JR Universal City → 西九條 → 新今宮。拖行李時不要再進難波大站。</span></li>
+              <li><span class="time">12:10</span><span>抵達新今宮後先處理行李。主方案是大型置物櫃或預約型寄放店；不要先拖到 Ocean 門口等。</span></li>
+              <li><span class="time">12:45</span><span>新世界午餐。若大型置物櫃不足，分兩批處理：一批顧行李，一批先買午餐或找寄放點。</span></li>
+              <li><span class="time">14:00</span><span>只排新世界散步、通天閣外觀或天王寺 MIO / Q's Mall 室內休息。不要再加遠景點。</span></li>
+              <li><span class="time">16:00</span><span>Ocean Tsutenkaku 自助入住，確認兩間房、洗衣機、廚房、垃圾規則與密碼。</span></li>
+              <li><span class="time">17:30</span><span>體力好才去阿倍野 Harukas 300；若行李日已經消耗，改 SpaWorld、天王寺商場或房內洗衣。</span></li>
+              <li><span class="time">19:30</span><span>天王寺或新世界晚餐，回程順路採買早餐、洗衣精、水果。今晚要把洗衣機試跑起來。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>Hotel Universal Port 或 CityWalk，今天不需要搶時間。</div>
+              <div class="meal"><strong>午餐：</strong>新世界串炸、烏龍麵、洋食；選座位多、上菜快的店。</div>
+              <div class="meal"><strong>晚餐：</strong>天王寺 MIO、Abeno Q's Mall 或新世界；餐後採買房內早餐。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>飯店 → Universal City 站：步行。</li>
+              <li>JR Universal City → 西九條：JR 夢咲線約 5-6 分。</li>
+              <li>西九條 → 新今宮：JR 大阪環狀線或轉乘路線，約 15-20 分，實際依班次。</li>
+              <li>新今宮 → Ocean Tsutenkaku：步行約 10-12 分；但 16:00 前不建議拖行李到住宿門口等待。</li>
+              <li>Ocean Tsutenkaku 是自助入住型住宿，已查到「無櫃台/不提供行李寄放」的資訊；除非訂房訊息明確回覆可寄放，否則以不可寄放規劃。</li>
+              <li>7 人大型行李請抓 4-6 個大型置物櫃或預約寄放店，不要只靠一個車站剛好有空櫃。</li>
+              <li>Ocean → 阿倍野 Harukas：步行到天王寺/大阪阿部野橋一帶約 15-20 分，或從動物園前搭御堂筋線 1 站到天王寺。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0703">
+        <div class="day-head">
+          <div>
+            <span class="date">7/3 星期五｜宇治 + Nintendo Museum</span>
+            <h2>宇治抹茶、平等院，有票才進 Nintendo Museum</h2>
+            <p class="sub">這天是京都南側，不排清水寺、伏見稻荷那種去年可能走過的擁擠路線。Nintendo 沒票時，行程也能用宇治與伏見完成。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">08:00</span><span>房內早餐。今天移動較長，先吃飽再出門。</span></li>
+              <li><span class="time">08:45</span><span>Ocean → 惠美須町站，搭堺筋線到北浜，轉京阪本線往中書島，再轉京阪宇治線到宇治。</span></li>
+              <li><span class="time">10:30</span><span>平等院、宇治川、表參道。鳳凰堂內部參觀夏季有調整，當天依現場公告。</span></li>
+              <li><span class="time">12:30</span><span>宇治午餐與抹茶甜點，不排太多店，保留排隊彈性。</span></li>
+              <li><span class="time">14:30</span><span>若有 Nintendo Museum 門票，移動到近鐵小倉或 JR 小倉後步行入館。</span></li>
+              <li><span class="time">備案</span><span>若沒 Nintendo 票，改伏見月桂冠大倉紀念館或宇治源氏物語周邊，傍晚早點回大阪。</span></li>
+              <li><span class="time">18:30</span><span>回大阪晚餐，住處附近可選天王寺、新世界，或買熟食回房內簡餐。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內煎蛋、吐司、優格、水果，利用 Ocean 的廚房。</div>
+              <div class="meal"><strong>午餐：</strong>宇治茶蕎麥、親子丼或茶香甜點，避開只排甜食造成下午餓。</div>
+              <div class="meal"><strong>晚餐：</strong>回天王寺/新世界吃，若大家累就超市熟食加房內洗衣。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 惠美須町站：步行約 2-5 分。</li>
+              <li>惠美須町 → 北浜：Osaka Metro 堺筋線直達約 10 分。</li>
+              <li>北浜 → 中書島 → 宇治：京阪本線與宇治線，約 50-60 分。</li>
+              <li>宇治 → Nintendo Museum：不可搭計程車到館。官方要求公共交通並步行，建議京阪/近鐵/JR 接到小倉站後步行。</li>
+              <li>回程：小倉/宇治 → 京都或中書島轉回大阪，抓 90 分鐘回到住處。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0704">
+        <div class="day-head">
+          <div>
+            <span class="date">7/4 星期六｜池田 + 勝尾寺</span>
+            <h2>杯麵博物館大阪池田，拿整理券後再去勝尾寺</h2>
+            <p class="sub">My CUPNOODLES Factory 是當日整理券，不接受電話或網路預約；Chicken Ramen Factory 才是預約制。週六要早到，拿不到就改看展區並提早去勝尾寺。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">08:00</span><span>房內早餐，帶水與小毛巾。</span></li>
+              <li><span class="time">08:45</span><span>動物園前/天王寺 → 梅田，轉阪急寶塚線到池田。</span></li>
+              <li><span class="time">09:35</span><span>CUPNOODLES MUSEUM Osaka Ikeda 開館後先拿 My CUPNOODLES Factory 時段整理券；若熱門時段滿了，接受晚一點體驗或改只看展。</span></li>
+              <li><span class="time">10:00</span><span>依整理券時段做 My CUPNOODLES。體驗約 45 分，忙碌時可能拉到 60-90 分。</span></li>
+              <li><span class="time">11:45</span><span>池田站周邊午餐，吃完再往勝尾寺。若沒拿到整理券，午餐可提前到 11:15。</span></li>
+              <li><span class="time">13:00</span><span>7 人建議池田 → 勝尾寺分兩台計程車，省去多次轉乘；若想省錢則回梅田/千里中央/箕面萱野轉巴士。</span></li>
+              <li><span class="time">14:00</span><span>勝尾寺達摩散步，拍照、買小達摩、慢慢逛。若早上杯麵滿位，這段可提前到 13:15。</span></li>
+              <li><span class="time">16:30</span><span>從勝尾寺下山，巴士到箕面萱野，轉北大阪急行/御堂筋線回大阪。</span></li>
+              <li><span class="time">18:30</span><span>梅田、難波或住處附近晚餐。若孩子累，直接買熟食回公寓。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內早餐，今天早出門但不用像 USJ 那麼趕。</div>
+              <div class="meal"><strong>午餐：</strong>池田站附近先吃飽，再上山。</div>
+              <div class="meal"><strong>晚餐：</strong>梅田或難波彈性用餐；回房後洗衣整理。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 動物園前：步行約 8-12 分；也可惠美須町轉堺筋線到日本橋再接近鐵/地鐵，但早上用御堂筋線較簡單。</li>
+              <li>My CUPNOODLES Factory 需要當日整理券；官方明寫不接受電話或網路預約。Chicken Ramen Factory 若想做，才需要提前預約。</li>
+              <li>動物園前 → 梅田：御堂筋線約 13-15 分。</li>
+              <li>阪急大阪梅田 → 池田：阪急寶塚線約 20 分，博物館從池田站步行。</li>
+              <li>池田 → 勝尾寺：若用大眾交通會繞，7 人建議分兩台計程車；回程用勝尾寺巴士到箕面萱野較順。</li>
+              <li>箕面萱野 → 難波/動物園前：北大阪急行直通御堂筋線，免換線到市中心。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0705">
+        <div class="day-head">
+          <div>
+            <span class="date">7/5 星期日｜有馬溫泉慢日</span>
+            <h2>有馬只排溫泉與老街，不硬接六甲山</h2>
+            <p class="sub">六甲有馬纜車官方公告 2026/6/1-7/17 暫停，這趟不要把六甲夜景當主行程。改成有馬泡湯、散步、午餐與回大阪休息。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">08:30</span><span>房內早餐，比前兩天晚一點出門。</span></li>
+              <li><span class="time">09:45</span><span>前往大阪梅田高速巴士站，搭直達有馬溫泉巴士。</span></li>
+              <li><span class="time">11:30</span><span>抵達有馬，先午餐再泡湯，避免空腹泡湯。</span></li>
+              <li><span class="time">13:00</span><span>金之湯/銀之湯或選日歸溫泉，分組行動也可以。</span></li>
+              <li><span class="time">15:30</span><span>有馬老街、碳酸煎餅、伴手禮、咖啡休息。</span></li>
+              <li><span class="time">17:00</span><span>巴士或電車回大阪。週日建議先訂回程巴士座位。</span></li>
+              <li><span class="time">19:00</span><span>回大阪晚餐，早點回房洗衣與休息。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內慢早餐，補蛋白質與水分。</div>
+              <div class="meal"><strong>午餐：</strong>有馬老街定食、釜飯、蕎麥或咖啡店輕食。</div>
+              <div class="meal"><strong>晚餐：</strong>大阪梅田或回新世界；泡湯日不要排太晚。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 梅田：動物園前搭御堂筋線到梅田。</li>
+              <li>大阪梅田 → 有馬溫泉：高速巴士約 60 分，成人常見約 1,400 日圓，週日建議預約。</li>
+              <li>若巴士滿位：梅田/大阪 → 三田或谷上方向轉神戶電鐵到有馬溫泉，轉乘較多，只當備案。</li>
+              <li>不建議當天接六甲山：Rokko-Arima Ropeway 在旅日期間公告暫停，改由神戶側上六甲會讓行程過長。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0706">
+        <div class="day-head">
+          <div>
+            <span class="date">7/6 星期一｜EXPOCITY 室內日</span>
+            <h2>NIFREL、LaLaport、VS PARK，一天都在萬博記念公園站旁</h2>
+            <p class="sub">週一 teamLab 休館，所以安排室內比例高、雨天也能玩的 EXPOCITY。這天不用再拉去京都或神戶。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">09:00</span><span>房內早餐，出門前先查 NIFREL 與 VS PARK 當日票況。</span></li>
+              <li><span class="time">09:45</span><span>動物園前 → 千里中央，轉大阪單軌到萬博記念公園。</span></li>
+              <li><span class="time">11:00</span><span>NIFREL 互動水族館/動物展示，抓 90-120 分鐘。</span></li>
+              <li><span class="time">13:00</span><span>LaLaport EXPOCITY 午餐，餐後讓大家分組逛街或休息。</span></li>
+              <li><span class="time">15:00</span><span>VS PARK 運動娛樂，適合青少年放電；不玩的長輩可逛 LaLaport。</span></li>
+              <li><span class="time">17:30</span><span>OSAKA WHEEL 或萬博紀念公園外圍拍照，依天氣決定。</span></li>
+              <li><span class="time">18:30</span><span>EXPOCITY 晚餐，避開回大阪後再找餐廳。</span></li>
+              <li><span class="time">20:00</span><span>搭單軌與御堂筋線回 Ocean Tsutenkaku。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內早餐，今天不需要早起排隊。</div>
+              <div class="meal"><strong>午餐：</strong>LaLaport 餐廳或美食街，座位多、選擇多。</div>
+              <div class="meal"><strong>晚餐：</strong>EXPOCITY 內解決，回程只負責回家與洗衣。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 動物園前：步行約 8-12 分。</li>
+              <li>動物園前 → 千里中央：御堂筋線/北大阪急行直通，約 35-40 分。</li>
+              <li>千里中央 → 萬博記念公園：大阪單軌，約 5-6 分。</li>
+              <li>萬博記念公園站 → NIFREL/LaLaport/VS PARK：步行約 2-8 分，全區集中。</li>
+              <li>回程照原路，若太累可從梅田或難波買消夜再回房。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0707">
+        <div class="day-head">
+          <div>
+            <span class="date">7/7 星期二｜打包休息 + 市區擇一 + teamLab</span>
+            <h2>最後完整一天先收行李，晚上再去長居植物園 teamLab</h2>
+            <p class="sub">這版把最後一晚的風險降下來：上午先打包與洗衣，下午中之島或堀江擇一，晚上 teamLab 後只回房睡覺，不再補採買。</p>
+          </div>
+          <div class="stay"><span>住宿</span>Ocean Tsutenkaku</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">08:30</span><span>房內清冰箱早餐。把回程衣物、伴手禮、液體、托運行李先整理到 80%。</span></li>
+              <li><span class="time">10:30</span><span>上午不急著出門。完成最後一輪洗衣、烘乾或晾衣，確認 7/8 退房密碼與垃圾規則。</span></li>
+              <li><span class="time">12:00</span><span>出門午餐。今天只選一條：A 中之島科學/美術，或 B 堀江/心齋橋最後採買。</span></li>
+              <li><span class="time">13:30</span><span>A 案：中之島科學館或中之島美術館擇一。B 案：堀江 Orange Street 或心齋橋擇一。</span></li>
+              <li><span class="time">16:00</span><span>回 Ocean 休息 90 分鐘，洗澡、換輕便鞋、補水。行李此時應只剩睡衣與明早盥洗包未收。</span></li>
+              <li><span class="time">17:45</span><span>天王寺或長居前晚餐先吃飽。teamLab 是戶外夜展，展場不是用餐重點。</span></li>
+              <li><span class="time">19:20</span><span>動物園前/天王寺搭御堂筋線到長居，3 號出口步行約 10 分到植物園。</span></li>
+              <li><span class="time">19:45</span><span>teamLab Botanical Garden Osaka，7/7 開放時段約 19:45-21:30，最後入場 20:30。</span></li>
+              <li><span class="time">21:15</span><span>開始往出口移動。回 Ocean 後只收盥洗包與充電器，22:30 前讓大家睡覺。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內清冰箱，消耗前幾天買的水果、優格、麵包。</div>
+              <div class="meal"><strong>午餐：</strong>依當天選線決定：中之島線吃肥後橋/美術館周邊；採買線吃堀江/心齋橋。</div>
+              <div class="meal"><strong>晚餐：</strong>長居前先吃飽，建議天王寺或長居站周邊，避免夜展後才找餐廳。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 北浜/淀屋橋/肥後橋：可用惠美須町堺筋線到北浜，再步行或轉乘到中之島。</li>
+              <li>中之島與堀江/心齋橋今天只選一邊。若真的想兩邊都去，請把 teamLab 改備案，不要三段全塞。</li>
+              <li>Ocean → 長居：動物園前或天王寺搭御堂筋線到長居，從 3 號出口步行約 10 分到植物園。</li>
+              <li>teamLab 7/6 休館，7/7 才排；若大雨或雷雨警報，取消夜展，改早回房睡覺。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day-0708">
+        <div class="day-head">
+          <div>
+            <span class="date">7/8 星期三｜回程</span>
+            <h2>Ocean Tsutenkaku 退房，新今宮搭南海到關空</h2>
+            <p class="sub">CI167 是中午 12:00 起飛，不能等到 10:00 退房才出門。目標 09:00-09:15 到 KIX T1。</p>
+          </div>
+          <div class="stay"><span>住宿</span>退房日</div>
+        </div>
+
+        <div class="day-body">
+          <div>
+            <h3>時間安排</h3>
+            <ul class="timeline">
+              <li><span class="time">06:45</span><span>房內簡早餐，最後檢查護照、行李、充電器、退房規則。</span></li>
+              <li><span class="time">07:45</span><span>離開 Ocean Tsutenkaku。拖行李建議分兩台計程車到南海新今宮站。</span></li>
+              <li><span class="time">08:10</span><span>抵達南海新今宮站，購票或使用已買好的 Rapi:t/南海票券。</span></li>
+              <li><span class="time">08:20</span><span>搭南海 Rapi:t 或 Airport Express 往 Kansai Airport。</span></li>
+              <li><span class="time">09:10</span><span>抵達 KIX T1，辦理 CI167 報到與托運。</span></li>
+              <li><span class="time">10:00</span><span>安檢前後早午餐、買伴手禮。</span></li>
+              <li><span class="time">12:00</span><span>China Airlines CI167 關西 KIX 起飛。</span></li>
+              <li><span class="time">14:25</span><span>抵達高雄 KHH。</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>三餐</h3>
+            <div class="meal-grid">
+              <div class="meal"><strong>早餐：</strong>房內清淡簡餐，避免拖行李又找店。</div>
+              <div class="meal"><strong>午餐：</strong>關空早午餐或機上餐，登機前先讓青少年吃到東西。</div>
+              <div class="meal"><strong>晚餐：</strong>抵達高雄後看家人狀態補餐。</div>
+            </div>
+
+            <h3>交通細節</h3>
+            <ul class="detail-list">
+              <li>Ocean → 南海新今宮：步行約 10-12 分，但回程有行李，建議兩台計程車 5 分鐘短接。</li>
+              <li>南海新今宮 → 關西機場：Rapi:t 或 Airport Express 都可；Rapi:t 有指定座與行李空間，7 人回程更舒服。</li>
+              <li>南海官方標示 Rapi:t 難波到關空最快 34 分，Airport Express 約 45 分；新今宮上車請以當日班次為準。</li>
+              <li>不用繞回市中心轉乘，因為住宿就在通天閣/新今宮側。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="transport">
+      <div class="section-head">
+        <div>
+          <h2>交通備忘</h2>
+          <p class="sub">把全程用得到的交通核心濃縮成一張表，現場查 Google Maps 時可用這些站名當起點。</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>情境</th>
+              <th>建議路線</th>
+              <th>理由</th>
+              <th>提醒</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KIX 到 USJ 飯店</td>
+              <td>KIX T1 利木津巴士 → USJ → 步行 Hotel Universal Port</td>
+              <td>7 人拖行李少轉乘，比 JR 更穩。</td>
+              <td>班次與月台當天看 KATE；人多時提早排。</td>
+            </tr>
+            <tr>
+              <td>USJ 飯店到 Ocean</td>
+              <td>Universal City → 西九條 → 新今宮 → 計程車或步行 Ocean</td>
+              <td>直覺、站體較容易理解，不必拖去難波大站。</td>
+              <td>行李多時新今宮到 Ocean 分兩台計程車。</td>
+            </tr>
+            <tr>
+              <td>Ocean 到京都南側</td>
+              <td>惠美須町 → 北浜 → 京阪中書島 → 宇治</td>
+              <td>從堺筋線接京阪最順，不必繞大阪站。</td>
+              <td>Nintendo Museum 端點用小倉站步行，不搭計程車到館。</td>
+            </tr>
+            <tr>
+              <td>Ocean 到大阪北部</td>
+              <td>動物園前/天王寺 → 御堂筋線 → 梅田/千里中央</td>
+              <td>御堂筋線貫穿大阪，對後六晚最常用。</td>
+              <td>尖峰時段 7 人要預留分散上車的可能。</td>
+            </tr>
+            <tr>
+              <td>Ocean 到關空</td>
+              <td>Ocean → 新今宮 → 南海 Rapi:t 或 Airport Express → KIX T1</td>
+              <td>住宿地點離新今宮近，回程最少轉乘。</td>
+              <td>CI167 12:00 起飛，建議 07:45 離開住宿。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tickets">
+      <div class="section-head">
+        <div>
+          <h2>預約與行前確認</h2>
+          <p class="sub">這些項目最容易影響行程是否成立，建議出發前一週與前一天各確認一次。</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="plain-box">
+          <h3>必查</h3>
+          <ul class="detail-list">
+            <li>AK170 與 CI167 航班狀態、行李額度、報到櫃台。</li>
+            <li>6/30 父子下午出發航班：優先查 KHH → KIX 15:25-15:35 直飛；若無票，再查 KHH → TPE → KIX 或隔日補飛。</li>
+            <li>USJ 開園時間、Express Pass、Super Nintendo World 入場方式。</li>
+            <li>Ocean Tsutenkaku 自助入住信件、門禁密碼、16:00 前行李寄放可能性。若沒有明確回覆，視為不可寄放。</li>
+          </ul>
+        </div>
+        <div class="plain-box">
+          <h3>要先買或預約</h3>
+          <ul class="detail-list">
+            <li>Nintendo Museum：門票以官方抽選/釋出為主，沒有票就不要硬排。</li>
+            <li>teamLab Botanical Garden Osaka：7/7 夜間票，注意雨天與改期規則。</li>
+            <li>有馬溫泉高速巴士：週日往返建議預約座位。</li>
+            <li>USJ Express Pass：若孩子指定 Mario Kart 或 Harry Potter，請在出發前決定要不要買，7 人當天臨時買風險高。</li>
+          </ul>
+        </div>
+        <div class="plain-box">
+          <h3>可現場決定</h3>
+          <ul class="detail-list">
+            <li>通天閣或 Harukas 300 擇一，依天氣與體力。</li>
+            <li>My CUPNOODLES Factory：不用網路預約，但要當日拿整理券；滿位就改只看展。</li>
+            <li>勝尾寺上下山交通，池田到勝尾寺可計程車或公車轉乘。</li>
+            <li>中之島科學館/美術館擇一，不要兩個都塞。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="backup">
+      <div class="section-head">
+        <div>
+          <h2>備案</h2>
+          <p class="sub">7 月大阪熱且容易下雨，備案要能直接替換，不破壞整體交通。</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="note important">
+          <h3>父子 6/30 買不到下午直飛</h3>
+          <p>不要勉強趕 AK170。先查高雄下午直飛；若無票，改桃園轉飛或 7/1 一早補飛。5 人照常住 Hotel Universal Port，7/1 USJ 可改成「先入園組」與「父子抵達後會合組」。</p>
+        </div>
+        <div class="note important">
+          <h3>7/2 找不到大型置物櫃</h3>
+          <p>不要拖 7 人行李逛新世界。改分兩台計程車到天王寺/難波大型寄放點，或找預約型 luggage storage 店；景點縮成午餐、室內商場、16:00 入住。</p>
+        </div>
+        <div class="note warn">
+          <h3>Nintendo 沒票</h3>
+          <p>7/3 改成平等院、宇治抹茶、宇治川散步，再接伏見月桂冠大倉紀念館或咖啡休息。這樣仍然是京都南側一日，不會浪費交通。</p>
+        </div>
+        <div class="note warn">
+          <h3>USJ 下雨或太熱</h3>
+          <p>優先室內設施與餐廳休息，下午看官方 Show Schedule。飯店離園近，可以讓部分家人先回飯店，晚上再到 CityWalk 集合吃飯。</p>
+        </div>
+        <div class="note warn">
+          <h3>有馬當天很累</h3>
+          <p>取消有馬，改住處周邊慢日：天王寺動物園外圍、てんしば、阿倍野、SpaWorld 或房內洗衣。這是最容易恢復體力的備案。</p>
+        </div>
+        <div class="note warn">
+          <h3>杯麵整理券拿不到</h3>
+          <p>改看展區與紀念品店，午餐提前，13:15 左右往勝尾寺。這樣下午不會被壓縮，也不用在博物館空等。</p>
+        </div>
+        <div class="note warn">
+          <h3>teamLab 大雨</h3>
+          <p>取消夜展，改天王寺或難波室內晚餐後直接回房。因隔天要早出門，寧可早睡，不把最後採買留到雨天晚上。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="section-head">
+        <div>
+          <h2>資料來源與確認點</h2>
+          <p class="sub">航班與營業時間仍可能調整，以下是製作本版時用來校正的官方或訂房資料。出發前一天請以航空公司、飯店與各設施官網為準。</p>
+        </div>
+      </div>
+
+      <ul class="source-list">
+        <li><a href="https://www.flightstats.com/v2/flight-tracker/AK/170" target="_blank" rel="noreferrer">FlightStats：AK170 高雄到關西時刻</a></li>
+        <li><a href="https://assets.kansai-airports.co.jp/c0fb2297-e_260305_pressrelease_ak.pdf" target="_blank" rel="noreferrer">Kansai Airports / AirAsia：AK170 KHH 08:30 → KIX 12:40 新航線資料</a></li>
+        <li><a href="https://www.flightsfrom.com/KHH-KIX" target="_blank" rel="noreferrer">FlightsFrom：KHH → KIX 直飛航班候選</a></li>
+        <li><a href="https://ao.wego.com/en/schedules/khh/osa/flight-schedules-from-kaohsiung-to-osaka" target="_blank" rel="noreferrer">Wego：高雄到大阪 6/30 下午直飛時刻候選</a></li>
+        <li><a href="https://www.trip.com/flights/status-ci167/" target="_blank" rel="noreferrer">Trip.com：CI167 關西到高雄時刻</a></li>
+        <li><a href="https://www.kansai-airport.or.jp/en/shop-and-dine/dine" target="_blank" rel="noreferrer">KIX 官方：關西機場餐廳清單</a></li>
+        <li><a href="https://ucw.jp/global/en/" target="_blank" rel="noreferrer">Universal CityWalk Osaka：營業時間與餐廳資訊</a></li>
+        <li><a href="https://ucw.jp/global/en/floormap/" target="_blank" rel="noreferrer">Universal CityWalk Osaka：餐廳樓層圖</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/restaurants" target="_blank" rel="noreferrer">USJ 官方：園內餐廳清單</a></li>
+        <li><a href="https://www.tripadvisor.com/RestaurantsNear-g298566-d1896860-Universal_City_Walk_Osaka-Osaka_Osaka_Prefecture_Kinki.html" target="_blank" rel="noreferrer">Tripadvisor：Universal CityWalk 周邊餐廳評價</a></li>
+        <li><a href="https://s.tabelog.com/en/osaka/A2701/A270206/27038436/" target="_blank" rel="noreferrer">Tabelog：喫茶ドレミ 新世界</a></li>
+        <li><a href="https://osaka-info.jp/local_journey/en/stopby-osaka/ikeda-azumaudon/" target="_blank" rel="noreferrer">Osaka Local Journey：池田吾妻烏龍麵</a></li>
+        <li><a href="https://s.tabelog.com/en/osaka/A2706/A270603/27019783/" target="_blank" rel="noreferrer">Tabelog：博多一風堂 池田店</a></li>
+        <li><a href="https://tabelog.com/osaka/A2706/A270603/R594/rstLst/lunch/" target="_blank" rel="noreferrer">Tabelog：池田站午餐排行</a></li>
+        <li><a href="https://www.nakamuratokichi.com/" target="_blank" rel="noreferrer">中村藤吉本店官方</a></li>
+        <li><a href="https://www.itohkyuemon.co.jp/" target="_blank" rel="noreferrer">伊藤久右衛門官方</a></li>
+        <li><a href="https://www.tsuentea.com/" target="_blank" rel="noreferrer">通圓茶屋官方</a></li>
+        <li><a href="https://mitsui-shopping-park.com/en/lalaport/expocity/shopguide/" target="_blank" rel="noreferrer">LaLaport EXPOCITY：餐廳與店鋪清單</a></li>
+        <li><a href="https://www.wdi.co.jp/en/restaurants/eggsnthings" target="_blank" rel="noreferrer">Eggs 'n Things 官方品牌資訊</a></li>
+        <li><a href="https://cafe.hardrock.com/osaka-universal/" target="_blank" rel="noreferrer">Hard Rock Cafe Osaka Universal 官方</a></li>
+        <li><a href="https://osaka-info.jp/en/spot/hotel-universal-port/" target="_blank" rel="noreferrer">Osaka Info：Hotel Universal Port 入退房與交通</a></li>
+        <li><a href="https://global-universalport.orixhotelsandresorts.com/LUC2ORIUNV/cdata/luc2oriunv_5_jaen.html" target="_blank" rel="noreferrer">Hotel Universal Port：Port Dining ricorico 早餐時間</a></li>
+        <li><a href="https://us.trip.com/hotels/osaka-hotel-detail-118281189/ocean-tsutenkaku/" target="_blank" rel="noreferrer">Trip.com：Ocean Tsutenkaku 設備與位置評價</a></li>
+        <li><a href="https://www.agoda.com/ocean-tsutenkaku/hotel/osaka-jp.html" target="_blank" rel="noreferrer">Agoda：Ocean Tsutenkaku 近惠美須町與洗衣機資訊</a></li>
+        <li><a href="https://ocean-tsutenkaku.allosakahotels.com/en/" target="_blank" rel="noreferrer">Ocean Tsutenkaku 資訊頁：不提供 luggage storage</a></li>
+        <li><a href="https://www.expedia.co.jp/en/Osaka-Hotels-Ocean-Tsutenkaku.h106827447.Hotel-Information" target="_blank" rel="noreferrer">Expedia：Ocean Tsutenkaku 無櫃台與入住方式</a></li>
+        <li><a href="https://www.kate.co.jp/en/timetable/detail/NU" target="_blank" rel="noreferrer">KATE 關西機場巴士：USJ 路線與票價</a></li>
+        <li><a href="https://www.nankai.co.jp/en_railway/access-timetable" target="_blank" rel="noreferrer">南海電鐵：Rapi:t 與 Airport Express</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/park-guide/schedule/park-hour" target="_blank" rel="noreferrer">USJ 官方：營業時間與提前入園提醒</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/park-guide/schedule/attraction-closure" target="_blank" rel="noreferrer">USJ 官方：2026 年 7 月設施停運</a></li>
+        <li><a href="https://museum.nintendo.com/en/index.html" target="_blank" rel="noreferrer">Nintendo Museum 官方：營業時間與交通限制</a></li>
+        <li><a href="https://www.nintendo.dk/nyheder/nintendo-museum-abner-den-2-oktober-i-kyoto-japan" target="_blank" rel="noreferrer">Nintendo 官方新聞：Nintendo Museum 開館資料</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Nintendo_Museum_Entrance.jpg" target="_blank" rel="noreferrer">Wikimedia Commons：Nintendo Museum 圖片來源</a></li>
+        <li><a href="https://www.byodoin.or.jp/en/" target="_blank" rel="noreferrer">平等院官方：2026 夏季鳳凰堂參觀調整</a></li>
+        <li><a href="https://www.gekkeikan.com/museum/" target="_blank" rel="noreferrer">月桂冠大倉紀念館官方：營業時間與票價</a></li>
+        <li><a href="https://www.cupnoodles-museum.jp/en/osaka_ikeda/guide/admission/" target="_blank" rel="noreferrer">CupNoodles Museum Osaka Ikeda：營業時間</a></li>
+        <li><a href="https://www.cupnoodles-museum.jp/en/osaka_ikeda/attractions/mc-factory/" target="_blank" rel="noreferrer">My CUPNOODLES Factory：費用與時間</a></li>
+        <li><a href="https://www.cupnoodles-museum.jp/en/osaka_ikeda/guide/faq/" target="_blank" rel="noreferrer">CupNoodles FAQ：My CUPNOODLES 當日整理券、Chicken Ramen 需預約</a></li>
+        <li><a href="https://osaka-info.jp/en/spot/katsuoji/" target="_blank" rel="noreferrer">Osaka Info：勝尾寺營業時間與票價</a></li>
+        <li><a href="https://www.japan-guide.com/e/e3558.html" target="_blank" rel="noreferrer">Japan Guide：大阪到有馬溫泉巴士</a></li>
+        <li><a href="https://www.feel-kobe.jp/en/news/detail_13.html" target="_blank" rel="noreferrer">Visit Kobe：六甲有馬纜車 2026 暫停公告</a></li>
+        <li><a href="https://www.nifrel.jp/en/" target="_blank" rel="noreferrer">NIFREL 官方：營業時間與票價</a></li>
+        <li><a href="https://bandainamco-am.co.jp/en/others/vspark/expocity/" target="_blank" rel="noreferrer">VS PARK LaLaport EXPOCITY 官方：營業時間</a></li>
+        <li><a href="https://mitsui-shopping-park.com/en/lalaport/expocity/hour/index.html" target="_blank" rel="noreferrer">LaLaport EXPOCITY：營業時間</a></li>
+        <li><a href="https://metronine.osaka/en/spot-details/?spot_id=16932883533092" target="_blank" rel="noreferrer">Osaka Metro NiNE：teamLab 2026 夏季時段與休館日</a></li>
+        <li><a href="https://www.abenoharukas-300.jp/en/observatory/information.html" target="_blank" rel="noreferrer">Abeno Harukas 300 官方：營業時間</a></li>
+        <li><a href="https://mapfan.com/genres/16/27/111/SCH%2CJ%2CHMT" target="_blank" rel="noreferrer">MapFan：惠美須町站周邊超市</a></li>
+        <li><a href="https://www.navitime.co.jp/around/category/poi?address=2711100600200003&category=0202&from=view.around.other.category" target="_blank" rel="noreferrer">NAVITIME：新世界/恵美須東周邊超市距離</a></li>
+        <li><a href="https://osaka-info.jp/en/spot/nakanoshima-museum/" target="_blank" rel="noreferrer">Osaka Info：中之島美術館營業時間</a></li>
+        <li><a href="https://www.japan-guide.com/e/e4015.html" target="_blank" rel="noreferrer">Japan Guide：大阪市立科學館營業時間</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>製作原則：7 人同行、暑假、兩間住宿已確認，所以把交通與休息時間放在景點數量前面。航班、票券、營業時間與交通班次請於出發前一天再次確認。</p>
+  </footer>
+
+  <script>
+    const maps = (q) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+    const mealChoices = {
+      "day-0630": {
+        breakfast: [
+          { name: "A 組：高雄機場 MOS Burger", tag: "穩定熱食", note: "5 人先飛組登機前吃飽最實際，漢堡、湯品與飲料對青少年友善。", url: maps("高雄國際機場 摩斯漢堡") },
+          { name: "A 組：高雄機場便利商店", tag: "最快", note: "飯糰、牛奶、香蕉、喉糖一次補齊，也可順手買機上備用點心。", url: maps("高雄國際機場 便利商店") },
+          { name: "B 組：家裡或學校附近早餐", tag: "考試優先", note: "父子這天不要餓著考試，早餐在出門前解決，午餐再接機場節奏。", url: maps("高雄 早餐") }
+        ],
+        lunch: [
+          { name: "A 組：551 HORAI 關西機場", tag: "大阪名物", note: "先到組抵達後墊胃，也可外帶上巴士前吃。", url: maps("551 HORAI Kansai Airport") },
+          { name: "A 組：どうとんぼり神座 關西機場", tag: "拉麵", note: "湯頭清爽、翻桌快，適合落地後想吃熱食，但要看入境時間。", url: maps("Kamukura Kansai Airport Terminal 1") },
+          { name: "B 組：高雄機場或機上輕食", tag: "趕班機", note: "父子考後先吃簡單午餐，避免為了餐廳耽誤下午直飛報到。", url: maps("高雄國際機場 餐廳") }
+        ],
+        dinner: [
+          { name: "A 組：TAKOPA たこ焼きパーク", tag: "大阪味", note: "先到組可先吃，不必等晚到組餓過頭；離飯店近。", url: maps("TAKOPA Universal CityWalk Osaka") },
+          { name: "A 組：Hard Rock Cafe Osaka Universal", tag: "座位穩", note: "漢堡份量夠，5 人先吃或全員晚一點吃都好安排。", url: maps("Hard Rock Cafe Osaka Universal") },
+          { name: "B 組：CityWalk 便利店/外帶輕食", tag: "晚到備案", note: "父子若 22:00 後才到，以便利商店、飯糰、熱湯或外帶收尾，隔天 USJ 比晚餐更重要。", url: maps("Universal CityWalk Osaka convenience store") }
+        ]
+      },
+      "day-0701": {
+        breakfast: [
+          { name: "Port Dining ricorico", tag: "飯店早餐", note: "不用移動、最舒服；若不搶開園，是全家最省腦的選擇。", url: maps("Hotel Universal Port Port Dining ricorico") },
+          { name: "Eggs 'n Things The Park Front", tag: "早午餐名店", note: "鬆餅與蛋料理份量足，適合不急著衝開園時。", url: maps("Eggs 'n Things The Park Front Hotel Osaka") },
+          { name: "Universal City 便利商店", tag: "搶開園", note: "飯糰、麵包、優格前一晚先買好，早上邊排隊邊補。", url: maps("Universal City Station Lawson 7 Eleven") }
+        ],
+        lunch: [
+          { name: "Kinopio's Cafe", tag: "SNW 必拍", note: "最有主題感，但通常要預約或排隊，適合配合 Nintendo 入區時段。", url: maps("Kinopio's Cafe Universal Studios Japan") },
+          { name: "Three Broomsticks", tag: "哈利波特", note: "有冷氣、場景感強，適合中午避暑與拍照。", url: maps("Three Broomsticks Universal Studios Japan") },
+          { name: "Discovery Restaurant", tag: "家庭友善", note: "座位與餐點選擇相對穩，適合不想為餐廳排太久。", url: maps("Discovery Restaurant Universal Studios Japan") }
+        ],
+        dinner: [
+          { name: "Gyukatsu Kyoto Katsugyu UCW", tag: "高評價", note: "Tripadvisor 近年評價很高，牛カツ對青少年吸引力大。", url: maps("Gyukatsu Kyoto Katsugyu Universal CityWalk Osaka") },
+          { name: "Red Lobster UCW", tag: "座位多", note: "海鮮、披薩、兒童也容易點餐，玩整天後不用再轉車。", url: maps("Red Lobster Universal CityWalk Osaka") },
+          { name: "Tsuruhashi Fugetsu UCW", tag: "大阪燒", note: "大阪燒連鎖名店，桌邊鐵板有氣氛，適合當 USJ 收尾餐。", url: maps("Tsuruhashi Fugetsu Universal CityWalk Osaka") }
+        ]
+      },
+      "day-0702": {
+        breakfast: [
+          { name: "Port Dining ricorico", tag: "退房前", note: "搬家日最穩，吃完回房整理行李。", url: maps("Hotel Universal Port Port Dining ricorico") },
+          { name: "Eggs 'n Things The Park Front", tag: "鬆餅", note: "若想用舒服早午餐開場，這間比進市區找店更順。", url: maps("Eggs 'n Things The Park Front Hotel Osaka") },
+          { name: "McDonald's / CityWalk 快餐", tag: "省時間", note: "孩子接受度高，吃完立刻回飯店退房。", url: maps("McDonald's Universal CityWalk Osaka") }
+        ],
+        lunch: [
+          { name: "串かつだるま 新世界総本店", tag: "名店", note: "新世界代表店，換住宿日最有在地感。", url: maps("Kushikatsu Daruma Shinsekai Sohonten") },
+          { name: "八重勝", tag: "老牌", note: "新世界串炸名店，排隊時可改達摩或橫綱。", url: maps("Yaekatsu Shinsekai Osaka") },
+          { name: "横綱 通天閣店", tag: "家庭好坐", note: "菜單選擇多、座位較好安排，7 人比小店更容易處理。", url: maps("Yokozuna Tsutenkaku Osaka") }
+        ],
+        dinner: [
+          { name: "たこ焼き やまちゃん 本店", tag: "天王寺名物", note: "阿倍野一帶代表章魚燒，適合 Harukas 前後補食。", url: maps("Takoyaki Yamachan Honten Tennoji") },
+          { name: "千房 あべのキューズモール支店", tag: "大阪燒", note: "商場內座位與動線穩，適合家庭晚餐。", url: maps("Chibo Abeno Q's Mall") },
+          { name: "あべのハルカスダイニング", tag: "餐廳街", note: "口味分歧時很好用，日式、西式、甜點都能分組選。", url: maps("Abeno Harukas Dining restaurants") }
+        ]
+      },
+      "day-0703": {
+        breakfast: [
+          { name: "Ocean 房內早餐", tag: "最順", note: "用超市吐司、蛋、優格與水果，出遠門前不用找店。", url: maps("スーパー玉出 恵美須店") },
+          { name: "喫茶ドレミ", tag: "通天閣老喫茶", note: "離惠美須町近，復古喫茶與鬆餅很有大阪感。", url: maps("喫茶 ドレミ 新世界 大阪") },
+          { name: "BUNGA CAFE / RIMARY Cafe", tag: "近住處", note: "新世界主街咖啡店，適合不想自己煮的人。", url: maps("BUNGA CAFE Shinsekai Osaka") }
+        ],
+        lunch: [
+          { name: "中村藤吉 平等院店", tag: "宇治名店", note: "茶蕎麥、甜點、伴手禮一次完成，最符合宇治日主題。", url: maps("Nakamura Tokichi Byodoin Uji") },
+          { name: "伊藤久右衛門 宇治本店", tag: "抹茶名店", note: "抹茶甜點與茶類伴手禮強，適合排成午餐加甜點。", url: maps("Itoh Kyuemon Uji Main Store") },
+          { name: "通圓茶屋", tag: "老茶屋", note: "宇治橋旁老店，想要歷史感與輕食甜點可選。", url: maps("Tsuen Tea Uji") }
+        ],
+        dinner: [
+          { name: "串かつだるま 動物園前店", tag: "回住處近", note: "回大阪後不用再拉遠，晚餐後直接回房洗衣。", url: maps("Kushikatsu Daruma Dobutsuenmae Osaka") },
+          { name: "麺屋 丈六", tag: "難波拉麵名店", note: "想吃黑醬油系大阪拉麵可選，排隊時就改商場餐廳。", url: maps("Menya Jouroku Namba Osaka") },
+          { name: "千房 道頓堀ビル店", tag: "大阪燒", note: "想順路逛難波心齋橋時使用，交通仍好接回動物園前。", url: maps("Chibo Dotonbori Osaka") }
+        ]
+      },
+      "day-0704": {
+        breakfast: [
+          { name: "Ocean 房內早餐", tag: "早出門", note: "今天跨池田與勝尾寺，房內吃最不拖。", url: maps("Ocean Tsutenkaku Osaka") },
+          { name: "喫茶ドレミ", tag: "近住處", note: "如果不想煮，早點出門前可用喫茶早餐補能量。", url: maps("喫茶 ドレミ 新世界 大阪") },
+          { name: "Tree Cafe 天王寺MIO", tag: "轉乘順", note: "若從天王寺進御堂筋線，這間在車站商場內好集合。", url: maps("Tree Cafe Tennoji Mio") }
+        ],
+        lunch: [
+          { name: "吾妻", tag: "池田老店", note: "大阪老字號烏龍麵，整理券順利時可 11:45 後吃；若沒拿到整理券就提早用餐。", url: maps("吾妻 池田 ささめうどん") },
+          { name: "博多一風堂 池田店", tag: "拉麵穩牌", note: "池田站步行近、翻桌快，適合整理券時間被卡住時快速銜接。", url: maps("Hakata Ippudo Ikeda Osaka") },
+          { name: "燻製カレー 池田本店", tag: "在地人氣", note: "想吃咖哩可選；若要趕勝尾寺下山班次，先確認排隊狀況。", url: maps("燻製カレー 池田本店") }
+        ],
+        dinner: [
+          { name: "お好み焼 きじ 梅田スカイビル店", tag: "大阪燒名店", note: "若回梅田晚餐，這間很有代表性。", url: maps("Okonomiyaki Kiji Umeda Sky Building") },
+          { name: "春駒 天神橋筋", tag: "壽司名店", note: "想吃壽司可選，但排隊可能長，適合不太累時。", url: maps("Harukoma Sushi Osaka Tenjinbashisuji") },
+          { name: "串かつだるま ルクア大阪店", tag: "車站方便", note: "梅田站旁，回程交通最乾淨，孩子也好點餐。", url: maps("Kushikatsu Daruma Lucua Osaka") }
+        ]
+      },
+      "day-0705": {
+        breakfast: [
+          { name: "Ocean 房內慢早餐", tag: "泡湯日", note: "泡湯前補水與蛋白質，避免空腹上路。", url: maps("スーパー玉出 恵美須店") },
+          { name: "喫茶ドレミ", tag: "復古喫茶", note: "不趕時間時很適合，吃完再搭御堂筋線去梅田。", url: maps("喫茶 ドレミ 新世界 大阪") },
+          { name: "デタトコカフェ 大阪新世界店", tag: "甜點咖啡", note: "新世界可麗餅咖啡店，想吃輕早餐可選。", url: maps("Detatoko Cafe Osaka Shinsekai") }
+        ],
+        lunch: [
+          { name: "くつろぎ家", tag: "有馬釜飯", note: "有馬代表午餐之一，泡湯前先吃熱飯最舒服。", url: maps("Kutsurogiya Arima Onsen") },
+          { name: "土山人 有馬店", tag: "蕎麥", note: "想吃清爽午餐可選，夏天比重口味更輕。", url: maps("Arima Dosanjin Soba") },
+          { name: "竹中肉店", tag: "小吃名物", note: "可樂餅、肉類小食適合邊逛老街邊補，正餐不足再加咖啡店。", url: maps("Takenaka Nikuten Arima Onsen") }
+        ],
+        dinner: [
+          { name: "阪急三番街 / 梅田餐廳街", tag: "選擇多", note: "巴士回梅田後最省力，全家口味不同也能解決。", url: maps("Hankyu Sanbangai restaurants Umeda") },
+          { name: "はなだこ", tag: "梅田章魚燒", note: "想吃大阪小吃當晚餐或宵夜可選，排隊長就改餐廳街。", url: maps("Hanadako Umeda Osaka") },
+          { name: "串かつだるま ルクア大阪店", tag: "方便回程", note: "車站型名店，回住處轉乘容易。", url: maps("Kushikatsu Daruma Lucua Osaka") }
+        ]
+      },
+      "day-0706": {
+        breakfast: [
+          { name: "Ocean 房內早餐", tag: "最省力", note: "今天不早起排隊，房內慢慢吃再出門。", url: maps("Ocean Tsutenkaku Osaka") },
+          { name: "Tree Cafe 天王寺MIO", tag: "車站早餐", note: "要從天王寺轉線時可用，集合動線清楚。", url: maps("Tree Cafe Tennoji Mio") },
+          { name: "コメダ珈琲店 あべの店", tag: "名古屋式早餐", note: "咖啡加吐司早餐簡單可靠，適合不想煮。", url: maps("Komeda Coffee Abeno Osaka") }
+        ],
+        lunch: [
+          { name: "KUA`AINA LaLaport EXPOCITY", tag: "漢堡", note: "份量足、口味穩，適合青少年。", url: maps("KUA AINA LaLaport EXPOCITY") },
+          { name: "Eggs 'n Things LaLaport EXPOCITY", tag: "鬆餅早午餐", note: "甜鹹都有，NIFREL 後午餐很順。", url: maps("Eggs 'n Things LaLaport EXPOCITY") },
+          { name: "RHC CAFE EXPOCITY", tag: "舒服坐", note: "想休息久一點、吃美式輕食可選。", url: maps("RHC CAFE EXPOCITY Osaka") }
+        ],
+        dinner: [
+          { name: "LaLaport EXPOCITY Food Pavilion", tag: "最快", note: "孩子想分開點餐時最方便，吃完直接回程。", url: maps("LaLaport EXPOCITY Food Pavilion") },
+          { name: "BISTRO 309 EXPOCITY", tag: "家庭餐廳", note: "麵包、洋食、座位穩，適合玩完 VS PARK。", url: maps("BISTRO 309 LaLaport EXPOCITY") },
+          { name: "焼肉 平城苑 EXPOCITY", tag: "燒肉", note: "想吃比較正式的晚餐可選，建議先看訂位。", url: maps("Heijoen EXPOCITY Osaka") }
+        ]
+      },
+      "day-0707": {
+        breakfast: [
+          { name: "Ocean 清冰箱早餐", tag: "打包日", note: "消耗前幾天採買的麵包、水果、優格，晚上回來才不忙。", url: maps("Ocean Tsutenkaku Osaka") },
+          { name: "喫茶ドレミ", tag: "最後喫茶", note: "想在通天閣旁吃最後一次老派早餐可選。", url: maps("喫茶 ドレミ 新世界 大阪") },
+          { name: "WEST WOOD BAKERS", tag: "美式早午餐", note: "若今天選堀江線，可把它當午餐，不建議早餐就急著出門。", url: maps("WEST WOOD BAKERS Osaka") }
+        ],
+        lunch: [
+          { name: "GARB weeks", tag: "中之島河畔", note: "選中之島線時用，景觀與座位感好，適合市區輕鬆日。", url: maps("GARB weeks Nakanoshima Osaka") },
+          { name: "social eat awake", tag: "中央公會堂", note: "選中之島線時用，建築漂亮，適合搭配中之島散步。", url: maps("social eat awake Nakanoshima Osaka") },
+          { name: "WEST WOOD BAKERS", tag: "堀江線", note: "選堀江/心齋橋採買線時用，午餐後就近買完直接回房休息。", url: maps("WEST WOOD BAKERS Osaka") }
+        ],
+        dinner: [
+          { name: "たこ焼き やまちゃん 本店", tag: "天王寺順路", note: "去長居前在天王寺吃最順，餐後直接搭御堂筋線。", url: maps("Takoyaki Yamachan Honten Tennoji") },
+          { name: "千房 あべのキューズモール支店", tag: "大阪燒", note: "商場內好坐，teamLab 前吃飽最安心。", url: maps("Chibo Abeno Q's Mall") },
+          { name: "長居站周邊簡餐", tag: "最接近展場", note: "若大家想少走路，直接到長居附近吃完再進植物園。", url: maps("Nagai Station restaurants Osaka") }
+        ]
+      },
+      "day-0708": {
+        breakfast: [
+          { name: "Ocean 房內簡早餐", tag: "最安全", note: "06:45 吃完、07:45 出門，避免退房日找店失控。", url: maps("Ocean Tsutenkaku Osaka") },
+          { name: "住處附近便利商店", tag: "快取", note: "前一晚先買好飯糰、牛奶、水，早上不用再排隊。", url: maps("Ebisucho Osaka convenience store") },
+          { name: "關空抵達後早餐", tag: "備案", note: "若大家早上吃不下，到 KIX 報到前再吃熱食。", url: maps("Kansai Airport Terminal 1 restaurants") }
+        ],
+        lunch: [
+          { name: "551 HORAI 關西機場", tag: "伴手禮兼午餐", note: "上機前補大阪豬肉包，時間夠也可外帶。", url: maps("551 HORAI Kansai Airport") },
+          { name: "どうとんぼり神座 關西機場", tag: "拉麵", note: "回程前最後一碗熱湯麵，速度也算穩。", url: maps("Kamukura Kansai Airport Terminal 1") },
+          { name: "杵屋 / うどん類餐廳", tag: "清爽", note: "不想吃太重時選烏龍麵，登機前比較舒服。", url: maps("Kineya Kansai Airport Terminal 1") }
+        ],
+        dinner: [
+          { name: "丹丹漢堡 小港店", tag: "高雄味", note: "抵達後若想快速補餐，從機場移動相對順。", url: maps("丹丹漢堡 小港店") },
+          { name: "港園牛肉麵", tag: "高雄老味", note: "想把旅行收在台灣熱湯麵，可以回市區再吃。", url: maps("港園牛肉麵 高雄") },
+          { name: "鴨肉珍", tag: "高雄名店", note: "若還有精神進市區，當作回國第一餐很有儀式感。", url: maps("鴨肉珍 高雄") }
+        ]
+      }
+    };
+
+    const mealKeys = ["breakfast", "lunch", "dinner"];
+    document.querySelectorAll("section.day").forEach((section) => {
+      const dayChoices = mealChoices[section.id];
+      if (!dayChoices) return;
+      section.querySelectorAll(".meal").forEach((meal, index) => {
+        const items = dayChoices[mealKeys[index]] || [];
+        if (!items.length) return;
+        const list = document.createElement("ul");
+        list.className = "choice-list";
+        items.forEach((item) => {
+          const li = document.createElement("li");
+          li.className = "meal-choice";
+          li.innerHTML = `
+            <div class="choice-title">
+              <a href="${item.url}" target="_blank" rel="noreferrer">${item.name}</a>
+              <span class="choice-badge">${item.tag}</span>
+            </div>
+            <p class="choice-note">${item.note}</p>
+          `;
+          list.appendChild(li);
+        });
+        meal.appendChild(list);
+      });
+    });
+  </script>
+</body>
+</html>
