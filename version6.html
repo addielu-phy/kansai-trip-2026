@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大阪關西親子 9 日遊攻略 Version 6 · 宇治+神戶市區版｜2026/6/30–7/8</title>
+<style>
+  :root{
+    --teal:#0f6e6e; --teal2:#138a86; --coral:#e2683f; --coral2:#ef7e57;
+    --ink:#1f2733; --muted:#6b7280; --bg:#f4f6f5; --card:#ffffff;
+    --gold:#c98a2b; --green:#2f8f5b; --line:#e2e6e3; --purple:#6b4ea8;
+    --shadow:0 6px 24px rgba(15,110,110,.09);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px}
+  a{color:var(--teal2);text-decoration:none}
+  .hero{background:linear-gradient(135deg,rgba(15,110,110,.85),rgba(19,138,134,.8)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Dotonbori%20Street%20at%20Night.jpg") center/cover;
+    color:#fff;padding:64px 20px 70px;position:relative;overflow:hidden}
+  .hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:2}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);
+    padding:4px 14px;border-radius:999px;font-size:13px;letter-spacing:1px;margin:0 6px 12px 0}
+  .hero .v2{background:var(--coral);border-color:var(--coral)}
+  .hero h1{margin:6px 0 10px;font-size:32px;font-weight:800;letter-spacing:1px;line-height:1.25}
+  .hero p.sub{margin:0;font-size:17px;opacity:.94}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .hero .meta span{background:rgba(255,255,255,.13);padding:8px 14px;border-radius:10px;font-size:14px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  nav .wrap{max-width:1000px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:10px 12px}
+  nav a{white-space:nowrap;font-size:14px;padding:7px 12px;border-radius:8px;color:var(--ink);font-weight:600}
+  nav a:hover{background:#e3f2f1;color:var(--teal2)}
+  main{max-width:1000px;margin:0 auto;padding:30px 18px 80px}
+  section{margin:42px 0;scroll-margin-top:64px}
+  h2{font-size:25px;border-left:6px solid var(--coral);padding-left:12px;margin:0 0 18px}
+  h2 .em{color:var(--coral)}
+  h3{font-size:18px;margin:22px 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2,.grid3{grid-template-columns:1fr}.hero h1{font-size:24px}}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#e3f2f1;color:var(--teal);font-weight:700}
+  tr:nth-child(even) td{background:#fafafa}
+  .pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;color:#fff}
+  .pill.coral{background:var(--coral)} .pill.teal{background:var(--teal2)}
+  .pill.green{background:var(--green)} .pill.gold{background:var(--gold)} .pill.purple{background:var(--purple)}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:var(--shadow);margin-bottom:22px}
+  .day-head{background:linear-gradient(90deg,#0f6e6e,#138a86);color:#fff;padding:16px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .day-head.usj{background:linear-gradient(90deg,#5a4b8a,#6b4ea8)}
+  .day-head .num{background:#fff;color:var(--teal);font-weight:800;width:42px;height:42px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .day-head.usj .num{color:var(--purple)}
+  .day-head .d-date{font-size:14px;opacity:.9}
+  .day-head .d-title{font-size:19px;font-weight:800;margin:0}
+  .day-head .d-theme{margin-left:auto;background:rgba(255,255,255,.16);padding:5px 12px;border-radius:8px;font-size:13px}
+  .badge-new{background:var(--coral);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:6px;margin-left:6px}
+  .day-body{padding:18px 20px}
+  .leg{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .leg:last-child{border-bottom:none}
+  .leg .ico{font-size:20px;flex-shrink:0;width:30px;text-align:center}
+  .leg .t{flex-shrink:0;width:62px;font-weight:700;color:var(--teal2);font-size:14px}
+  .leg .c{flex:1}
+  .transport-box{background:#eef6f5;border:1px solid #cfe4e2;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:14px}
+  .transport-box b{color:var(--teal)}
+  .transport-box .step{display:block;padding:3px 0;border-bottom:1px dotted #cfe4e2}
+  .transport-box .step:last-child{border-bottom:none}
+  .row-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tg{font-size:13px;background:#eef4f3;border:1px solid #d7e6e4;border-radius:8px;padding:6px 10px}
+  .tg.eat{background:#fdf1ec;border-color:#f6dbcf}
+  .tg.move{background:#eef7f1;border-color:#cfe9d9}
+  .tg.stay{background:#fff7ea;border-color:#f3e2c2}
+  .callout{border-left:4px solid var(--gold);background:#fffaf0;padding:12px 16px;border-radius:8px;margin:14px 0;font-size:14.5px}
+  .callout.coral{border-color:var(--coral);background:#fdf2ee}
+  .callout.teal{border-color:var(--teal2);background:#eef6f5}
+  ul.clean{margin:8px 0;padding-left:20px} ul.clean li{margin:5px 0}
+  .muted{color:var(--muted);font-size:13.5px}
+  .price-strong{color:var(--coral);font-weight:800}
+  footer{background:#0f6e6e;color:#cfe6e4;text-align:center;padding:26px 18px;font-size:13px}
+
+  /* PHOTO GRID */
+  .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  .photo-grid.col2{grid-template-columns:repeat(2,1fr)}
+  .photo-grid.col4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:720px){.photo-grid,.photo-grid.col2,.photo-grid.col4{grid-template-columns:repeat(2,1fr)}}
+  .photo{position:relative;aspect-ratio:4/3;border-radius:10px;overflow:hidden;
+    background-size:cover;background-position:center;background-repeat:no-repeat;
+    background-color:#cfe4e2}
+  .photo.tall{aspect-ratio:3/4}
+  .photo::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,110,110,.4),rgba(226,104,63,.35))}
+  .photo span{position:absolute;left:8px;bottom:8px;right:8px;color:#fff;font-size:12px;font-weight:700;
+    text-shadow:0 1px 4px rgba(0,0,0,.6);z-index:2}
+  /* Specific image backgrounds via Wikimedia */
+  .ph-dotonbori{background-image:url("images/dotonbori.jpg")}
+  .ph-usj{background-image:url("images/usj.jpg")}
+  .ph-citywalk{background-image:url("images/citywalk.jpg")}
+  .ph-tsutenkaku{background-image:url("images/tsutenkaku.jpg")}
+  .ph-shinsekai{background-image:url("images/shinsekai.jpg")}
+  .ph-kushikatsu{background-image:url("images/kushikatsu.jpg")}
+  .ph-kuromon{background-image:url("images/shinsekai.jpg")}
+  .ph-shirahama{background-image:url("images/shirahama.jpg")}
+  .ph-sandanbeki{background-image:url("images/sandanbeki.jpg")}
+  .ph-toretore{background-image:url("images/kaisendon.jpg")}
+  .ph-hirakata{background-image:url("images/hirakata.jpg")}
+  .ph-arashiyama{background-image:url("images/arashiyama.jpg")}
+  .ph-bamboo{background-image:url("images/bamboo.jpg")}
+  .ph-sagano{background-image:url("images/sagano.jpg")}
+  .ph-monkey{background-image:url("images/bamboo.jpg")}
+  .ph-yudofu{background-image:url("images/yudofu.jpg")}
+  .ph-taiyo{background-image:url("images/taiyo.jpg")}
+  .ph-expo{background-image:url("images/expo.jpg")}
+  .ph-redhorse{background-image:url("images/redhorse.jpg")}
+  .ph-harukas{background-image:url("images/harukas.jpg")}
+  .ph-sumiyoshi{background-image:url("images/sumiyoshi.jpg")}
+  .ph-hankai{background-image:url("images/hankai.jpg")}
+  .ph-nagai{background-image:url("images/nagai.jpg")}
+  .ph-okonomi{background-image:url("images/okonomi.jpg")}
+  .ph-ramen{background-image:url("images/ramen.jpg")}
+  .ph-takoyaki{background-image:url("images/takoyaki.jpg")}
+  .ph-kix{background-image:url("images/kix.jpg")}
+  .ph-rapit{background-image:url("images/rapit.jpg")}
+  .ph-port{background-image:url("images/port.jpg")}
+  .ph-godzilla{background-image:url("images/godzilla.jpg")}
+  .ph-naruto{background-image:url("images/naruto.jpg")}
+  .ph-awaji{background-image:url("images/awaji.jpg")}
+  .ph-greenia{background-image:url("images/greenia.jpg")}
+  .ph-rokkocable{background-image:url("images/rokkocable.jpg")}
+  .ph-mayanight{background-image:url("images/mayanight.jpg")}
+  .ph-arima{background-image:url("images/arima.jpg")}
+  .ph-arimatown{background-image:url("images/arimatown.jpg")}
+  .ph-byodoin{background-image:url("images/byodoin.jpg")}
+  .ph-uji{background-image:url("images/uji.jpg")}
+  .ph-kitano{background-image:url("images/kitano.jpg")}
+  .ph-nankin{background-image:url("images/nankin.jpg")}
+  .ph-kobeport{background-image:url("images/kobeport.jpg")}
+
+  /* MEAL CARDS */
+  .meals{margin-top:14px;border-radius:12px;background:#fff7f4;border:1px solid #f6dbcf;padding:14px 16px}
+  .meals h4{margin:0 0 8px;font-size:15px;color:var(--coral);font-weight:800;letter-spacing:.5px}
+  .meal-block{margin:0 0 10px;padding:0 0 8px;border-bottom:1px dashed #f3c8b8}
+  .meal-block:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+  .meal-block .label{display:inline-block;background:var(--coral);color:#fff;font-weight:700;font-size:12px;
+    padding:2px 8px;border-radius:6px;margin-right:6px}
+  .meal-block ul{margin:6px 0 0;padding-left:22px;font-size:14px}
+  .meal-block ul li{margin:3px 0}
+  .meal-block ul li b{color:var(--ink)}
+  .star{color:#e4a72d;font-size:13px}
+  @media print{nav{display:none}.hero{padding:30px 20px}.day,.card{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="tag v2">VERSION 6 · 宇治+神戶市區版</span>
+    <span class="tag">7/3 宇治世界遺產 · 7/4 神戶市區（北野/南京町/港邊）· 7/5 有馬溫泉</span>
+    <h1>大阪關西親子 9 日遊攻略 · 宇治神戶版</h1>
+    <p class="sub">2026 / 6 / 30（二）– 7 / 8（三）｜環球 × 新世界 × 宇治 × 神戶 × 有馬溫泉 × 萬博</p>
+    <div class="meta">
+      <span>✈️ 去程 AK170 高雄08:30→關西12:40</span>
+      <span>✈️ 回程 CI167 關西12:00→高雄14:20</span>
+      <span>👨‍👩‍👧‍👦 4 大 + 3 青少年</span>
+      <span>🏨 Universal Port → Ocean Tsutenkaku</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#flights">航班</a>
+    <a href="#hotels">住宿</a>
+    <a href="#transport">交通票券</a>
+    <a href="#overview">總覽</a>
+    <a href="#d1">Day1-2 USJ</a>
+    <a href="#d3">Day3 新世界</a>
+    <a href="#d4">Day4 宇治</a>
+    <a href="#d5">Day5 神戶</a>
+    <a href="#d6">Day6 有馬溫泉</a>
+    <a href="#d7">Day7 萬博+VSPARK</a>
+    <a href="#d8">Day8 阿倍野</a>
+    <a href="#d9">Day9 返程</a>
+    <a href="#swap">替換選項</a>
+    <a href="#notes">預約提醒</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- FLIGHTS -->
+<section id="flights">
+  <h2>✈️ 航班<span class="em">資訊</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill coral">去程 6/30（二）· 分兩組出發</span>
+      <h3 style="margin-top:12px">✈️ A 組（5 人）AirAsia AK170</h3>
+      <table>
+        <tr><th>高雄 KHH</th><td>起飛 <b>08:30</b> → 關西 KIX <b>12:40</b></td></tr>
+        <tr><th>抵飯店</th><td>約 15:00（下午先玩 USJ 半天）</td></tr>
+        <tr><th>報到</th><td>建議 <b>06:00 前</b>到高雄機場</td></tr>
+      </table>
+      <h3 style="margin-top:14px">✈️ B 組（你+兒子）華航 CI（下午班）</h3>
+      <table>
+        <tr><th>高雄 KHH</th><td>起飛 <b>15:35</b> → 關西 KIX <b>19:35</b></td></tr>
+        <tr><th>抵飯店</th><td>約 22:15（當晚與 A 組會合）</td></tr>
+        <tr><th>報到</th><td>兒子 12:00 考完 → <b>13:35 前</b>到機場（約 1.5h 緩衝）</td></tr>
+      </table>
+      <p class="muted">⚠️ 兒子 6/30 上午考試，故你與兒子改搭下午華航；其餘 5 人維持 AK170 早班。航班時刻/票價以官網為準（CI 約 NT$11,603/人）。</p>
+    </div>
+    <div class="card">
+      <span class="pill teal">回程 7/8（三）</span>
+      <h3 style="margin-top:12px">China Airlines CI167</h3>
+      <table>
+        <tr><th>大阪關西 KIX T1</th><td>起飛 <b>12:00</b></td></tr>
+        <tr><th>高雄小港 KHH</th><td>抵達 <b>約 14:20</b></td></tr>
+        <tr><th>航程</th><td>約 3 小時 45 分</td></tr>
+        <tr><th>到機場</th><td>目標 <b>09:00–09:15</b> 抵 KIX</td></tr>
+      </table>
+      <p class="muted">⚠️ CI167 確切時間以華航官網為準。7 人＋大行李建議南海指定席。</p>
+    </div>
+  </div>
+  <div class="card">
+    <h3>🚇 機場 ⇄ 飯店 交通細節</h3>
+    <div class="photo-grid col2" style="margin-bottom:14px">
+      <div class="photo ph-kix"><span>関西國際機場 KIX T1</span></div>
+      <div class="photo ph-rapit"><span>南海特急 ラピート（回程推薦）</span></div>
+    </div>
+    <div class="transport-box">
+      <span class="step"><b>6/30 機場 → Hotel Universal Port（兩組同路線）</b>：関西空港駅 →〔JR 関空快速・往京橋〕→ <b>西九条駅</b>（約 55 分，¥1,210）→ 同站轉〔JR ゆめ咲線・桜島行〕→ <b>ユニバーサルシティ駅</b>（約 5 分）→ 步行 4 分。總約 70–80 分。</span>
+      <span class="step"><b>A 組替代</b>：利木津巴士機場→環球影城直達（約 70 分，¥1,600，免轉車最輕鬆）。</span>
+      <span class="step"><b>B 組（晚到）</b>：19:35 落地，入境領行李約 20:30 → JR 約 22:00 抵飯店。<b>提醒 A 組先留一把房卡</b>給晚到的你們。</span>
+      <span class="step"><b>7/8 飯店 → 機場（免轉車！）</b>：Ocean Tsutenkaku 步行 10 分到 <b>新今宮駅</b> →〔南海空港急行〕→ 関西空港（約 45 分，¥970）；或〔南海特急 ラピート〕（約 37 分，¥1,490，指定席）。</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOTELS -->
+<section id="hotels">
+  <h2>🏨 住宿<span class="em">（已確認）</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill green">✅ 6/30–7/2（2 晚）</span>
+      <h3 style="margin-top:12px">Hotel Universal Port 環球港飯店</h3>
+      <div class="photo ph-port" style="aspect-ratio:16/9;margin:10px 0"><span>Hotel Universal Port · 步行 4 分到 USJ 正門</span></div>
+      <table>
+        <tr><th>入住/退房</th><td>6/30 <b>15:00</b> → 7/2 <b>11:00</b></td></tr>
+        <tr><th>位置</th><td>JR ユニバーサルシティ駅 步行 4 分、USJ 正門步行 4 分</td></tr>
+        <tr><th>類型</th><td>USJ 官方夥伴飯店（享提早入園福利）</td></tr>
+        <tr><th>特色</th><td>小小兵主題、親子備品齊、餐廳多、海灣景</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <span class="pill green">✅ 7/2–7/8（6 晚）</span>
+      <h3 style="margin-top:12px">Ocean Tsutenkaku 新世界公寓</h3>
+      <div class="photo ph-tsutenkaku" style="aspect-ratio:16/9;margin:10px 0"><span>通天閣樓下、新世界內</span></div>
+      <table>
+        <tr><th>入住/退房</th><td>7/2 <b>16:00</b> → 7/8 <b>10:00</b></td></tr>
+        <tr><th>地址</th><td>浪速區惠美須東 1-10-12（通天閣樓下）</td></tr>
+        <tr><th>類型</th><td>公寓式（房內廚房、冰箱、微波，可自炊）</td></tr>
+        <tr><th>最近車站</th><td>惠美須町(堺筋線)5分 · 動物園前(御堂筋線)7分 · <b>新今宮(JR/南海)10分</b> · 天王寺10分</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="callout coral">🗼 <b>新世界基地優勢</b>：①樓下就是串炸街；②新今宮南海直達關空；③動物園前御堂筋線直達梅田/千里中央/長居；④步行到天王寺/阿倍野 HARUKAS 只 10 分。</p>
+</section>
+
+<!-- TRANSPORT -->
+<section id="transport">
+  <h2>🚇 交通 &amp; <span class="em">票券</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>必備：ICOCA 交通卡</h3>
+      <p>7 人每人一張（或手機綁 ICOCA/Suica）。地鐵、JR、南海、便利商店全嗶。先儲值 ¥3,000。</p>
+      <h3>新世界出發主幹</h3>
+      <ul class="clean">
+        <li><b>御堂筋線（動物園前）</b>：直達梅田、千里中央（萬博）、長居（teamLab）</li>
+        <li><b>堺筋線（惠美須町）</b>：到北浜（轉京阪）、日本橋、天神橋筋</li>
+        <li><b>JR/南海（新今宮）</b>：環状線繞大阪；南海直達關空</li>
+        <li><b>阪堺電車（惠美須町電停）</b>：復古路面電車到住吉大社</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>建議加購票券</h3>
+      <ul class="clean">
+        <li><b>USJ Express Pass 4/7</b>：提前 1–2 個月買，旺季秒殺（7/1）</li>
+        <li><b>宇治</b>：平等院庭園免預約；<b>鳳凰堂內部當天現場排號</b>（7/3）</li>
+        <li><b>有馬溫泉 阪急高速巴士</b>：7/5 劃位</li>
+        <li><b>太陽之塔內部見學</b>：7/6 官網時段預約</li>
+        <li><b>teamLab 長居植物園</b>：7/7 夜間時段票</li>
+        <li><b>南海ラピート指定席</b>：7/8 回程</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <h2>🗺️ 行程<span class="em">總覽</span></h2>
+  <div class="card">
+    <table>
+      <tr><th>日期</th><th>主題</th><th>住宿</th></tr>
+      <tr><td>6/30（二）</td><td>抵達（A組早班先玩USJ半天／B組你+兒子下午華航）</td><td>Universal Port</td></tr>
+      <tr><td>7/1（三）</td><td>環球影城②（整天）</td><td>Universal Port</td></tr>
+      <tr><td>7/2（四）</td><td>搬家 + 新世界/通天閣</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/3（五）</td><td>宇治 平等院 + 抹茶（世界遺產）</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/4（六）</td><td>神戶市區（北野異人館 + 南京町 + 港邊夜景）</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/5（日）</td><td>有馬溫泉 慢日（泡湯放鬆）</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/6（一）</td><td>萬博 太陽之塔 + NIFREL + VS PARK</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/7（二）</td><td>住吉大社 + 阪堺電車 + teamLab</td><td>Ocean Tsutenkaku</td></tr>
+      <tr><td>7/8（三）</td><td>返程 CI167</td><td>—</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- DAY 1-2 USJ -->
+<section id="d1">
+  <div class="day">
+    <div class="day-head usj">
+      <div class="num">1·2</div>
+      <div><div class="d-date">6/30（二）– 7/1（三）</div><p class="d-title">抵達 + 環球影城</p></div>
+      <div class="d-theme">🎢 USJ</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-usj"><span>環球影城入口</span></div>
+        <div class="photo ph-citywalk"><span>Universal CityWalk</span></div>
+        <div class="photo ph-port"><span>Hotel Universal Port</span></div>
+      </div>
+      <p class="callout coral" style="margin-top:0">👥 <b>6/30 分兩組出發</b>（兒子上午考試）：A 組 5 人搭 AK170 早班、下午先玩 USJ；B 組（你+兒子）搭華航下午班、晚上會合。</p>
+      <div class="leg"><div class="ico">🟦</div><div class="t">A組</div><div class="c"><b>AK170 12:40 抵達</b> → JR 約 15:00 入住 Hotel Universal Port（<b>拿兩間房鑰匙、留一把給 B 組</b>）→ 15:30 持當日票<b>進環球影城玩半天</b>（衝大金剛/任天堂、看夜間遊行）→ CityWalk 晚餐。</div></div>
+      <div class="leg"><div class="ico">🟧</div><div class="t">B組</div><div class="c"><b>兒子 12:00 考完</b>→直奔高雄機場→<b>華航 CI 15:35 起飛、19:35 抵關西</b>→入境領行李約 20:30→JR→<b>約 22:15 抵飯店與 A 組會合</b>、便利商店覓食、早睡。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>機場 → 飯店（兩組同路線）</b>：関西空港駅 →〔JR 関空快速〕→ 西九条駅（約 55 分，¥1,210）→ 轉〔JR ゆめ咲線〕→ ユニバーサルシティ駅（約 5 分）→ 步行 4 分。</span>
+        <span class="step"><b>A 組替代</b>：利木津巴士機場→環球影城直達（約 70 分，¥1,600，免轉車）。</span>
+      </div>
+      <p class="callout coral">⚠️ <b>分組要先處理好的 3 件事</b>：①<b>飯店入住</b>—若訂房人/信用卡是你（在 B 組），出發前先請飯店註記「A 組成人可代辦入住、領兩間房卡」，必要時備全員護照影本；②<b>B 組行李</b>—兒子大行李前一晚整理好、交給 A 組先託運，考完只帶隨身輕裝衝機場；③<b>趕機緩衝薄</b>—兒子 12:00 考完到華航 13:35 截止報到只約 1.5h，若考試可能延後或交通會塞，先想好計程車直奔機場的備案。</p>
+      <div class="leg"><div class="ico">🍄</div><div class="t">7/1 08:00</div><div class="c"><b>環球影城整天（全家會合）</b>：官方飯店提早入園 → 開 App 抽超級任天堂世界＋大金剛整理券；上午大金剛瘋狂礦車＋瑪利歐賽車，中午哈利波特，下午侏羅紀/好萊塢美夢，晚上夜間遊行。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（CityWalk + USJ 園內）</h4>
+        <div class="meal-block">
+          <span class="label">6/30 晚餐 · CityWalk（A組；B組晚到可便利商店或這幾家外帶）</span>
+          <ul>
+            <li><b>Red Lobster 大阪環球影城店</b>　<span class="star">★★★★☆</span> 龍蝦/生蠔/海鮮燉飯，影城正前方</li>
+            <li><b>TAKOPA 大阪章魚燒博物館</b>（4F）　名店章魚燒大集合，<b>必去</b></li>
+            <li><b>Hard Rock Cafe</b>（4F）　美式氣氛、份量大適合 7 人</li>
+            <li><b>Bubba Gump 蝦餐廳</b>（5F）　阿甘正傳主題、青少年喜愛</li>
+            <li><b>鶴橋風月 大阪燒</b>　大阪名店、現煎表演</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/1 午餐 · USJ 園內</span>
+          <ul>
+            <li><b>Kinopio's Cafe</b>（任天堂世界）　奇諾比奧蘑菇造型餐</li>
+            <li><b>Three Broomsticks 三根掃帚</b>（哈利波特）　英式料理＋奶油啤酒</li>
+            <li><b>Discovery Restaurant</b>（侏羅紀）　恐龍蛋造型餐</li>
+            <li><b>Finnegan's Bar</b>　愛爾蘭酒吧風、漢堡/炸魚薯條</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/1 晚餐 · USJ 或 CityWalk</span>
+          <ul>
+            <li><b>Mel's Drive-In</b>　復古美式漢堡、份量足</li>
+            <li><b>Azzurra di Capri</b>　義式 pizza/pasta、家庭友善</li>
+            <li><b>麵屋 一燈 USJ 店</b>　拉麵連鎖、好排隊</li>
+            <li>回飯店後 Lawson/7-11 補宵夜也 OK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 奶油啤酒 · 蘑菇餐 · 大阪燒</span>
+        <span class="tg move">🚇 関空快速＋ゆめ咲線</span>
+        <span class="tg stay">🏨 Hotel Universal Port</span>
+      </div>
+      <p class="callout">Express Pass 請提前 1–2 個月買，旺季秒殺。USJ App 開園前先登入綁定票券。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 3 = 7/2 -->
+<section id="d3">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">3</div>
+      <div><div class="d-date">7/2（週四）</div><p class="d-title">搬家 + 新世界/通天閣<span class="badge-new">就在樓下</span></p></div>
+      <div class="d-theme">🗼 在地</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-tsutenkaku"><span>通天閣（飯店樓下）</span></div>
+        <div class="photo ph-shinsekai"><span>新世界懷舊街</span></div>
+        <div class="photo ph-kushikatsu"><span>串炸 串カツ</span></div>
+      </div>
+      <div class="leg"><div class="ico">🧳</div><div class="t">10:30</div><div class="c">Hotel Universal Port 退房（11:00 前）。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>環球影城 → Ocean Tsutenkaku</b>：ユニバーサルシティ駅 →〔JR ゆめ咲線〕→ 西九条駅（約 5 分）→ 同站轉〔JR 大阪環状線・天王寺方向〕→ <b>新今宮駅</b>（約 25 分，全程 ¥230）→ 步行 10 分到飯店。</span>
+      </div>
+      <div class="leg"><div class="ico">🧳</div><div class="t">11:30</div><div class="c">先到 Ocean Tsutenkaku 寄放行李（16:00 才能入住）。</div></div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">13:30</div><div class="c"><b>通天閣</b>登塔（跳樓機 TIP THE TSUTENKAKU）、新世界懷舊街拍照、SPA WORLD 大溫泉（選配）。</div></div>
+      <div class="leg"><div class="ico">🛒</div><div class="t">15:00</div><div class="c">採買：玉出超市惠美須店（24h，激安）、業務超市，補食材。</div></div>
+      <div class="leg"><div class="ico">🏨</div><div class="t">16:00</div><div class="c">正式入住 Ocean Tsutenkaku、安頓、開洗衣。</div></div>
+      <div class="leg"><div class="ico">🌆</div><div class="t">17:30</div><div class="c"><b>阿倍野 HARUKAS 300 夕景＋夜景</b>（飯店步行 10 分到天王寺）：日本最高樓 300m 展望台，剛好卡黃昏轉夜景的黃金時段，玻璃地板拍照。<span class="muted">（與 7/7 行程不重複：7/2 看夜景、7/7 排白天南大阪 + 住吉 + teamLab）</span></div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（新世界串炸街 · ジャンジャン橫丁）</h4>
+        <div class="meal-block">
+          <span class="label">7/2 午餐 · 新世界串炸</span>
+          <ul>
+            <li><b>元祖串カツ だるま 通天閣本店</b>　<span class="star">★★★★★</span> 串炸發祥地、必朝聖、Tabelog 高分</li>
+            <li><b>八重勝（やえかつ）</b>　<span class="star">★★★★★</span> 在地人最愛、必排隊、ジャンジャン橫丁內</li>
+            <li><b>新世界 串カツ いっとく</b>　平價、在地人氣、肉串多汁</li>
+            <li><b>串カツ 横綱</b>　24h 不打烊、適合宵夜或半夜飛回來吃</li>
+            <li><b>千成屋珈琲</b>　昭和老咖啡店、草莓三明治超有名</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/2 晚餐 · 新世界 / 阿倍野 / 在家</span>
+          <ul>
+            <li><b>はり重 道頓堀本店</b>　咖哩牛、米其林必比登</li>
+            <li><b>HARBS</b>（HARUKAS Wing 3F）　千層水果蛋糕名店</li>
+            <li><b>阿倍野 きっしゃん</b>（HARUKAS Wing 12F）　平價松阪牛燒肉</li>
+            <li><b>しゃぶしゃぶ 美山</b>（Q's Mall）　涮涮鍋吃到飽</li>
+            <li>在家煮：玉出買食材壽喜燒/海鮮丼最放鬆</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 串炸 · 玉出採買 · 在家煮</span>
+        <span class="tg move">🚇 ゆめ咲線→環状線（西九条轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 1 晚）</span>
+      </div>
+      <p class="callout teal">🗼 換基地日不排太遠。新世界、通天閣、串炸街、玉出超市全在飯店樓下，剛好當熟悉環境的一天。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 4 = 7/3 Uji -->
+<section id="d4">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">4</div>
+      <div><div class="d-date">7/3（週五）</div><p class="d-title">宇治 · 平等院 + 抹茶<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🍵 世界遺產</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-byodoin"><span>平等院鳳凰堂（10円硬幣圖案）</span></div>
+        <div class="photo ph-uji"><span>宇治橋・宇治川</span></div>
+        <div class="photo ph-yudofu"><span>宇治抹茶甜點</span></div>
+      </div>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 5 分 → <b>惠美須町駅</b> →〔堺筋線・北行〕→ <b>北浜駅</b>（約 10 分）→ 轉〔京阪本線・特急〕→ <b>中書島駅</b> → 轉〔京阪宇治線〕→ <b>宇治駅</b>（全程約 70–80 分，約 ¥500）→ 步行 10 分到平等院。</span>
+        <span class="step"><b>回程</b>：宇治 → 中書島 → 北浜 → 惠美須町，原路回。</span>
+      </div>
+      <div class="leg"><div class="ico">🏯</div><div class="t">10:30</div><div class="c"><b>平等院</b>（世界遺產、10円硬幣上的鳳凰堂）：庭園 8:30–17:30 年中無休、¥700 含鳳翔館。</div></div>
+      <div class="leg"><div class="ico">🎫</div><div class="t">即時</div><div class="c"><b>鳳凰堂內部拝觀</b>（¥300，每場 50 人、9:30–16:10）：<b>不能事先預約！只能當天現場排號、先到先得、額滿即止</b> → 一抵達就先去領號。</div></div>
+      <div class="leg"><div class="ico">🍵</div><div class="t">12:30</div><div class="c"><b>宇治抹茶午餐+甜點</b>：表參道老店巡禮（見下方餐廳）。</div></div>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">14:30</div><div class="c"><b>宇治上神社</b>（世界遺產、現存最古神社建築）、宇治川、朝霧橋、源氏物語博物館（選配）。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">16:00</div><div class="c">表參道買抹茶伴手禮（中村藤吉、伊藤久右衛門、辻利），搭京阪回大阪。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（宇治抹茶名店 + 回程大阪）</h4>
+        <div class="meal-block">
+          <span class="label">7/3 早餐 · 出發前</span>
+          <ul>
+            <li>飯店廚房自煮（玉子燒、煎培根、咖啡）</li>
+            <li><b>Lawson / 玉出超市 動物園前</b>　飯糰、味噌湯</li>
+            <li><b>千成屋珈琲（新世界）</b>　草莓三明治外帶</li>
+            <li>北浜轉車順道便利商店</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/3 午餐 · 宇治抹茶名店</span>
+          <ul>
+            <li><b>中村藤吉 平等院店</b>　<span class="star">★★★★★</span> 百年茶舖、生茶凍、茶蕎麥麵（必排隊）</li>
+            <li><b>伊藤久右衛門 本店</b>　<span class="star">★★★★★</span> 抹茶聖代、抹茶蕎麥麵套餐</li>
+            <li><b>辻利兵衛本店</b>　茶寮甜點、百年製茶</li>
+            <li><b>福壽園 宇治茶工房</b>　可體驗手作抹茶</li>
+            <li><b>通圓茶屋</b>　創業 1160 年、宇治橋畔最古茶屋</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/3 晚餐 · 回大阪後</span>
+          <ul>
+            <li><b>難波 千日前 はり重</b>　咖哩牛、米其林必比登</li>
+            <li><b>會津屋 難波本店</b>　章魚燒元祖、創業 1933</li>
+            <li><b>金龍拉麵 道頓堀店</b>　24h 大綠龍</li>
+            <li><b>串カツ 横綱 新世界本店</b>　回飯店路上、24h 串炸</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍵 中村藤吉 · 抹茶聖代 · 茶蕎麥麵</span>
+        <span class="tg move">🚆 堺筋線→京阪本線→宇治線（中書島轉）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 2 晚）</span>
+      </div>
+      <p class="callout coral">⚠️ <b>鳳凰堂內部要早到搶號</b>：每場限 50 人、9:00 起當天現場發號、額滿即止，不能線上預約。想看內部建議一開園就先去領號，再逛庭園/吃飯。平等院庭園本身年中無休、不用預約。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 5 = 7/4 Kobe city -->
+<section id="d5">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">5</div>
+      <div><div class="d-date">7/4（週六）</div><p class="d-title">神戶市區 · 北野 + 南京町 + 港邊夜景<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🏛️ 異國港都</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-kitano"><span>北野異人館・風見雞館</span></div>
+        <div class="photo ph-nankin"><span>南京町中華街</span></div>
+        <div class="photo ph-kobeport"><span>神戶港・馬賽克摩天輪夜景</span></div>
+      </div>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 8 分 → 動物園前駅 →〔御堂筋線〕→ 梅田 → 轉〔阪神本線・直通特急〕或 JR 到 <b>三宮</b>（約 45–55 分，¥420）。</span>
+        <span class="step"><b>北野</b>：三宮步行上坡約 15 分，或搭〔City Loop 觀光巴士〕到「北野異人館」。</span>
+        <span class="step"><b>回程</b>：Harborland/三宮 → 阪神/JR → 梅田 → 御堂筋線 → 動物園前。</span>
+      </div>
+      <div class="leg"><div class="ico">🏛️</div><div class="t">10:30</div><div class="c"><b>北野異人館街</b>：風見雞館（9:30–18:00）、萌黃館等西洋建築群，異國風拍照；北野星巴克（百年洋館改建）。</div></div>
+      <div class="leg"><div class="ico">🥟</div><div class="t">12:30</div><div class="c"><b>南京町中華街</b>（三宮步行 5 分）：老祥記豬肉包、皇蘭、小籠包邊走邊吃，日本三大中華街之一。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">14:30</div><div class="c"><b>元町商店街 / 三宮中心街</b>購物，或生田神社參拜。</div></div>
+      <div class="leg"><div class="ico">🎡</div><div class="t">17:00</div><div class="c"><b>神戶港 Harborland / MOSAIC</b>：馬賽克摩天輪（¥800）、umie 購物中心、美利堅公園、<b>神戶港夕陽轉夜景</b>（關西最美港灣夜景之一）。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（神戶名店）</h4>
+        <div class="meal-block">
+          <span class="label">7/4 早餐 · 出發前</span>
+          <ul>
+            <li>飯店廚房自煮（吐司、雞蛋、咖啡）</li>
+            <li><b>玉出超市 / Lawson 動物園前</b>　飯糰、味噌湯</li>
+            <li><b>千成屋珈琲（新世界）</b>　草莓三明治外帶</li>
+            <li>梅田轉車順道：阪急三番街麵包店</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/4 午餐 · 南京町/三宮</span>
+          <ul>
+            <li><b>老祥記</b>　<span class="star">★★★★★</span> 南京町豬肉包名店、創業 1915（必排隊）</li>
+            <li><b>Grill 一平（三宮）</b>　神戶老牌洋食蛋包飯</li>
+            <li><b>神戶牛 Steak Land 三宮</b>　平價鐵板神戶牛（建議訂位）</li>
+            <li><b>南京町小吃巡禮</b>　皇蘭小籠包、餃子、糖葫蘆</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/4 晚餐 · 神戶港 / 三宮名店</span>
+          <ul>
+            <li><b>モーリヤ（Mouriya）三宮本店</b>　<span class="star">★★★★★</span> 神戶牛名店、創業 1885（務必訂位）</li>
+            <li><b>umie / MOSAIC 餐廳</b>　看港景用餐、選擇多</li>
+            <li><b>洋食の朝日</b>　在地排隊炸牛排</li>
+            <li>回大阪宵夜：串カツ 横綱 新世界 24h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 神戶牛 · 南京町豬肉包 · 洋食蛋包飯</span>
+        <span class="tg move">🚆 御堂筋線→阪神/JR（梅田轉）+ City Loop</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 3 晚）</span>
+      </div>
+      <p class="callout coral">⚠️ <b>北野異人館公休</b>：風見雞館等部分館每月<b>第 3 個週三、週四公休</b>，出發前查當月公休日（7/4 是週六、通常有開）。神戶牛名店（Mouriya 等）週末務必訂位。City Loop 一日券方便跑北野/港邊。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 6 = 7/5 Arima Onsen -->
+<section id="d6">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">6</div>
+      <div><div class="d-date">7/5（週日）</div><p class="d-title">有馬溫泉 慢日<span class="badge-new">放鬆日</span></p></div>
+      <div class="d-theme">♨️ 泡湯</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-arima"><span>有馬溫泉 金之湯</span></div>
+        <div class="photo ph-arimatown"><span>有馬溫泉街・湯本坂</span></div>
+        <div class="photo ph-yudofu"><span>溫泉街美食</span></div>
+      </div>
+      <div class="callout teal" style="margin-top:0">♨️ <b>連玩多天後的中場放鬆日</b>：日本三大古泉之一，梅田高速巴士直達、免轉車。泡湯、逛老街、吃釜飯，傍晚回大阪。</div>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 7 分 → <b>動物園前駅</b> →〔御堂筋線・北行〕→ <b>梅田</b>（約 15 分）→ 步行至 <b>阪急三番街高速巴士站</b> →〔阪急高速巴士・有馬溫泉行（特急直達）〕→ <b>有馬溫泉</b>（約 55–60 分，¥1,370）。</span>
+        <span class="step"><b>回程</b>：有馬溫泉 → 阪急高速巴士 → 梅田 → 御堂筋線 → 動物園前。<b>巴士建議事先劃位</b>（週日較滿）。</span>
+      </div>
+      <div class="leg"><div class="ico">🚌</div><div class="t">09:45</div><div class="c">前往梅田阪急三番街，搭高速巴士直達有馬。</div></div>
+      <div class="leg"><div class="ico">♨️</div><div class="t">11:30</div><div class="c">抵有馬。<b>金之湯</b>（含鐵質鹽分的金泉，褐色名湯）或 <b>銀之湯</b>（碳酸泉，清澈），泡公共湯屋（毛巾現場可買）。</div></div>
+      <div class="leg"><div class="ico">🏘️</div><div class="t">14:00</div><div class="c"><b>湯本坂溫泉老街</b>散步：碳酸煎餅現烤、佃煮、金泉布丁、足湯、太閤之湯紀念館。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">16:00</div><div class="c">買伴手禮、咖啡店歇腳，搭巴士返大阪。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（有馬溫泉街 + 回程梅田）</h4>
+        <div class="meal-block">
+          <span class="label">7/5 早餐</span>
+          <ul>
+            <li>飯店自煮 / 玉出超市便當</li>
+            <li><b>新今宮駅內「アントレマルシェ」</b>便當麵包</li>
+            <li><b>千成屋珈琲（新世界）</b>草莓三明治外帶</li>
+            <li>梅田轉車順道：阪急三番街麵包店</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/5 午餐 · 有馬溫泉街</span>
+          <ul>
+            <li><b>有馬山叢 御所別墅 / くつろぎ家</b>　釜飯、會席定食</li>
+            <li><b>竹中肉店</b>　現炸有馬可樂餅、和牛肉包（排隊名物）</li>
+            <li><b>三津森本舗</b>　現烤碳酸煎餅（百年老店）</li>
+            <li><b>café de beau</b>　溫泉街文青咖啡</li>
+            <li><b>有馬籠</b>周邊蕎麥/烏龍定食</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/5 晚餐 · 回大阪後</span>
+          <ul>
+            <li><b>瀧見小路（梅田）</b>　昭和復古美食街</li>
+            <li><b>阪急三番街 拉麵小路</b>　名店集結</li>
+            <li><b>串カツ 横綱 新世界</b>　回飯店 24h 串炸</li>
+            <li>在家：玉出買壽喜燒包煮</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 有馬可樂餅 · 碳酸煎餅 · 金泉布丁</span>
+        <span class="tg move">🚌 御堂筋線→梅田→阪急高速巴士（直達）</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 4 晚）</span>
+      </div>
+      <p class="callout coral">⚠️ <b>提醒</b>：①金之湯/銀之湯週間可能有公休（不同日），出發前查官網；②高速巴士週日易滿，建議事先劃位；③泡湯日適合排在連跑景點之後，讓全家中場喘息。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 7 = 7/6 Expo Park -->
+<section id="d7">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">7</div>
+      <div><div class="d-date">7/6（週一）</div><p class="d-title">萬博公園 太陽之塔 + NIFREL<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">🦁 互動科技</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-taiyo"><span>太陽之塔（岡本太郎）</span></div>
+        <div class="photo ph-expo"><span>萬博紀念公園</span></div>
+        <div class="photo ph-redhorse"><span>REDHORSE 大摩天輪</span></div>
+      </div>
+      <div class="transport-box">
+        <span class="step"><b>去程</b>：飯店步行 7 分 → <b>動物園前駅</b> →〔御堂筋線・北行〕→ <b>千里中央</b>（約 30 分）→ 轉〔大阪單軌電車〕→ <b>萬博紀念公園駅</b>（約 6 分）→ 步行 5 分。約 ¥680。</span>
+      </div>
+      <div class="leg"><div class="ico">🗼</div><div class="t">10:30</div><div class="c"><b>太陽之塔內部見學</b>：岡本太郎名作，內部「生命之樹」震撼，<b>需官網時段預約</b>（成人 ¥720＋入園 ¥450）。</div></div>
+      <div class="leg"><div class="ico">🐠</div><div class="t">12:30</div><div class="c"><b>NIFREL（ニフレル）</b>：海遊館團隊「感性博物館」，近距離接觸白虎、水豚（成人 ¥2,200，10:00–20:00 全年無休）。</div></div>
+      <div class="leg"><div class="ico">🏃</div><div class="t">15:00</div><div class="c"><b>VS PARK ららぽーと EXPOCITY 店</b>（萬博城內）：BANDAI NAMCO 體感運動樂園，逃離猛獸短跑、躲避球、各種對戰遊戲，<b>國三高二青少年會玩到瘋</b>（平日約 10:00–20:00、最終入場 19:00；營業時間依官網為準）。</div></div>
+      <div class="leg"><div class="ico">🎡</div><div class="t">17:30</div><div class="c"><b>EXPOCITY / LaLaport</b>：REDHORSE 大摩天輪、購物、午茶、吹冷氣。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（EXPOCITY 美食街）</h4>
+        <div class="meal-block">
+          <span class="label">7/6 早餐</span>
+          <ul>
+            <li>飯店自煮 / 玉出便當</li>
+            <li><b>千成屋珈琲（新世界）</b>　昭和咖啡店、草莓三明治</li>
+            <li>動物園前站 Lawson</li>
+            <li>到 EXPOCITY 再吃，星巴克/ Tully's 有早餐套餐</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/6 午餐 · EXPOCITY</span>
+          <ul>
+            <li><b>NIFREL Cafe</b>　動物造型甜點、適合拍照</li>
+            <li><b>金子半之助</b>（EXPOCITY 3F）　江戶前天丼名店</li>
+            <li><b>ラケル（RAKERU）</b>　日式蛋包飯名店</li>
+            <li><b>EXPOCITY 美食街</b>　20+ 攤位，7 人各點各的最方便</li>
+            <li><b>BBQ 萬博 BEAST</b>　戶外燒烤吃到飽（要訂位）</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/6 晚餐 · 回新世界</span>
+          <ul>
+            <li><b>串カツ だるま 通天閣本店</b>　回家路上、串炸名店</li>
+            <li><b>松屋 動物園前店</b>　24h 牛丼、平價</li>
+            <li><b>すき家 新今宮店</b>　24h 牛丼連鎖</li>
+            <li>在家壽喜燒：黑門/玉出買牛肉</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 EXPOCITY 美食街 · 天丼 · 蛋包飯</span>
+        <span class="tg move">🚝 御堂筋線→大阪單軌</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 5 晚）</span>
+      </div>
+      <p class="callout">🦁 取代去年海遊館：NIFREL 互動性更高、人潮較少。太陽之塔內部<b>務必先預約</b>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 8 = 7/7 South Osaka + teamLab -->
+<section id="d8">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">8</div>
+      <div><div class="d-date">7/7（週二）</div><p class="d-title">住吉大社 + 阪堺電車 + teamLab<span class="badge-new">NEW</span></p></div>
+      <div class="d-theme">⛩️ 在地 + 夜光</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid">
+        <div class="photo ph-sumiyoshi"><span>住吉大社 太鼓橋</span></div>
+        <div class="photo ph-hankai"><span>阪堺電車（復古路面電車）</span></div>
+        <div class="photo ph-nagai"><span>長居植物園 teamLab</span></div>
+      </div>
+      <div class="callout teal" style="margin-top:6px">📍 今天全在飯店附近南大阪，移動最省力，剛好排在離開前一天。<b>（HARUKAS 夜景已排 7/2，今天不重複登高樓。）</b></div>
+      <div class="leg"><div class="ico">🚃</div><div class="t">10:00</div><div class="c">飯店附近 <b>惠美須町電停</b> 搭〔阪堺電車〕南下，或從天王寺駅前電停上車，體驗大阪僅存的復古路面電車。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>住吉大社</b>：阪堺電車到 <b>住吉鳥居前</b> 電停（下車即到，¥230）。</span>
+        <span class="step"><b>飯店 → teamLab（晚間）</b>：動物園前駅 →〔御堂筋線・南行〕→ <b>長居駅</b>（約 8 分）→ 3 號出口步行 10 分到長居植物園。</span>
+      </div>
+      <div class="leg"><div class="ico">⛩️</div><div class="t">10:30</div><div class="c"><b>住吉大社</b>：全國住吉神社總本社，朱紅太鼓橋（反橋）必拍；周邊住吉公園散步。</div></div>
+      <div class="leg"><div class="ico">🛍️</div><div class="t">14:00</div><div class="c">回天王寺/新世界<b>最後採買打包</b>（藥妝、伴手禮、隔天早餐）；下午回飯店休息整理行李。</div></div>
+      <div class="leg"><div class="ico">🍽️</div><div class="t">17:00</div><div class="c"><b>告別晚餐先吃（17:00 前）</b>：天王寺/長居附近，避免 teamLab 後太晚（詳見下方餐廳）。</div></div>
+      <div class="leg"><div class="ico">🌌</div><div class="t">19:45</div><div class="c"><b>teamLab Botanical Garden 長居植物園</b>（成人 ¥1,800，需時段票，6–7 月 19:45–21:30、最終入場 20:30）。<b>戶外展，遇強風雷雨可能部分停展</b>。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（天王寺名店 + 道頓堀告別餐）</h4>
+        <div class="meal-block">
+          <span class="label">7/7 早餐</span>
+          <ul>
+            <li>飯店自煮 / 玉出便當</li>
+            <li><b>千成屋珈琲（新世界）</b>　草莓三明治、咖啡</li>
+            <li><b>HARUKAS Café du Ciel</b>（展望台旁）有景觀</li>
+            <li><b>VIE DE FRANCE 天王寺站</b>　麵包+咖啡套餐</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/7 午餐 · 天王寺/阿倍野（住吉回程順道）</span>
+          <ul>
+            <li><b>KYK 炸豬排</b>（阿倍野 Q's Mall）　京都名店、白飯高麗菜無限</li>
+            <li><b>しゃぶしゃぶ 美山</b>（Q's Mall）　涮涮鍋吃到飽，7 人方便</li>
+            <li><b>HARBS</b>（阿倍野 HARUKAS Wing 3F）　<span class="star">★★★★★</span> 千層水果蛋糕（不上展望台也能吃）</li>
+            <li><b>天王寺 MIO / あべのキューズモール</b>美食街　多選、好併桌</li>
+            <li><b>住吉鳥居前 さつまや</b>　神社旁定食/烏龍麵</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/7 告別晚餐 · 建議 17:00 前吃（teamLab 19:45 入場）</span>
+          <ul>
+            <li><b>阿倍野 きっしゃん 松阪牛燒肉</b>（HARUKAS 12F）　告別大餐、平價松阪牛（需訂位）</li>
+            <li><b>一鳥一炭 居酒屋</b>（天王寺）　人氣串燒、適合一家人</li>
+            <li><b>洋食 グリル マルヨシ</b>（天王寺）　老牌洋食、蛋包飯/炸物</li>
+            <li><b>長居駅周邊食堂</b>　看完 teamLab 前先吃飽，省去趕路</li>
+            <li>想吃蟹道樂/北極星等道頓堀名店 → 建議改 7/2 晚或當宵夜（teamLab 日不順路）</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 松阪牛 · 串燒 · 洋食蛋包飯</span>
+        <span class="tg move">🚃 阪堺電車＋御堂筋線</span>
+        <span class="tg stay">🏠 Ocean Tsutenkaku（第 6 晚）</span>
+      </div>
+      <p class="callout teal">🌌 teamLab 夜間限定（戶外、遇強風雷雨可能停展）。<b>告別晚餐請排 17:00 前</b>，避免 teamLab 散場後（21:30）才吃太晚。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 9 = 7/8 return -->
+<section id="d9">
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9</div>
+      <div><div class="d-date">7/8（週三）</div><p class="d-title">返程回高雄 CI167</p></div>
+      <div class="d-theme">✈️ 賦歸</div>
+    </div>
+    <div class="day-body">
+      <div class="photo-grid col2">
+        <div class="photo ph-rapit"><span>南海特急 ラピート</span></div>
+        <div class="photo ph-kix"><span>關西機場 T1</span></div>
+      </div>
+      <div class="leg"><div class="ico">🛏️</div><div class="t">07:15</div><div class="c">早餐（清冰箱/便利商店），最後檢查、退稅單備妥，<b>08:00 前退房出門</b>（7 人大行李、退稅、櫃台排隊抓寬鬆）。</div></div>
+      <div class="transport-box">
+        <span class="step"><b>飯店 → 機場（免轉車）</b>：步行 10 分 → <b>新今宮駅</b> →〔南海空港急行〕→ 関西空港（約 45 分，¥970）；或〔南海特急 ラピート〕（約 37 分，¥1,490，指定席）。7 人大行李建議叫 2 台計程車到新今宮。</span>
+      </div>
+      <div class="leg"><div class="ico">🚆</div><div class="t">08:10</div><div class="c">新今宮搭南海，約 08:55 抵關西機場 T1（比 09:15 多留緩衝）。</div></div>
+      <div class="leg"><div class="ico">🛫</div><div class="t">09:00</div><div class="c">華航櫃台報到、退稅、出境（起飛前約 3 小時）。</div></div>
+      <div class="leg"><div class="ico">✈️</div><div class="t">12:00</div><div class="c"><b>CI167 關西 12:00 → 高雄約 14:20</b>。</div></div>
+
+      <div class="meals">
+        <h4>🍴 餐廳推薦（早餐 + 機場最後一餐）</h4>
+        <div class="meal-block">
+          <span class="label">7/8 早餐 · 飯店出發前</span>
+          <ul>
+            <li>清冰箱：剩餘食材自煮</li>
+            <li><b>Lawson 動物園前店</b>　飯糰、味噌湯</li>
+            <li><b>千成屋珈琲</b>（新世界，順路）草莓三明治外帶</li>
+            <li><b>新今宮駅內 アントレマルシェ</b>　鐵路便當</li>
+          </ul>
+        </div>
+        <div class="meal-block">
+          <span class="label">7/8 機場 · 過安檢前 / 候機</span>
+          <ul>
+            <li><b>とんかつ KYK</b>（KIX T1 4F）　炸豬排定食</li>
+            <li><b>551 蓬萊 KIX 店</b>　大阪豬肉包外帶上飛機</li>
+            <li><b>道頓堀 くくる KIX 店</b>　章魚燒</li>
+            <li><b>Hattendo 八天堂 奶油麵包</b>　日本名物伴手禮</li>
+            <li><b>KIX T1 美食街</b>　拉麵、咖哩、烏龍麵多選</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-tags">
+        <span class="tg eat">🍴 鐵路便當 · 551 豬肉包 · 機場拉麵</span>
+        <span class="tg move">🚆 南海（新今宮直達關空）</span>
+        <span class="tg stay">🏠 賦歸</span>
+      </div>
+      <p class="callout coral">⏰ 新飯店最大優點：新今宮南海直達關空。7 人建議 ラピート 指定席好放行李。CI167 時間出發前再確認華航官網。</p>
+    </div>
+  </div>
+</section>
+
+<!-- SWAP -->
+<section id="swap">
+  <h2>🔀 替換 / <span class="em">備案景點</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <span class="pill purple">青少年最愛</span>
+      <h3>淡路島 二次元之森</h3>
+      <p>火影忍者忍者修行、<b>實體大哥吉拉滑索</b>、蠟筆小新。難波 JR 高速巴士直達約 2 小時。</p>
+    </div>
+    <div class="card">
+      <span class="pill teal">夏季限定避暑</span>
+      <h3>京都 鞍馬・貴船 川床流水麵</h3>
+      <p>貴船川上平台用餐，比市區涼 10 度，流水麵超消暑。叡山電車。7 月正季節，<b>川床需預約</b>。</p>
+    </div>
+    <div class="card">
+      <span class="pill green">自然健行</span>
+      <h3>箕面瀑布 + 勝尾寺達摩</h3>
+      <p>阪急箕面站沿溪步行到 33m 瀑布；勝尾寺<b>滿山達摩不倒翁</b>超療癒。半日自然行程。</p>
+    </div>
+    <div class="card">
+      <span class="pill gold">室內/雨備</span>
+      <h3>合味道紀念館 池田</h3>
+      <p>DIY 專屬泡麵杯（畫包裝、選配料）。阪急池田站。<b>雨天/想輕鬆</b>的最佳備案。</p>
+    </div>
+  </div>
+</section>
+
+<!-- NOTES -->
+<section id="notes">
+  <h2>📋 預約 &amp; <span class="em">提醒</span></h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>✅ 提前預約/購票</h3>
+      <ul class="clean">
+        <li><b>USJ Express Pass 4/7</b>（提前 1–2 個月，旺季秒殺；7/1）</li>
+        <li><b>宇治 鳳凰堂內部</b>當天現場排號、早到搶（7/3）</li>
+        <li><b>神戶 北野異人館</b>每月第3週三/四公休，查當月（7/4）</li>
+        <li><b>六甲山 GREENIA / 摩耶山纜車</b>查公休（7/4）</li>
+        <li><b>有馬溫泉 阪急高速巴士</b>劃位（7/5，週日易滿）</li>
+        <li><b>太陽之塔內部見學</b>（7/6 官網時段預約）</li>
+        <li><b>teamLab 長居植物園</b>時段票（7/7）</li>
+        <li><b>南海ラピート</b>指定席（7/8 回程）</li>
+        <li><b>蟹道樂、HARBS</b> 等告別餐建議訂位</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>⚠️ 出發前確認</h3>
+      <ul class="clean">
+        <li><b>6/30 兒子考試 → 你+兒子改下午華航；其他人 AK170 早班</b></li>
+        <li>六甲山 GREENIA、摩耶纜車公休日＋末班車（7/4）</li>
+        <li>有馬溫泉 金之湯/銀之湯 公休日（7/5）</li>
+        <li>各樂園/景點公休日與營業時間</li>
+        <li><b>CI167 確切起飛時間（華航官網）</b></li>
+        <li>7 月關西濕熱：水壺、涼感巾、防曬、折傘/雨衣</li>
+      </ul>
+    </div>
+  </div>
+  <p class="callout teal">🍳 <b>自炊照舊</b>：Ocean Tsutenkaku 房內廚房，樓下玉出超市 24h。跑遠的日子（宇治、神戶、有馬）回來累，在家煮壽喜燒/海鮮丼最放鬆。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>大阪關西親子 9 日遊攻略 · Version 3 融合定案版 · 2026/6/30–7/8</p>
+  <p>Hotel Universal Port → Ocean Tsutenkaku ｜ 青少年向 · 有馬溫泉慢日 · 每餐 3+ 名店 · 景點實景照片 🎌</p>
+</footer>
+
+</body>
+</html>
